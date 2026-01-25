@@ -1,4 +1,7 @@
-\# Māori GIS in Practice
+---
+title: Māori GIS in Practice
+sidebar_label: Introduction
+---
 
 
 
