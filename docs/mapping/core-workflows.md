@@ -5,7 +5,7 @@ sidebar_position: 10
 
 This page describes common GIS workflows used across Māori organisations. These are practical patterns for how GIS work usually happens, from an idea through to an output that supports kōrero or decisions.
 
-### A typical GIS workflow
+## A typical GIS workflow
 
 Most work follows this sequence:
 
@@ -18,7 +18,7 @@ Most work follows this sequence:
 
 Skipping steps often leads to confusion, rework, or misuse of information.
 
-### Starting with purpose
+## Starting with purpose
 
 Before opening any software, be clear about:
 
@@ -29,7 +29,7 @@ Before opening any software, be clear about:
 
 Purpose guides the choice of data, level of detail, and how results are presented.
 
-### Data gathering
+## Data gathering
 
 Common sources include:
 
@@ -41,7 +41,7 @@ Common sources include:
 
 At this stage, note the source, ownership, and any conditions on use.
 
-### Review and preparation
+## Review and preparation
 
 Good practice includes:
 
@@ -52,7 +52,7 @@ Good practice includes:
 
 This step protects downstream users and avoids misunderstandings.
 
-### Mapping and analysis
+## Mapping and analysis
 
 Examples include:
 
@@ -63,7 +63,7 @@ Examples include:
 
 Analysis should match the audience. More complexity does not always add value.
 
-### Outputs and sharing
+## Outputs and sharing
 
 Common outputs are:
 
@@ -74,7 +74,7 @@ Common outputs are:
 
 Be deliberate about where outputs live, who can access them, and how long they remain relevant.
 
-### Storage and care
+## Storage and care
 
 Good practice includes:
 
