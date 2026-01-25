@@ -1,5 +1,5 @@
 /* --------------------------------------------------
-   Base typography
+   Māori GIS: Typography, layout, colours
 -------------------------------------------------- */
 
 :root {
@@ -7,17 +7,21 @@
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.65;
 
-  /* Colour palette */
+  /* Calm palette */
   --maori-gis-text: #1f2933;
   --maori-gis-muted: #5f6c7b;
   --maori-gis-accent: #1f7a6f;
   --maori-gis-accent-soft: #e6f3f1;
   --maori-gis-border: #d9e2ec;
   --maori-gis-bg-soft: #f8fafb;
+
+  /* Notes */
+  --maori-gis-note-border: #2f5e8b;
+  --maori-gis-note-bg: #eef5ff;
 }
 
 /* --------------------------------------------------
-   Body text
+   Content width and reading comfort
 -------------------------------------------------- */
 
 .markdown {
@@ -25,13 +29,30 @@
   max-width: 780px;
 }
 
+/* Wider column only on large screens */
+@media (min-width: 1200px) {
+  .markdown {
+    max-width: 920px;
+  }
+}
+
 .markdown p {
   margin-bottom: 1rem;
   color: var(--maori-gis-text);
 }
 
+/* Softer link styling */
+.markdown a {
+  color: var(--maori-gis-accent);
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
 /* --------------------------------------------------
-   Headings
+   Headings and section rhythm
 -------------------------------------------------- */
 
 .markdown h1 {
@@ -44,9 +65,21 @@
 .markdown h2 {
   font-size: 1.4rem;
   font-weight: 600;
-  margin-top: 2.2rem;
+  margin-top: 2.25rem;
   margin-bottom: 0.75rem;
   color: var(--maori-gis-accent);
+}
+
+/* Gentle divider between major sections */
+.markdown h2 {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--maori-gis-border);
+}
+
+/* Do not add divider if h2 is the first thing on the page */
+.markdown h1 + h2 {
+  border-top: none;
+  padding-top: 0;
 }
 
 .markdown h3 {
@@ -60,7 +93,8 @@
    Lists
 -------------------------------------------------- */
 
-.markdown ul {
+.markdown ul,
+.markdown ol {
   margin-left: 1.2rem;
   margin-bottom: 1.1rem;
 }
@@ -70,7 +104,7 @@
 }
 
 /* --------------------------------------------------
-   Info callouts
+   Admonitions (:::info etc)
 -------------------------------------------------- */
 
 .markdown .admonition {
@@ -83,6 +117,24 @@
 .markdown .admonition-title {
   font-weight: 600;
   color: var(--maori-gis-accent);
+}
+
+/* --------------------------------------------------
+   Context note callout
+   Use in Markdown:
+   :::note
+   Your text
+   :::
+-------------------------------------------------- */
+
+/* Docusaurus default supports "note" admonition type */
+.markdown .admonition.admonition-note {
+  border-left: 4px solid var(--maori-gis-note-border);
+  background-color: var(--maori-gis-note-bg);
+}
+
+.markdown .admonition.admonition-note .admonition-title {
+  color: var(--maori-gis-note-border);
 }
 
 /* --------------------------------------------------
@@ -101,6 +153,11 @@
   font-weight: 400;
 }
 
+/* Slightly calmer active state */
+.theme-doc-sidebar-item-link--active {
+  color: var(--maori-gis-accent);
+}
+
 /* --------------------------------------------------
    Breadcrumbs
 -------------------------------------------------- */
@@ -111,7 +168,7 @@
 }
 
 /* --------------------------------------------------
-   Tables (future proofing)
+   Tables
 -------------------------------------------------- */
 
 .markdown table {
