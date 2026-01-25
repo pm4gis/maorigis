@@ -12,6 +12,8 @@ module.exports = {
         'getting-started/arcgis-pro',
         'getting-started/arcgis-online',
         'getting-started/google-earth',
+	'getting-started/kobotoolbox',
+
       ],
     },
     {
