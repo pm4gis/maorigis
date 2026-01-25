@@ -8,7 +8,6 @@
   --ifm-line-height-base: 1.65;
 
   /* Calm palette */
-  --maori-gis-text: #1f2933;
   --maori-gis-muted: #5f6c7b;
   --maori-gis-accent: #1f7a6f;
   --maori-gis-accent-soft: #e6f3f1;
@@ -20,12 +19,23 @@
   --maori-gis-note-bg: #eef5ff;
 }
 
+/* Dark mode tokens */
+[data-theme='dark'] {
+  --maori-gis-muted: rgba(230, 237, 243, 0.72);
+  --maori-gis-accent: #49b8aa;
+  --maori-gis-accent-soft: rgba(73, 184, 170, 0.14);
+  --maori-gis-border: rgba(255, 255, 255, 0.14);
+  --maori-gis-bg-soft: rgba(255, 255, 255, 0.04);
+
+  --maori-gis-note-border: #7bb7ff;
+  --maori-gis-note-bg: rgba(123, 183, 255, 0.12);
+}
+
 /* --------------------------------------------------
    Content width and reading comfort
 -------------------------------------------------- */
 
 .markdown {
-  color: var(--maori-gis-text);
   max-width: 780px;
 }
 
@@ -38,7 +48,6 @@
 
 .markdown p {
   margin-bottom: 1rem;
-  color: var(--maori-gis-text);
 }
 
 /* Softer link styling */
@@ -68,10 +77,6 @@
   margin-top: 2.25rem;
   margin-bottom: 0.75rem;
   color: var(--maori-gis-accent);
-}
-
-/* Gentle divider between major sections */
-.markdown h2 {
   padding-top: 1.25rem;
   border-top: 1px solid var(--maori-gis-border);
 }
@@ -119,15 +124,7 @@
   color: var(--maori-gis-accent);
 }
 
-/* --------------------------------------------------
-   Context note callout
-   Use in Markdown:
-   :::note
-   Your text
-   :::
--------------------------------------------------- */
-
-/* Docusaurus default supports "note" admonition type */
+/* Note callout */
 .markdown .admonition.admonition-note {
   border-left: 4px solid var(--maori-gis-note-border);
   background-color: var(--maori-gis-note-bg);

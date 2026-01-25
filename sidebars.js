@@ -21,6 +21,7 @@ module.exports = {
         'data/nz-data',
         'data/maori-land',
         'data/place-names',
+	'data/data-catalogue',
       ],
     },
     {
