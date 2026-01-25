@@ -1,218 +1,134 @@
 ---
-
 title: Google Earth
-
-sidebar\_position: 3
-
+sidebar_position: 3
 ---
 
+Google Earth is a free mapping and visualisation tool that lets you explore the world using satellite imagery, aerial photos, terrain, and simple map layers. It is best understood as a visual exploration and communication tool rather than a full GIS application.
 
+For many iwi and hapū contexts, Google Earth is a useful starting point because it feels familiar, loads fast, and works well for kōrero.
 
-Google Earth is a free mapping and visualisation tool that lets you explore the world using satellite imagery, aerial photos, terrain, and simple map layers. It is widely used because it is easy to access and requires very little setup.
+## Download and versions
 
+Google Earth web:
+- https://earth.google.com/web/
 
+Google Earth Pro desktop:
+- https://www.google.com/earth/versions/
 
-Google Earth is best understood as a visual exploration and communication tool rather than a full GIS application.
+Google Earth mobile:
+- Search for “Google Earth” in your phone app store
 
+For most practical work on a computer, Google Earth Pro is the most useful option.
 
-
-\### What Google Earth is good for
-
-
+## He aha te painga, why Google Earth is useful
 
 Google Earth is commonly used for:
 
+- Exploring whenua and landscapes in 3D
+- Getting fast visual context for a rohe
+- Supporting kōrero in hui and workshops
+- Viewing change over time using historical imagery
+- Creating simple overlays and screenshots for reports
+- Sharing locations with people unfamiliar with GIS
 
-
-\- Exploring whenua and landscapes in 3D
-
-\- Visualising places quickly without technical setup
-
-\- Supporting kōrero in hui and workshops
-
-\- Viewing change over time using historical imagery
-
-\- Creating simple place based stories and screenshots
-
-\- Sharing locations and ideas with people unfamiliar with GIS
-
-
-
-For many iwi and hapū contexts, Google Earth is a useful starting point because it feels familiar and intuitive.
-
-
-
-\### Versions of Google Earth
-
-
-
-There are three main versions you may encounter:
-
-
-
-\- Google Earth (web) runs in a browser and requires an internet connection
-
-\- Google Earth Pro runs as a desktop application and allows more features
-
-\- Google Earth on mobile devices for quick viewing in the field
-
-
-
-For most practical work, Google Earth Pro on a desktop computer is the most useful option.
-
-
-
-\### What Google Earth is not
-
-
+## What Google Earth is not
 
 Google Earth is not:
 
+- A full GIS analysis tool
+- An authoritative source of boundaries
+- A data management system
+- A safe place to store sensitive or restricted data
 
+Imagery can look precise but it can be out of date or offset. Treat it as context, not truth on its own.
 
-\- A full GIS analysis tool
+## Core tasks you will actually use
 
-\- A reliable source of authoritative boundaries
+Common tasks include:
 
-\- A database or data management system
+- Search and navigate to a place
+- Add placemarks for locations of interest
+- Draw paths and polygons to describe an area
+- Measure distance and area
+- View historical imagery
+- Save and share KML or KMZ files
+- Take screenshots for hui packs
 
-\- Suitable for managing sensitive or restricted data
+## Step by step, create a simple hui overlay
 
+1. Open Google Earth Pro
 
+2. Navigate to your area
+- Search for the place name
+- Use tilt and rotate if 3D terrain helps explain the landscape
 
-Imagery in Google Earth looks precise, but it is not always current or spatially accurate enough for decision making on its own.
+3. Add a polygon for an area of interest
+- Add
+- Polygon
+- Name it clearly
+- Draw the boundary
+- Set a simple style so it is visible
 
+4. Add a placemark for a key location
+- Add
+- Placemark
+- Name it clearly
+- Keep the description brief
 
+5. Save as KMZ
+- Right click the folder in the Places panel
+- Save Place As
+- Choose KMZ
+- Store it in your project folder
 
-\### Using Google Earth with Māori contexts
+## Step by step, bring Google Earth work into QGIS
 
+Use this when early kōrero becomes a GIS task.
 
+1. Save your Google Earth content as KML or KMZ
 
-Google Earth is often used to support kōrero about place, whakapapa, history, and landscape. It can be very effective for this purpose.
+2. In QGIS
+- Layer
+- Add Layer
+- Add Vector Layer
+- Select the KML or KMZ file and load it
 
+3. Export to GeoPackage for longer term use
+- Right click the layer
+- Export
+- Save Features As
+- Format: GeoPackage
 
+4. Add proper context layers
+- LINZ Basemaps for imagery: https://basemaps.linz.govt.nz/
+- LINZ Data Service for reference layers: https://data.linz.govt.nz/
 
-When using Google Earth with Māori data, consider:
+## Using Google Earth with Māori data
 
+Google Earth is often used to support kōrero about place, whakapapa, history, and landscape. It can be very effective for this, but be careful with what you capture and share.
 
+Consider:
 
-\- Whether sites or locations are sensitive
+- Whether sites or locations are sensitive
+- Who will see the screen during a hui
+- Who will receive the KMZ or screenshots afterwards
+- Whether a map implies permission that has not been agreed
+- Whether the overlay should be generalised
 
-\- Who will see the screen or shared files
-
-\- Whether imagery reveals information that should remain private
-
-\- How screenshots or files might be reused later
-
-
-
-:::info
-
+:::note
 Just because imagery is publicly visible does not mean it is appropriate to use or share in all contexts. Mana, trust, and tikanga still apply.
-
 :::
 
+## File types and sharing
 
+Google Earth uses:
 
-\### Common tasks in Google Earth
+- KML and KMZ for points, lines, and areas
+- Image overlays
+- Simple descriptions and links
 
+KMZ files are easy to forward. If content is sensitive, do not email it widely. Prefer screenshots with reduced detail or a simplified boundary.
 
+## Where this fits in the guide
 
-Typical tasks include:
-
-
-
-\- Searching for places and landmarks
-
-\- Adding placemarks for important locations
-
-\- Drawing simple lines and areas
-
-\- Measuring distance and area
-
-\- Turning imagery layers on and off
-
-\- Viewing historical imagery to see change over time
-
-
-
-These tasks are well suited to early stage exploration and discussion.
-
-
-
-\### File types used by Google Earth
-
-
-
-Google Earth uses simple file formats:
-
-
-
-\- KML and KMZ files for points, lines, and areas
-
-\- Image overlays
-
-\- Simple descriptive text and links
-
-
-
-These files are easy to share but can also be copied and redistributed easily.
-
-
-
-\### Strengths of Google Earth
-
-
-
-Google Earth works well when:
-
-
-
-\- You need to communicate ideas quickly
-
-\- The audience is not technical
-
-\- Visual context is more important than precision
-
-\- You are exploring possibilities rather than making final decisions
-
-
-
-It is especially useful for hui, workshops, and early planning conversations.
-
-
-
-\### Limitations to be aware of
-
-
-
-Be cautious when:
-
-
-
-\- Treating imagery as authoritative
-
-\- Assuming boundaries are correct
-
-\- Sharing files without controls
-
-\- Using Google Earth as the only source of evidence
-
-
-
-Google Earth should support decision making, not replace it.
-
-
-
-\### How Google Earth fits into this guide
-
-
-
-In this guide, Google Earth is used as an entry point for understanding place and spatial thinking. It is often the first tool people use before moving into more detailed GIS work with tools such as QGIS.
-
-
-
-Later sections will show how ideas explored in Google Earth can be taken into a GIS environment when more structure, accuracy, and control are required.
-
-
-
+Google Earth is a strong entry point for spatial thinking and early kōrero. When you need structure, accuracy, and repeatable work, move the content into QGIS or ArcGIS Pro and manage it properly.

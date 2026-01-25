@@ -1,294 +1,124 @@
 ---
-
 title: ArcGIS Online
-
-sidebar\_position: 4
-
+sidebar_position: 4
 ---
 
+ArcGIS Online is a web based GIS platform used to store, manage, analyse, and share spatial data through maps and applications. It is widely used across the public sector in Aotearoa New Zealand and is often the platform partner organisations expect.
 
+ArcGIS Online is powerful for sharing and collaboration, but it requires deliberate governance. Publishing is easy. Undoing oversharing can be hard.
 
-ArcGIS Online is a web based GIS platform used to store, manage, analyse, and share spatial data through maps and applications. It is widely used across the public sector in Aotearoa New Zealand and is often the main GIS platform organisations already have access to.
+## He aha te painga, why ArcGIS Online is valuable for Māori organisations
 
+ArcGIS Online is useful when you need to:
 
+- Share interactive maps with governance, staff, partners, or community
+- Create simple apps so non technical users can engage with information
+- Support engagement through StoryMaps
+- Support monitoring and reporting through Dashboards
+- Collect field information using mobile apps and forms
+- Coordinate work across multiple teams and locations
 
-ArcGIS Online works through a web browser. Data, maps, and apps are stored online rather than on a local computer. This makes it powerful for collaboration and sharing, but it also introduces responsibilities around access, permissions, and data care.
+It can also support capability building, because people can interact with maps without needing GIS software installed.
 
+## Key concepts you need to understand
 
+ArcGIS Online is organised around:
 
-\### What ArcGIS Online is good for
+- An organisation, your controlled workspace
+- Users, roles, and privileges
+- Groups, for controlling sharing
+- Items, the things you create and share, such as maps and layers
+- Hosted layers, data stored and served by the platform
+- Apps, experiences that sit on top of maps and layers
 
+If you understand users, groups, and items, you can manage most risk.
 
+## Data care, mana whakahaere, and permissions
 
-ArcGIS Online is commonly used for:
+Before uploading any data, be clear about:
 
+- Who owns the data
+- Who has permission to use it
+- Whether it includes sensitive locations or kōrero
+- What the default sharing setting should be
+- Whether downloads and exports should be allowed
 
-
-\- Creating and sharing interactive web maps
-
-\- Collaborating across teams and organisations
-
-\- Publishing maps and apps for non technical users
-
-\- Supporting engagement, reporting, and communication
-
-\- Combining GIS with forms, dashboards, and stories
-
-\- Working across devices without installing software
-
-
-
-For Māori organisations, ArcGIS Online can be valuable when information needs to be shared clearly with trustees, staff, partners, or the wider community.
-
-
-
-\### Core concepts to understand
-
-
-
-ArcGIS Online is built around a few key ideas:
-
-
-
-\- Content lives in an online organisation
-
-\- Users have accounts with roles and permissions
-
-\- Maps and data can be private, shared, or public
-
-\- Apps sit on top of maps to present information clearly
-
-
-
-Understanding these concepts is more important than knowing every tool.
-
-
-
-\### Using ArcGIS Online with Māori organisations
-
-
-
-ArcGIS Online is often used by iwi, hapū, trusts, incorporations, and PSGEs to support planning, reporting, and communication.
-
-
-
-Common uses include:
-
-
-
-\- Visualising rohe, assets, and interests
-
-\- Supporting post settlement governance and planning
-
-\- Sharing information with trustees or committees
-
-\- Communicating projects to partners and agencies
-
-\- Supporting environmental and taiao monitoring
-
-\- Telling stories about place and kaupapa
-
-
-
-The platform is well suited to sharing kōrero visually, but it must be used with care.
-
-
-
-\### Data responsibility and control
-
-
-
-ArcGIS Online makes sharing very easy. This is both a strength and a risk.
-
-
-
-When using ArcGIS Online, always be clear about:
-
-
-
-\- Who owns the data
-
-\- Where the data is stored
-
-\- Who can view, edit, or download it
-
-\- Whether content is public, internal, or restricted
-
-
-
-:::info
-
-Before uploading whenua, sites, or culturally sensitive information, confirm permissions and expectations. Once data is online, control can be harder to regain.
-
+:::note
+A map can be private while the layer behind it is shared wider. Always check the sharing settings on the layer, not only the map.
 :::
 
+## Common apps and when to use them
 
+ArcGIS Online includes several app patterns that are useful in Māori contexts.
 
-\### Apps in ArcGIS Online
+Web maps
+- The foundation for most things
+- Used to explore layers, turn layers on and off, and share a view
 
+StoryMaps, kōrero and engagement
+- Used to present a narrative with maps, images, and text
+- Useful for kaupapa communication, project context, and engagement
+- Official info and examples: https://storymaps.arcgis.com/
 
+Dashboards, reporting and monitoring
+- Used to show indicators, counts, charts, and maps
+- Useful for governance reporting, environmental monitoring, programme tracking
+- Official info: https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview
 
-ArcGIS Online includes many apps that present GIS information without requiring GIS skills.
+Instant Apps and Experience Builder, simple user tools
+- Used to create focused map experiences for specific audiences
+- Useful for trustees, staff, and partners who need a simple interface
+- Instant Apps: https://www.esri.com/en-us/arcgis/products/arcgis-instant-apps/overview
+- Experience Builder: https://www.esri.com/en-us/arcgis/products/arcgis-experience-builder/overview
 
+Survey123 and Field Maps, collecting information
+- Useful for field data capture, monitoring sites, inspections, and activity logging
+- Survey123: https://survey123.arcgis.com/
+- Field Maps: https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview
 
+## A safe publishing workflow, from desktop to web
 
-Common app types include:
+This is a practical workflow that reduces oversharing risk.
 
+1. Prepare a shareable dataset
+- Remove sensitive attributes
+- Generalise geometry if needed
+- Confirm naming and macrons
+- Add a short metadata description and date
 
+2. Publish as a hosted feature layer
+- Upload data
+- Create hosted layer
+- Set sharing to Owner only first
 
-\- Map viewers for exploring data
+3. Create a view layer for wider sharing
+- Create a view that excludes sensitive fields or features
+- Share the view to a specific group, not to the whole organisation
 
-\- Dashboards for showing live information
+4. Build the map and app on the view
+- Use the view as the layer source in maps and apps
 
-\- Story based apps for narrative and engagement
+5. Review before sharing
+- Check layer sharing
+- Check map sharing
+- Check app sharing
+- Check whether exports are allowed
+- Check popups do not reveal sensitive information
 
-\- Simple viewers for trustees and decision makers
+## Example, a taiao monitoring dashboard
 
-\- Mobile friendly apps for field or site use
+Common Māori use case:
 
+- A set of monitoring sites (points)
+- A table of monitoring results (date, indicator, result, notes)
+- A dashboard showing:
+  - map of sites
+  - latest results
+  - trend chart for key indicators
+  - filters by catchment or site type
 
+Start with internal sharing, then widen access once the kaupapa and permissions are clear.
 
-Apps are often where the real value sits for non technical users.
+## Where this fits in the guide
 
-
-
-\### StoryMaps
-
-
-
-StoryMaps combine maps, text, images, and media into a scrolling narrative.
-
-
-
-They are often used to:
-
-
-
-\- Explain history and context
-
-\- Share kaupapa and project stories
-
-\- Support engagement with communities
-
-\- Present information in a clear and approachable way
-
-
-
-For Māori organisations, StoryMaps are useful for sharing kōrero about whenua, taiao, projects, and aspirations in a way that is accessible and visual.
-
-
-
-They are not suitable for sensitive or restricted information unless carefully controlled.
-
-
-
-\### Dashboards
-
-
-
-Dashboards present information using maps, charts, and indicators.
-
-
-
-They are commonly used for:
-
-
-
-\- Monitoring projects or programmes
-
-\- Tracking environmental indicators
-
-\- Showing asset or activity status
-
-\- Supporting governance reporting
-
-
-
-Dashboards work best when the audience needs a clear snapshot rather than detailed analysis.
-
-
-
-\### Strengths of ArcGIS Online
-
-
-
-ArcGIS Online works well when:
-
-
-
-\- Many people need access to the same information
-
-\- Maps need to be shared widely and easily
-
-\- Non technical users need to interact with maps
-
-\- Storytelling and communication are important
-
-\- Integration with forms and apps is useful
-
-
-
-It reduces technical barriers for viewing and using GIS.
-
-
-
-\### Limitations to be aware of
-
-
-
-Be cautious when:
-
-
-
-\- Treating ArcGIS Online as the only copy of data
-
-\- Uploading sensitive or culturally restricted information
-
-\- Assuming default settings are appropriate
-
-\- Relying on online access in all situations
-
-\- Using apps without understanding data sources
-
-
-
-ArcGIS Online is not a replacement for clear governance, data management, or tikanga.
-
-
-
-\### ArcGIS Online and other tools
-
-
-
-ArcGIS Online is often used alongside other GIS tools.
-
-
-
-Common patterns include:
-
-
-
-\- Data prepared in desktop GIS, then published online
-
-\- Exploration in Google Earth, followed by structured maps online
-
-\- Online apps for viewing, with analysis done elsewhere
-
-
-
-It works best as part of a wider GIS approach rather than on its own.
-
-
-
-\### How ArcGIS Online fits into this guide
-
-
-
-In this guide, ArcGIS Online is presented as a platform for sharing and communication. It is especially useful once data and purpose are clear and the audience needs access without technical barriers.
-
-
-
-Later sections will focus on choosing the right tool for the task, deciding what should be shared online, and understanding responsibilities when publishing maps and apps.
-
-
-
+ArcGIS Online is best used for sharing and engagement once your data is ready and your permissions are clear. Use QGIS or ArcGIS Pro for careful preparation and data management, then publish simplified outputs to ArcGIS Online for the audiences that need them.
