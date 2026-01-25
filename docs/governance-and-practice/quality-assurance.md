@@ -8,7 +8,7 @@ sidebar\_position: 5
 
 
 
-\## Purpose
+## Purpose
 
 
 
@@ -16,19 +16,19 @@ This page outlines how to ensure Māori GIS data is accurate, appropriate, and c
 
 
 
-\## Technical accuracy
+## Technical accuracy
 
 
 
 Check:
 
-\- Spatial accuracy
+- Spatial accuracy
 
-\- Attribute consistency
+- Attribute consistency
 
-\- Projection and scale
+- Projection and scale
 
-\- Data integrity
+- Data integrity
 
 
 
@@ -36,19 +36,19 @@ Technical errors undermine trust.
 
 
 
-\## Cultural validation
+## Cultural validation
 
 
 
 Validation should include:
 
-\- Correct place names
+- Correct place names
 
-\- Appropriate representation
+- Appropriate representation
 
-\- Review by knowledge holders
+- Review by knowledge holders
 
-\- Respect for tikanga
+- Respect for tikanga
 
 
 
@@ -56,17 +56,17 @@ Technical correctness is not enough.
 
 
 
-\## Review processes
+## Review processes
 
 
 
 Good practice includes:
 
-\- Peer review
+- Peer review
 
-\- Community sign off where appropriate
+- Community sign off where appropriate
 
-\- Clear approval points
+- Clear approval points
 
 
 
@@ -74,17 +74,17 @@ Validation should be planned, not rushed.
 
 
 
-\## Managing uncertainty
+## Managing uncertainty
 
 
 
 Be clear about:
 
-\- Known gaps
+- Known gaps
 
-\- Assumptions
+- Assumptions
 
-\- Confidence levels
+- Confidence levels
 
 
 
