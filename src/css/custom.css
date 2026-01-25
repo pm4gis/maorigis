@@ -1,38 +1,131 @@
+/* --------------------------------------------------
+   Base typography
+-------------------------------------------------- */
+
 :root {
-  --ifm-font-family-base: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-  --ifm-font-size-base: 17px;
-  --ifm-line-height-base: 1.7;
-  --ifm-heading-line-height: 1.2;
-  --ifm-h1-font-size: 2.4rem;
-  --ifm-h2-font-size: 1.6rem;
-  --ifm-h3-font-size: 1.25rem;
-  --ifm-leading: 1.7;
+  --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+
+  /* Colour palette */
+  --maori-gis-text: #1f2933;
+  --maori-gis-muted: #5f6c7b;
+  --maori-gis-accent: #1f7a6f;
+  --maori-gis-accent-soft: #e6f3f1;
+  --maori-gis-border: #d9e2ec;
+  --maori-gis-bg-soft: #f8fafb;
+}
+
+/* --------------------------------------------------
+   Body text
+-------------------------------------------------- */
+
+.markdown {
+  color: var(--maori-gis-text);
+  max-width: 780px;
 }
 
 .markdown p {
-  max-width: 72ch;
+  margin-bottom: 1rem;
+  color: var(--maori-gis-text);
 }
 
-.markdown li {
-  max-width: 72ch;
+/* --------------------------------------------------
+   Headings
+-------------------------------------------------- */
+
+.markdown h1 {
+  font-size: 2.25rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
 }
 
 .markdown h2 {
-  margin-top: 2.0rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--maori-gis-accent);
 }
 
 .markdown h3 {
-  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
-.theme-doc-markdown {
-  padding-top: 0.25rem;
+/* --------------------------------------------------
+   Lists
+-------------------------------------------------- */
+
+.markdown ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1.1rem;
 }
 
-.theme-doc-sidebar-container {
-  border-right: 1px solid var(--ifm-toc-border-color);
+.markdown li {
+  margin-bottom: 0.35rem;
 }
 
-.footer__title {
+/* --------------------------------------------------
+   Info callouts
+-------------------------------------------------- */
+
+.markdown .admonition {
+  border-left: 4px solid var(--maori-gis-accent);
+  background-color: var(--maori-gis-accent-soft);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.markdown .admonition-title {
+  font-weight: 600;
+  color: var(--maori-gis-accent);
+}
+
+/* --------------------------------------------------
+   Sidebar tweaks
+-------------------------------------------------- */
+
+.theme-doc-sidebar-item-link {
+  font-size: 0.95rem;
+}
+
+.theme-doc-sidebar-item-link-level-1 {
+  font-weight: 600;
+}
+
+.theme-doc-sidebar-item-link-level-2 {
+  font-weight: 400;
+}
+
+/* --------------------------------------------------
+   Breadcrumbs
+-------------------------------------------------- */
+
+.breadcrumbs__item {
+  font-size: 0.85rem;
+  color: var(--maori-gis-muted);
+}
+
+/* --------------------------------------------------
+   Tables (future proofing)
+-------------------------------------------------- */
+
+.markdown table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid var(--maori-gis-border);
+  padding: 0.6rem 0.7rem;
+}
+
+.markdown th {
+  background-color: var(--maori-gis-bg-soft);
   font-weight: 600;
 }
