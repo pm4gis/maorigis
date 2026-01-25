@@ -131,9 +131,10 @@ export default function Home() {
               <Link className="button button--secondary button--sm" to="/docs/principles">
                 Read principles
               </Link>
-              <Link className="button button--secondary button--outline button--sm" to="/docs/publishing-and-sharing">
-                Publishing and sharing
-              </Link>
+             <Link className="button button--secondary button--outline button--sm" to="/docs/getting-started/tools">
+  Tools overview
+</Link>
+
             </div>
           </div>
         </section>
