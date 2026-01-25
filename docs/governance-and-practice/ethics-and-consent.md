@@ -8,7 +8,7 @@ sidebar\_position: 2
 
 
 
-\## Purpose
+## Purpose
 
 
 
@@ -16,19 +16,19 @@ This page outlines ethical responsibilities when creating, analysing, and sharin
 
 
 
-\## Informed consent in mapping projects
+## Informed consent in mapping projects
 
 
 
 Consent must be:
 
-\- Given before data is collected or digitised
+- Given before data is collected or digitised
 
-\- Based on clear explanation of purpose and risks
+- Based on clear explanation of purpose and risks
 
-\- Specific to the agreed use
+- Specific to the agreed use
 
-\- Able to be withdrawn
+- Able to be withdrawn
 
 
 
@@ -36,7 +36,7 @@ Mapping data does not create consent by default.
 
 
 
-\## Consent over time
+## Consent over time
 
 
 
@@ -46,27 +46,27 @@ GIS projects often evolve. New layers, new outputs, or new audiences may change 
 
 Good practice includes:
 
-\- Checking consent when scope changes
+- Checking consent when scope changes
 
-\- Not assuming consent applies to new uses
+- Not assuming consent applies to new uses
 
-\- Revisiting decisions when publishing or sharing
+- Revisiting decisions when publishing or sharing
 
 
 
-\## Sensitive spatial data
+## Sensitive spatial data
 
 
 
 Sensitive data may include:
 
-\- Wāhi tapu and wāhi tūpuna
+- Wāhi tapu and wāhi tūpuna
 
-\- Urupā and burial sites
+- Urupā and burial sites
 
-\- Cultural landscapes
+- Cultural landscapes
 
-\- Resources under pressure or dispute
+- Resources under pressure or dispute
 
 
 
@@ -74,21 +74,21 @@ Sensitivity is not always obvious from the data itself and must be understood th
 
 
 
-\## Managing visibility and access
+## Managing visibility and access
 
 
 
 Options for reducing risk include:
 
-\- Generalising locations
+- Generalising locations
 
-\- Masking attributes
+- Masking attributes
 
-\- Limiting scale or resolution
+- Limiting scale or resolution
 
-\- Using role based access controls
+- Using role based access controls
 
-\- Publishing summaries instead of raw data
+- Publishing summaries instead of raw data
 
 
 
@@ -96,19 +96,19 @@ Public does not mean appropriate.
 
 
 
-\## Avoiding harm
+## Avoiding harm
 
 
 
 Potential harms include:
 
-\- Enabling exploitation or vandalism
+- Enabling exploitation or vandalism
 
-\- Undermining cultural authority
+- Undermining cultural authority
 
-\- Misinterpretation without context
+- Misinterpretation without context
 
-\- Pressure to disclose more data
+- Pressure to disclose more data
 
 
 
@@ -116,17 +116,17 @@ Ethical practice requires actively thinking about misuse, not just intended use.
 
 
 
-\## Accountability
+## Accountability
 
 
 
 Ethical decisions should be:
 
-\- Documented
+- Documented
 
-\- Reviewable
+- Reviewable
 
-\- Able to be explained
+- Able to be explained
 
 
 
