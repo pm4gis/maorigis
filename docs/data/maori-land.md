@@ -1,348 +1,176 @@
 ---
-
 title: Māori land
-
-sidebar\_position: 20
-
+sidebar_position: 20
 ---
 
-
-
-Māori land information sits across whakapapa, law, governance, and place. GIS can help you pull threads together, but you need to be clear about what the data represents, what it can be used for, and what should stay private.
-
-
+Māori land information sits across whakapapa, law, governance, and place. GIS can help you pull information together, but you need to be clear about what the data represents, what it can be used for, and what should stay private.
 
 This page focuses on practical sources and workflows for working with whenua Māori in a GIS context.
 
-
-
-\## What you are usually trying to do
-
-
+## What you are usually trying to do
 
 Common needs include:
 
+- Find where a block is and what surrounds it
+- Understand how a block is managed (trust, incorporation, other structure)
+- Support communication with owners and whānau
+- Prepare maps for hui, planning, funding, or projects
+- Combine whenua information with taiao, hazards, and infrastructure layers
+- Build an internal register of whenua interests and responsibilities
 
+## Key places to find Māori land information
 
-\- Identify where a block is and what surrounds it
+Start with sources designed for Māori land records and block context.
 
-\- Understand how a block is managed (trust, incorporation, other structure)
+Pātaka Whenua is the Māori Land Court online portal for Māori land information.
+- https://www.maorilandonline.govt.nz/
 
-\- Support communication with owners and whānau
+Use it when you need:
 
-\- Prepare maps for hui, planning, funding, or projects
+- Block search by name
+- Information about governance and management entities
+- Court record context that helps explain what a block is and how it is held
 
-\- Combine whenua information with taiao, hazards, and infrastructure layers
+The Māori Land Court also publishes Māori land data pages that link to updates and supporting resources.
+- https://www.maorilandcourt.govt.nz/
 
-\- Build an internal register of whenua interests and responsibilities
+Te Puni Kōkiri provides tools and guidance that can support Māori land development and land information work.
+- https://www.tpk.govt.nz/
 
+## Practical data sources to map context around Māori land
 
+These do not replace Māori Land Court records, but they help you map the surroundings and constraints.
 
-\## Key places to find Māori land information
+LINZ Data Service (property, hydro, transport, topo, imagery)
+- https://data.linz.govt.nz/
 
+LINZ Basemaps (imagery and basemap tiles, useful for QGIS and ArcGIS products)
+- https://basemaps.linz.govt.nz/
 
+Stats NZ boundaries (meshblocks, SA2, local government boundaries)
+- https://datafinder.stats.govt.nz/
 
-Start with the sources that are designed for Māori land records and block context.
+DOC maps and data (public conservation land, tracks, huts, ecological regions)
+- https://doc-deptconservation.opendata.arcgis.com/
+- https://www.doc.govt.nz/our-work/maps-and-data/
 
+Regional and local council open data portals
+Most councils publish planning layers, hazards, and infrastructure context.
 
+To find a portal quickly, search the council name with “open data” or “GIS data”.
 
-Pātaka Whenua (Māori Land Court) is the current online portal for Māori land information, replacing what was previously available through Māori Land Online. :contentReference\[oaicite:0]{index=0}
+## How to think about Māori land boundaries in GIS
 
+Māori land information is often strong on record context but weaker on one single authoritative boundary dataset. Different organisations may hold different versions of boundaries, and some boundaries are indicative rather than legal.
 
+A practical approach is to separate your work into two linked parts:
 
-Use Pātaka Whenua when you need:
+- Your boundary layer (the geometry you map)
+- Your record layer (what you know about the block, its governance, and how it is used)
 
+Link them with an internal identifier you control and maintain.
 
+## Suggested schema for an internal whenua register
 
-\- A block search by block name
-
-\- An owner or management structure search
-
-\- Summary information that relates to the Māori Land Court record
-
-
-
-The Māori Land Court also publishes supporting documents and lists for Māori land, including the annual Māori Land Update, national lists of Māori land blocks, and the Māori Incorporation Register. :contentReference\[oaicite:1]{index=1}
-
-
-
-Te Puni Kōkiri hosts Tōku Whenua reports on Tupu, which can provide boundary context, aerial photos, and environmental information for a land block. :contentReference\[oaicite:2]{index=2}
-
-
-
-\## Practical Māori land data sources and links
-
-
-
-Use these links as your starting set.
-
-
-
-Māori Land Court and related
-
-
-
-\- Pātaka Whenua (search and summaries): https://customer.service.maorilandcourt.govt.nz/ :contentReference\[oaicite:3]{index=3}
-
-\- Māori land data landing page (updates, lists, incorporation register): https://www.xn--morilandcourt-wqb.govt.nz/en/the-court-record/m%C4%81ori-land-data :contentReference\[oaicite:4]{index=4}
-
-\- Find your land guidance (includes Tōku Whenua and LINZ references): https://www.xn--morilandcourt-wqb.govt.nz/en/maori-land/find-your-land :contentReference\[oaicite:5]{index=5}
-
-\- Tūhono Whenua guidance (how to get information about Māori land): https://www.tupu.nz/en/tuhono/how-to-get-information-about-maori-land/ :contentReference\[oaicite:6]{index=6}
-
-\- Tōku Whenua reports (Tupu): https://www.tupu.nz/ :contentReference\[oaicite:7]{index=7}
-
-
-
-Public base layers that help you map whenua context
-
-
-
-\- LINZ Data Service (property, topo, imagery, hydro, transport): https://data.linz.govt.nz/ :contentReference\[oaicite:8]{index=8}
-
-\- LINZ Basemaps (imagery and basemap tiles): https://basemaps.linz.govt.nz/ :contentReference\[oaicite:9]{index=9}
-
-\- Stats NZ geographic boundaries (meshblocks and admin boundaries): https://datafinder.stats.govt.nz/ :contentReference\[oaicite:10]{index=10}
-
-\- DOC Open Spatial Data (public conservation land, tracks, ecological regions): https://doc-deptconservation.opendata.arcgis.com/ :contentReference\[oaicite:11]{index=11}
-
-
-
-\## Working with Māori land boundaries in GIS
-
-
-
-Māori land information is often available as text records, reports, and summaries. Spatial boundaries can be harder to obtain in a single authoritative dataset, and different organisations may hold different versions.
-
-
-
-A practical approach is to separate your work into two layers:
-
-
-
-\- Your boundary layer (the geometry you map)
-
-\- Your record layer (what you know about the block, its governance, and how it is used)
-
-
-
-Then you link them using stable identifiers you can maintain over time.
-
-
-
-\## Suggested schema for your internal whenua register
-
-
-
-Create one internal layer or table for Māori land blocks you work with. Keep it simple and focused.
-
-
+Create one internal layer or table for Māori land blocks you work with. Keep it simple.
 
 Suggested fields:
 
+- block_name
+- block_reference (whatever reference you can record consistently)
+- rohe
+- governance_type (trust, incorporation, other)
+- governance_name
+- source_system (Pātaka Whenua, council, LINZ, internal, other)
+- last_checked_date
+- sensitivity (public, internal, restricted)
+- notes
 
-
-\- block\_name
-
-\- block\_id\_or\_reference (use what you can consistently capture from your source)
-
-\- rohe
-
-\- governance\_type (trust, incorporation, other)
-
-\- governance\_name
-
-\- main\_contacts (internal or approved contacts only)
-
-\- source\_system (Pātaka Whenua, Tōku Whenua, whānau, LINZ, other)
-
-\- last\_checked\_date
-
-\- sensitivity (public, internal, restricted)
-
-\- notes (short context, tikanga, constraints)
-
-
-
-Keep ownership lists and personal information out of GIS unless you have a clear purpose, permission, and secure storage.
-
-
+Keep personal information out of GIS unless you have a clear purpose, permission, and secure storage.
 
 :::note
-
-Treat whenua and owner information as taonga. Keep a clear boundary between public mapping and internal records.
-
+Treat whenua and owner information as taonga. Keep a clear boundary between public mapping outputs and internal records.
 :::
 
+## Step by step: build a Māori land context map in QGIS
 
+This is a practical workflow for creating a map that supports kōrero without exposing sensitive detail.
 
-\## Step by step: build a Māori land context map in QGIS
+1. Confirm the block name and record context
+- Search the block in Pātaka Whenua
+- Record the exact block name you will use internally
+- Note the governance entity name if present
 
+2. Create a project folder structure
+Use a predictable structure such as:
+- 01_source
+- 02_working
+- 03_outputs
+- 04_metadata
 
+3. Add imagery for context
+Use LINZ Basemaps for current imagery.
+- https://basemaps.linz.govt.nz/
 
-This is a practical workflow for creating a map that supports kōrero without over exposing sensitive information.
+4. Add property and context layers
+From LINZ Data Service, add layers such as parcels, roads, waterways, and topo features.
+- https://data.linz.govt.nz/
 
+If you need live services, use WFS where available. If you need simple display only, use WMS or WMTS.
 
+5. Add taiao and planning context
+- Add hazard and planning layers from the relevant council open data portal
+- Add DOC layers for public conservation land if relevant
+  - https://doc-deptconservation.opendata.arcgis.com/
 
-1\. Find the block and confirm the name
+6. Create your block layer
+- If you have a boundary from a trusted source, store it as a polygon layer
+- If you only have a general location, store an indicative point and label it as indicative
 
-\- Search the block in Pātaka Whenua
+7. Create a hui friendly output
+Keep the map focused:
+- One clear boundary or indicative marker
+- Few supporting layers
+- Readable labels
+- A short note on date checked and limitations
 
-\- Record the exact block name you will use internally
+8. Store a short metadata note
+In `04_metadata`, create a text file listing:
+- sources used
+- dates downloaded or checked
+- licence notes
+- sensitivity or tikanga notes
 
-\- Note any governance structure name if present :contentReference\[oaicite:12]{index=12}
+## Step by step: add LINZ Basemaps imagery into ArcGIS Online
 
+Use this when you want high quality imagery as a basemap layer.
 
+1. Open LINZ Basemaps and create an API key
+- https://basemaps.linz.govt.nz/
 
-2\. Create a project folder for the block
+2. Choose the imagery layer you want and copy the WMTS URL
+LINZ Basemaps provides WMTS options and guidance in their documentation pages.
+- https://basemaps.linz.govt.nz/docs/
 
-Use a predictable folder structure:
+3. In ArcGIS Online Map Viewer
+- Add layer
+- Add layer from URL
+- Paste the WMTS URL
+- Confirm the layer draws correctly and set it as the basemap or reference layer
 
+## Common issues and how to avoid them
 
+## Block names do not match other datasets
+Block naming can differ across sources and time. Store the source name and the date you checked it.
 
-\- 01\_source
+## Boundaries are treated as exact when they are not
+If a boundary is indicative, label it as indicative in the layer name and in the map output.
 
-\- 02\_working
+## Sensitive sites are included in general outputs
+Keep sensitive sites in a separate restricted layer with controlled access. Avoid publishing them to public web maps.
 
-\- 03\_outputs
+## Where to go next
 
-\- 04\_metadata
-
-
-
-3\. Add a basemap or imagery
-
-Use LINZ Basemaps for current imagery and context.
-
-If you need a WMTS link for ArcGIS Online or other tools, LINZ provides WMTS URLs in the form shown in their guide, including an API key. :contentReference\[oaicite:13]{index=13}
-
-
-
-4\. Add property and context layers
-
-From LINZ Data Service, add the layers you need for context such as:
-
-\- parcels
-
-\- waterways
-
-\- roads
-
-\- topo features
-
-
-
-Use WFS when you need editable vector features and filtering. LINZ provides WFS access using a web services key. :contentReference\[oaicite:14]{index=14}
-
-
-
-5\. Add taiao layers relevant to the kaupapa
-
-Use DOC for public conservation areas and similar context layers. :contentReference\[oaicite:15]{index=15}
-
-
-
-6\. Create your block layer
-
-If you have a boundary from a report or partner, store it as your geometry.
-
-If you only have a reference location, store a point and clearly label it as indicative.
-
-
-
-7\. Create an output map for hui
-
-Keep it simple:
-
-\- block boundary or indicative point
-
-\- key surrounding context
-
-\- labels that are readable at A4 or A3
-
-\- a short note about limitations and date checked
-
-
-
-8\. Store metadata
-
-Create a small text file in `04\_metadata` that lists:
-
-\- sources used
-
-\- dates downloaded or checked
-
-\- licence notes
-
-\- restrictions or tikanga notes
-
-
-
-\## Step by step: use LINZ Basemaps in ArcGIS Online for context
-
-
-
-LINZ provides a WMTS URL pattern for adding a basemap layer, including an API key, and guidance for using it in Esri software. :contentReference\[oaicite:16]{index=16}
-
-
-
-1\. Get a LINZ Basemaps API key
-
-\- Open https://basemaps.linz.govt.nz/
-
-\- Copy your API key from the site interface :contentReference\[oaicite:17]{index=17}
-
-
-
-2\. Choose a tileset
-
-\- Find an imagery layer relevant to your rohe
-
-\- Copy the WMTS capabilities URL shown in the LINZ guidance pattern :contentReference\[oaicite:18]{index=18}
-
-
-
-3\. Add to ArcGIS Online
-
-\- In Map Viewer, choose Add layer from URL
-
-\- Paste the WMTS URL
-
-\- Follow the LINZ guidance about removing the `?api=` part if required for recognition in ArcGIS Online :contentReference\[oaicite:19]{index=19}
-
-
-
-\## Common problems and how to avoid them
-
-
-
-\## Block names do not match other datasets
-
-Block naming can differ across sources and time. Store the source name and the date you checked it. Do not try to force it to match council or LINZ naming.
-
-
-
-\## Boundaries are treated as exact when they are not
-
-If your boundary is indicative, label it as indicative in the layer name and in outputs.
-
-
-
-\## Sensitive sites are mapped inside a general boundary
-
-Keep sensitive sites in a separate restricted layer, with controlled access, and avoid publishing them to public web maps.
-
-
-
-\## Where to go next
-
-
-
-\- Read the principles page and decide what should be public, internal, or restricted: /docs/principles
-
-\- Use the Taiao page in this section when building environmental context layers: /docs/taiao
-
-\- Use the Sites page when managing site based information with sensitivity settings: /docs/sites
-
-
-
+- Principles and responsibilities: /docs/principles
+- Taiao layers and care points: /docs/data/taiao
+- Sites and sensitivity controls: /docs/data/sites
