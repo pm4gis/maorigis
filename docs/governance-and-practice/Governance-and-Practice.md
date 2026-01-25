@@ -8,7 +8,7 @@ sidebar\_position: 1
 
 
 
-\## Purpose
+## Purpose
 
 
 
@@ -20,7 +20,7 @@ The focus is on authority, responsibility, and long term care rather than techni
 
 
 
-\## Māori data sovereignty in a GIS context
+## Māori data sovereignty in a GIS context
 
 
 
@@ -30,13 +30,13 @@ Māori data sovereignty recognises that data about Māori is subject to Māori a
 
 In GIS projects, this means:
 
-\- Authority sits with iwi, hapū, or whānau connected to the data
+- Authority sits with iwi, hapū, or whānau connected to the data
 
-\- Data has whakapapa and context, not just coordinates
+- Data has whakapapa and context, not just coordinates
 
-\- Rights are collective as well as individual
+- Rights are collective as well as individual
 
-\- Decisions continue over time, not only at project start
+- Decisions continue over time, not only at project start
 
 
 
@@ -44,21 +44,21 @@ Where data is hosted does not remove these responsibilities.
 
 
 
-\## Rangatiratanga and decision making
+## Rangatiratanga and decision making
 
 
 
 Rangatiratanga in GIS means Māori determine:
 
-\- What data is collected
+- What data is collected
 
-\- Why it is collected
+- Why it is collected
 
-\- Who can access it
+- Who can access it
 
-\- How it can be used
+- How it can be used
 
-\- Whether it can be shared or published
+- Whether it can be shared or published
 
 
 
@@ -66,7 +66,7 @@ These decisions should be explicit and documented, not assumed or inherited from
 
 
 
-\## Kaitiakitanga across the data lifecycle
+## Kaitiakitanga across the data lifecycle
 
 
 
@@ -76,15 +76,15 @@ Kaitiakitanga applies from collection to archiving.
 
 Good practice includes:
 
-\- Clear rules for editing and versioning
+- Clear rules for editing and versioning
 
-\- Regular review of access permissions
+- Regular review of access permissions
 
-\- Processes for retiring or deleting data
+- Processes for retiring or deleting data
 
-\- Planning for staff turnover and succession
+- Planning for staff turnover and succession
 
-\- Avoiding loss of knowledge when projects end
+- Avoiding loss of knowledge when projects end
 
 
 
@@ -92,7 +92,7 @@ GIS systems should support these practices rather than override them.
 
 
 
-\## Ownership, custodianship, and use
+## Ownership, custodianship, and use
 
 
 
@@ -100,11 +100,11 @@ These roles are often confused and should be separated.
 
 
 
-\- Ownership relates to authority and control
+- Ownership relates to authority and control
 
-\- Custodianship relates to day to day management
+- Custodianship relates to day to day management
 
-\- Use relates to a specific agreed purpose
+- Use relates to a specific agreed purpose
 
 
 
@@ -112,7 +112,7 @@ One organisation may hold data as a custodian while authority remains elsewhere.
 
 
 
-\## Licensing and conditions of use
+## Licensing and conditions of use
 
 
 
@@ -122,15 +122,15 @@ Standard open licences may not be appropriate for Māori spatial data.
 
 Conditions may include:
 
-\- No commercial use
+- No commercial use
 
-\- No redistribution
+- No redistribution
 
-\- Use limited to a defined kaupapa
+- Use limited to a defined kaupapa
 
-\- Mandatory attribution to iwi or hapū
+- Mandatory attribution to iwi or hapū
 
-\- Review before reuse in new contexts
+- Review before reuse in new contexts
 
 
 
@@ -138,19 +138,19 @@ These conditions should be documented and visible to users.
 
 
 
-\## Governance structures
+## Governance structures
 
 
 
 Strong governance includes:
 
-\- Named data governors or kaitiaki
+- Named data governors or kaitiaki
 
-\- Clear escalation paths for decisions
+- Clear escalation paths for decisions
 
-\- Alignment with iwi or organisational governance
+- Alignment with iwi or organisational governance
 
-\- Regular review points
+- Regular review points
 
 
 
