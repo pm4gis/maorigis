@@ -8,7 +8,7 @@ sidebar\_position: 4
 
 
 
-\## Purpose
+## Purpose
 
 
 
@@ -16,7 +16,7 @@ This page explains how to document Māori geospatial data so context, authority,
 
 
 
-\## Why metadata matters
+## Why metadata matters
 
 
 
@@ -26,37 +26,37 @@ Without it, data can be misused, misunderstood, or separated from its whakapapa.
 
 
 
-\## Key metadata elements
+## Key metadata elements
 
 
 
 In addition to technical fields, include:
 
-\- Data authority and kaitiaki
+- Data authority and kaitiaki
 
-\- Purpose and intended use
+- Purpose and intended use
 
-\- Conditions and restrictions
+- Conditions and restrictions
 
-\- Cultural considerations
+- Cultural considerations
 
-\- Known limitations
+- Known limitations
 
 
 
-\## Recording whakapapa
+## Recording whakapapa
 
 
 
 Where appropriate, document:
 
-\- How the data was created
+- How the data was created
 
-\- Who was involved
+- Who was involved
 
-\- What sources were used
+- What sources were used
 
-\- What decisions shaped it
+- What decisions shaped it
 
 
 
@@ -64,17 +64,17 @@ This supports transparency and trust.
 
 
 
-\## Language and naming
+## Language and naming
 
 
 
 Use:
 
-\- Correct place names
+- Correct place names
 
-\- Agreed spellings
+- Agreed spellings
 
-\- Appropriate descriptions
+- Appropriate descriptions
 
 
 
@@ -82,17 +82,17 @@ Avoid neutral language that removes context.
 
 
 
-\## Keeping documentation current
+## Keeping documentation current
 
 
 
 Metadata should be:
 
-\- Updated as data changes
+- Updated as data changes
 
-\- Reviewed periodically
+- Reviewed periodically
 
-\- Treated as part of the dataset
+- Treated as part of the dataset
 
 
 
