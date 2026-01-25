@@ -1,5 +1,5 @@
 module.exports = {
-  tutorialSidebar: [
+ guideSidebar: [
     'intro',
     'principles',
     {
