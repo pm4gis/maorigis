@@ -46,5 +46,3 @@ In Māori contexts, GIS work often involves:
 - Multiple audiences with different rights to access information  
 
 Because of this, tikanga, consent, and governance are treated as part of the technical workflow throughout this guide. They are not side notes or optional extras.
-
-## What this guide do
