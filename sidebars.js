@@ -1,8 +1,8 @@
 module.exports = {
- guideSidebar: [
+  guideSidebar: [
     'intro',
     'principles',
-	'about',
+    'about',
     {
       type: 'category',
       label: 'Getting started',
@@ -12,8 +12,7 @@ module.exports = {
         'getting-started/arcgis-pro',
         'getting-started/arcgis-online',
         'getting-started/google-earth',
-	'getting-started/kobotoolbox',
-
+        'getting-started/kobotoolbox'
       ],
     },
     {
@@ -23,7 +22,7 @@ module.exports = {
         'data/nz-data',
         'data/maori-land',
         'data/place-names',
-	'data/data-catalogue',
+        'data/data-catalogue'
       ],
     },
     {
@@ -33,7 +32,7 @@ module.exports = {
         'mapping/core-workflows',
         'mapping/whenua',
         'mapping/taiao',
-        'mapping/sites',
+        'mapping/sites'
       ],
     },
     {
@@ -42,8 +41,19 @@ module.exports = {
       items: [
         'publishing/maps',
         'publishing/storymaps',
-        'publishing/sharing',
+        'publishing/sharing'
       ],
-    }, 
+    },
+    {
+      type: 'category',
+      label: 'Governance and Practice',
+      items: [
+        'governance-and-practice/Governance-and-Practice',
+        'governance-and-practice/ethics-and-consent',
+        'governance-and-practice/working-with-whanau',
+        'governance-and-practice/metadata-documentation',
+        'governance-and-practice/quality-assurance'
+      ],
+    }
   ],
 };
