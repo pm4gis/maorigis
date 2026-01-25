@@ -166,9 +166,3 @@ A map without dates becomes hard to trust.
 ## Record licence terms
 Keep a short licence note in your dataset register for every dataset you use.
 
-## Where to go next
-
-- Place names and macrons: /docs/data/place-names
-- Māori land workflows: /docs/data/maori-land
-- Taiao context: /docs/data/taiao
-
