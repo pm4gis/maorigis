@@ -3,7 +3,13 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css';
 
-function Card({ to, title, description }) {
+type CardProps = {
+  to: string;
+  title: string;
+  description: string;
+};
+
+function Card({ to, title, description }: CardProps) {
   return (
     <Link className={styles.card} to={to}>
       <div className={styles.cardInner}>
@@ -14,7 +20,7 @@ function Card({ to, title, description }) {
   );
 }
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <Layout
       title="Māori GIS"
