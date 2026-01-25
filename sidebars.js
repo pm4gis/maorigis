@@ -2,6 +2,7 @@ module.exports = {
  guideSidebar: [
     'intro',
     'principles',
+	'about',
     {
       type: 'category',
       label: 'Getting started',
@@ -40,6 +41,6 @@ module.exports = {
         'publishing/storymaps',
         'publishing/sharing',
       ],
-    },
+    }, 
   ],
 };
