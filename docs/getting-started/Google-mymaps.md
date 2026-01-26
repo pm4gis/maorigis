@@ -185,4 +185,112 @@ Help: https://support.google.com/mymaps/answer/3024933
 You can share a map so others can view or edit it. My Maps sharing is linked to Google Drive sharing, so you can manage permissions from Drive as well.
 
 Common roles:
-- Can view: ideal for whānau and trustees who just ne
+- Can view: ideal for whānau and trustees who just need to read the map
+- Can edit: ideal for a small project team doing updates
+
+Help:
+- Share and set access in My Maps: https://support.google.com/mymaps/answer/3109452
+- Manage sharing in Google Drive: https://support.google.com/mymaps/answer/6138031
+
+### Practical collaboration patterns
+
+- Keep editing to a small group, keep viewing wider
+- Use a simple change process, like “add new points only, do not delete without agreement”
+- Add a “Last updated” note in the map description
+- If you need separate views for different audiences, create separate maps and share them differently
+
+### Organising maps in Google Drive
+
+My Maps are stored in Google Drive. Put maps into kaupapa folders, like:
+- Taiao monitoring
+- Whenua projects
+- Engagement maps
+- Comms outputs
+
+Google notes that My Maps do not use your Drive storage quota, and maps are available only in Google Drive on the web, not offline.  
+
+Help: https://support.google.com/mymaps/answer/6138031
+
+### Mobile reality
+
+You cannot create My Maps on a mobile device, but you can view maps on mobile in a browser. Plan for this by testing the map on a phone before sending it to a wide audience.
+
+Help: https://support.google.com/mymaps/answer/6138031
+
+## Directions and simple measurements
+
+My Maps can add a directions layer and can measure distance and area. This is useful for logistics planning and early scoping.
+
+Examples:
+- Plan a site visit route with multiple stops
+- Estimate a walking track distance for a monitoring plan
+- Roughly measure an area for discussion
+
+Each set of directions goes in its own layer.
+
+Help: https://support.google.com/mymaps/answer/3502610
+
+## Share on social media or embed in a website
+
+My Maps supports sharing and also embedding a map into a website. Embedding requires the map to be public.
+
+Practical tips for social media sharing:
+- Keep the map simple, with 2 to 4 layers maximum for public audiences
+- Use short labels and a small number of key points
+- Add a clear note about what the map is and is not
+
+Help: https://support.google.com/mymaps/answer/3109452
+
+## Bring KML from Google Earth into My Maps
+
+Google Earth is a fast way to sketch and explore in 3D, then share a simple view via My Maps.
+
+A practical flow:
+1. Create folders and placemarks in Google Earth for your kaupapa.
+2. Save or export as KML or KMZ.
+3. Import KML or KMZ into a My Maps layer.
+4. Style the layer for readability, then share.
+
+My Maps supports importing KML and KMZ and also lists common KML limitations on import. Keep KML simple, and expect that some advanced KML features may not import.
+
+Help:
+- Import file types and KML limits: https://support.google.com/mymaps/answer/3024836
+- Export your My Maps to KML/KMZ: https://support.google.com/mymaps/answer/3109452
+- View your My Maps in Google Earth (view only): https://support.google.com/mymaps/answer/12167856
+
+## Export and move into GIS when it matters
+
+When your My Maps content becomes important, move it into GIS.
+
+Steps:
+1. Export the map to KML or KMZ.
+2. Load it into QGIS or ArcGIS Pro.
+3. Check geometry, fix any issues, and set a proper CRS in your GIS project.
+4. Store the rebuilt dataset in a managed format like GeoPackage (QGIS) or a geodatabase (ArcGIS).
+5. Add metadata, sources, checked dates, and permissions.
+
+Help:
+- Export map to KML/KMZ and export layers to CSV: https://support.google.com/mymaps/answer/3109452
+
+## Tikanga, safety, and good practice for Māori organisations
+
+A simple rule: if you would not print it and leave it on a public table, do not put it in My Maps.
+
+Good practice:
+- Keep sensitive layers out of My Maps entirely, unless you have a locked down approach and clear approval
+- Generalise locations when sharing outside the core kaitiaki group
+- Use a “Sensitivity” column and enforce it through sharing, not just good intentions
+- Keep place names accurate, with macrons, and record who confirmed local spellings
+- Use My Maps for kōrero and engagement, then store authoritative datasets in GIS with proper controls
+
+## Helpful My Maps reference links
+
+- Create or open a map, change basemap: https://support.google.com/mymaps/answer/3024454
+- Use layers, styles, and the data table: https://support.google.com/mymaps/answer/3024933
+- Add places: https://support.google.com/mymaps/answer/3024925
+- Draw lines and shapes: https://support.google.com/mymaps/answer/3433053
+- Directions and measuring: https://support.google.com/mymaps/answer/3502610
+- Import from files and spreadsheets: https://support.google.com/mymaps/answer/3024836
+- Share, export, print, embed: https://support.google.com/mymaps/answer/3109452
+- Manage maps in Google Drive: https://support.google.com/mymaps/answer/6138031
+- View your map in Google Earth: https://support.google.com/mymaps/answer/12167856
