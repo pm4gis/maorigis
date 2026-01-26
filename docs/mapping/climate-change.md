@@ -12,7 +12,7 @@ Climate change (huringa āhuarangi) is already reshaping the taiao across Aotear
 
 
 
-\## What impacts to map first
+## What impacts to map first
 
 
 
@@ -24,19 +24,19 @@ Common Māori priorities to map include:
 
 
 
-\- Marae, papakāinga, urupā, wāhi tapu, pā sites, and access routes
+- Marae, papakāinga, urupā, wāhi tapu, pā sites, and access routes
 
-\- Whenua Māori blocks, land uses, forestry, and farm systems
+- Whenua Māori blocks, land uses, forestry, and farm systems
 
-\- Awa, puna, repo, roto, moana, and mahinga kai areas
+- Awa, puna, repo, roto, moana, and mahinga kai areas
 
-\- Community assets: water supplies, kāinga, roads, bridges, wharves, health centres, and schools
+- Community assets: water supplies, kāinga, roads, bridges, wharves, health centres, and schools
 
-\- Taonga species and habitat, restoration sites, riparian planting, and wetlands
+- Taonga species and habitat, restoration sites, riparian planting, and wetlands
 
 
 
-\## Aotearoa climate impact themes
+## Aotearoa climate impact themes
 
 
 
@@ -68,7 +68,7 @@ The table below links common impacts to practical datasets and mapping approache
 
 
 
-\## National climate data and mapping portals
+## National climate data and mapping portals
 
 
 
@@ -104,7 +104,7 @@ These are the core national sources that are most useful for climate impact mapp
 
 
 
-\## Basemap and elevation data for modelling
+## Basemap and elevation data for modelling
 
 
 
@@ -132,7 +132,7 @@ Tip: NZTM2000 (EPSG:2193) is the safest default projection for local analysis. K
 
 
 
-\## Local council hazard layers and viewers
+## Local council hazard layers and viewers
 
 
 
@@ -144,25 +144,23 @@ Examples to look at:
 
 
 
-\- Auckland Council Flood Viewer: https://experience.arcgis.com/experience/cbde7f2134404f4d90adce5396a0a630
+- Auckland Council Flood Viewer: https://experience.arcgis.com/experience/cbde7f2134404f4d90adce5396a0a630
 
-\- Greater Wellington flood hazard viewer: https://experience.arcgis.com/experience/9729c62312a849749455ec862169a76f
+- Greater Wellington flood hazard viewer: https://experience.arcgis.com/experience/9729c62312a849749455ec862169a76f
 
-\- Greater Wellington regional flood hazard assessment (context and methods): https://www.gw.govt.nz/your-region/emergency-and-hazard-management/flood-protection/flood-hazard-advice/regional-flood-hazard-assessment/
+- Greater Wellington regional flood hazard assessment (context and methods): https://www.gw.govt.nz/your-region/emergency-and-hazard-management/flood-protection/flood-hazard-advice/regional-flood-hazard-assessment/
 
-\- Hawke’s Bay Hazard Portal: https://gis.hbrc.govt.nz/hazards/
+- Hawke’s Bay Hazard Portal: https://gis.hbrc.govt.nz/hazards/
 
-\- Christchurch coastal hazards viewer: https://gis.ccc.govt.nz/hazard-viewer/
+- Christchurch coastal hazards viewer: https://gis.ccc.govt.nz/hazard-viewer/
 
-\- Environment Canterbury coastal hazard monitoring map: https://canterburymaps.govt.nz/map?webmap=117b9d3b75cb422da15b9d1b6698c8c3
-
-
-
-Search tip: try “{council name} flood hazard GIS”, “{council name} coastal inundation map”, or “{council name} open data ArcGIS”.
+- Environment Canterbury coastal hazard monitoring map: https://canterburymaps.govt.nz/map?webmap=117b9d3b75cb422da15b9d1b6698c8c3
 
 
 
-\## Using climate projections in GIS
+
+
+## Using climate projections in GIS
 
 
 
@@ -174,11 +172,11 @@ Key places to start:
 
 
 
-\- Core Public Dataset: https://climatedata.environment.govt.nz/core-public-dataset.html
+- Core Public Dataset: https://climatedata.environment.govt.nz/core-public-dataset.html
 
-\- Variable info: https://climatedata.environment.govt.nz/variable-info.html
+- Variable info: https://climatedata.environment.govt.nz/variable-info.html
 
-\- MfE projections map and dashboards are linked from: https://climatedata.environment.govt.nz/
+- MfE projections map and dashboards are linked from: https://climatedata.environment.govt.nz/
 
 
 
@@ -186,19 +184,19 @@ Practical workflow:
 
 
 
-1\. Choose a variable that matches your kaupapa, such as rainfall (PR), hot days (TX25 or TX30), drought indicators (PED), or heavy rainfall (R99pVAL).
+1. Choose a variable that matches your kaupapa, such as rainfall (PR), hot days (TX25 or TX30), drought indicators (PED), or heavy rainfall (R99pVAL).
 
-2\. Decide a scenario and period to talk about, such as 2021–2040, 2041–2060, 2081–2100, or a warming level like 2°C.
+2. Decide a scenario and period to talk about, such as 2021–2040, 2041–2060, 2081–2100, or a warming level like 2°C.
 
-3\. In QGIS, add the NetCDF file as a raster layer, then select the variable band you need.
+3. In QGIS, add the NetCDF file as a raster layer, then select the variable band you need.
 
-4\. Clip the raster to your rohe boundary, then summarise values by catchment, land block, or community area.
+4. Clip the raster to your rohe boundary, then summarise values by catchment, land block, or community area.
 
-5\. Use simple categories for kōrero at hui, like low, medium, high change, and include the baseline period in your map notes.
+5. Use simple categories for kōrero at hui, like low, medium, high change, and include the baseline period in your map notes.
 
 
 
-\## Sea level rise and coastal flooding
+## Sea level rise and coastal flooding
 
 
 
@@ -206,9 +204,9 @@ Two national sources work well together:
 
 
 
-\- NZ SeaRise gives location specific relative sea-level rise projections, including vertical land movement. Use it to understand how fast sea level rise may occur in your rohe. https://searise.nz/maps/
+- NZ SeaRise gives location specific relative sea-level rise projections, including vertical land movement. Use it to understand how fast sea level rise may occur in your rohe. https://searise.nz/maps/
 
-\- NIWA extreme coastal flood maps give a nationwide view of 1% annual exceedance probability coastal flooding, plus sea-level rise increments up to 2 m. https://niwa.co.nz/hazards/coastal-hazards/extreme-coastal-flood-maps-aotearoa-new-zealand
+- NIWA extreme coastal flood maps give a nationwide view of 1% annual exceedance probability coastal flooding, plus sea-level rise increments up to 2 m. https://niwa.co.nz/hazards/coastal-hazards/extreme-coastal-flood-maps-aotearoa-new-zealand
 
 
 
@@ -216,13 +214,13 @@ How to use them together in GIS:
 
 
 
-1\. Use NZ SeaRise to pick an amount of relative sea-level rise to plan around, such as 0.3 m, 0.5 m, 1.0 m.
+1. Use NZ SeaRise to pick an amount of relative sea-level rise to plan around, such as 0.3 m, 0.5 m, 1.0 m.
 
-2\. In the NIWA tool, view the matching increment to see potential flood exposure at a national scale.
+2. In the NIWA tool, view the matching increment to see potential flood exposure at a national scale.
 
-3\. If your council has higher resolution coastal hazard layers, use those for property scale decisions, and use NIWA for national comparisons and early scoping.
+3. If your council has higher resolution coastal hazard layers, use those for property scale decisions, and use NIWA for national comparisons and early scoping.
 
-4\. For local modelling, use LiDAR DEM data where available, and record the sea level rise scenario and storm-tide assumptions in your metadata.
+4. For local modelling, use LiDAR DEM data where available, and record the sea level rise scenario and storm-tide assumptions in your metadata.
 
 
 
@@ -230,15 +228,15 @@ Good practice references:
 
 
 
-\- MfE Coastal hazards and climate change guidance (2024): https://environment.govt.nz/publications/coastal-hazards-and-climate-change-guidance/
+- MfE Coastal hazards and climate change guidance (2024): https://environment.govt.nz/publications/coastal-hazards-and-climate-change-guidance/
 
-\- NZ SeaRise programme context and resources: https://searise.nz/
+- NZ SeaRise programme context and resources: https://searise.nz/
 
-\- NIWA coastal flood mapping methodology report is linked from the NIWA coastal flood maps page.
+- NIWA coastal flood mapping methodology report is linked from the NIWA coastal flood maps page.
 
 
 
-\## Rainfall extremes and flood design inputs
+## Rainfall extremes and flood design inputs
 
 
 
@@ -250,11 +248,11 @@ Key links:
 
 
 
-\- HIRDS overview: https://niwa.co.nz/climate-and-weather/high-intensity-rainfall-design-system-hirds
+- HIRDS overview: https://niwa.co.nz/climate-and-weather/high-intensity-rainfall-design-system-hirds
 
-\- HIRDS tool: https://hirds.niwa.co.nz/
+- HIRDS tool: https://hirds.niwa.co.nz/
 
-\- HIRDS rainfall depth surfaces dataset (ArcGIS Hub): https://hub.arcgis.com/datasets/NIWA::hirds-v4-rainfall-depth-surfaces-new-zealand/about
+- HIRDS rainfall depth surfaces dataset (ArcGIS Hub): https://hub.arcgis.com/datasets/NIWA::hirds-v4-rainfall-depth-surfaces-new-zealand/about
 
 
 
@@ -262,15 +260,15 @@ Practical GIS uses:
 
 
 
-\- Compare rainfall depths for a 10 minute, 1 hour, and 24 hour event in your rohe.
+- Compare rainfall depths for a 10 minute, 1 hour, and 24 hour event in your rohe.
 
-\- Use HIRDS outputs to inform flood models, culvert sizing, and stormwater upgrades.
+- Use HIRDS outputs to inform flood models, culvert sizing, and stormwater upgrades.
 
-\- Map “design storm” rainfall gradients across a catchment to support prioritisation.
+- Map “design storm” rainfall gradients across a catchment to support prioritisation.
 
 
 
-\## Drought, low flows, and freshwater stress
+## Drought, low flows, and freshwater stress
 
 
 
@@ -282,11 +280,11 @@ Useful links:
 
 
 
-\- NZ Drought Monitor: https://niwa.co.nz/hazards/weather-hazards/new-zealand-drought-monitor
+- NZ Drought Monitor: https://niwa.co.nz/hazards/weather-hazards/new-zealand-drought-monitor
 
-\- Drought indicator maps: https://niwa.co.nz/climate-and-weather/nz-drought-indicator-products-and-information/drought-indicator-maps
+- Drought indicator maps: https://niwa.co.nz/climate-and-weather/nz-drought-indicator-products-and-information/drought-indicator-maps
 
-\- LAWA water quantity and river quality: https://www.lawa.org.nz/explore-data/
+- LAWA water quantity and river quality: https://www.lawa.org.nz/explore-data/
 
 
 
@@ -294,15 +292,15 @@ Practical GIS uses:
 
 
 
-\- Build a “catchment stress” map combining drought indicators, water takes, low flow sites, and key mahinga kai reaches.
+- Build a “catchment stress” map combining drought indicators, water takes, low flow sites, and key mahinga kai reaches.
 
-\- Track drought conditions over time for reporting to trustees and rūnanga.
+- Track drought conditions over time for reporting to trustees and rūnanga.
 
-\- Overlay drought and land cover to target riparian planting, wetland restoration, and shade for waterways.
+- Overlay drought and land cover to target riparian planting, wetland restoration, and shade for waterways.
 
 
 
-\## Wildfire and heat exposure
+## Wildfire and heat exposure
 
 
 
@@ -314,11 +312,11 @@ Useful links:
 
 
 
-\- Fire and Emergency climate and wildfire context: https://www.fireandemergency.nz/about-us/our-commitments/our-climate-is-changing/
+- Fire and Emergency climate and wildfire context: https://www.fireandemergency.nz/about-us/our-commitments/our-climate-is-changing/
 
-\- NIWA fire weather portal: https://fireweather.niwa.co.nz/
+- NIWA fire weather portal: https://fireweather.niwa.co.nz/
 
-\- MfE climate projections to map hot days and extreme temperature: https://environment.govt.nz/facts-and-science/climate-change/climate-change-projections/
+- MfE climate projections to map hot days and extreme temperature: https://environment.govt.nz/facts-and-science/climate-change/climate-change-projections/
 
 
 
@@ -326,15 +324,15 @@ Practical GIS uses:
 
 
 
-\- Map hot days (TX25 or TX30) for settlement areas and compare future periods.
+- Map hot days (TX25 or TX30) for settlement areas and compare future periods.
 
-\- Combine heat exposure with shade, tree cover, and social vulnerability indicators.
+- Combine heat exposure with shade, tree cover, and social vulnerability indicators.
 
-\- Map wildfire exposure by combining vegetation, slope, access routes, water points, and nearby assets.
+- Map wildfire exposure by combining vegetation, slope, access routes, water points, and nearby assets.
 
 
 
-\## Change detection with historic imagery
+## Change detection with historic imagery
 
 
 
@@ -346,9 +344,9 @@ Useful links:
 
 
 
-\- Retrolens historic aerial imagery: https://retrolens.co.nz/
+- Retrolens historic aerial imagery: https://retrolens.co.nz/
 
-\- LINZ aerial imagery overview: https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery
+- LINZ aerial imagery overview: https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery
 
 
 
@@ -356,15 +354,15 @@ Simple workflow:
 
 
 
-1\. Use Retrolens to view older imagery at a site and note the photo year.
+1. Use Retrolens to view older imagery at a site and note the photo year.
 
-2\. In GIS, add current aerial imagery (LINZ Basemaps or council imagery), then compare with digitised shorelines, riverbanks, or wetland extents from older years.
+2. In GIS, add current aerial imagery (LINZ Basemaps or council imagery), then compare with digitised shorelines, riverbanks, or wetland extents from older years.
 
-3\. Store “year captured” as an attribute so you can make time sliders and change graphs later.
+3. Store “year captured” as an attribute so you can make time sliders and change graphs later.
 
 
 
-\## A practical workflow for iwi and hapū projects
+## A practical workflow for iwi and hapū projects
 
 
 
@@ -372,23 +370,23 @@ This pattern works for many climate adaptation projects, from a quick scan to de
 
 
 
-1\. Build a rohe base layer set: boundaries, place names, whenua Māori blocks, parcels, buildings, roads, rivers, coast.
+1. Build a rohe base layer set: boundaries, place names, whenua Māori blocks, parcels, buildings, roads, rivers, coast.
 
-2\. Add a kaupapa asset layer: marae, urupā, wāhi tapu, mahinga kai, taonga species sites, infrastructure.
+2. Add a kaupapa asset layer: marae, urupā, wāhi tapu, mahinga kai, taonga species sites, infrastructure.
 
-3\. Add hazard layers: coastal inundation, erosion, river flooding, landslides, drought, wildfire.
+3. Add hazard layers: coastal inundation, erosion, river flooding, landslides, drought, wildfire.
 
-4\. Add climate scenario layers: sea-level rise increments, projected rainfall change, hot days, drought indices.
+4. Add climate scenario layers: sea-level rise increments, projected rainfall change, hot days, drought indices.
 
-5\. Run exposure summaries: counts and lengths by asset type, by catchment, by land block, by community area.
+5. Run exposure summaries: counts and lengths by asset type, by catchment, by land block, by community area.
 
-6\. Produce hui-ready maps: simple categories, clear legends, and narrative notes that match local kōrero.
+6. Produce hui-ready maps: simple categories, clear legends, and narrative notes that match local kōrero.
 
-7\. Package outputs for sharing: PDF maps for governance, web maps for operational teams, and a data dictionary for future staff.
+7. Package outputs for sharing: PDF maps for governance, web maps for operational teams, and a data dictionary for future staff.
 
 
 
-\## Protecting sensitive information
+## Protecting sensitive information
 
 
 
@@ -400,17 +398,17 @@ Practical approaches:
 
 
 
-\- Separate public layers from restricted layers. Use a “view layer” for sharing that removes sensitive attributes and generalises locations.
+- Separate public layers from restricted layers. Use a “view layer” for sharing that removes sensitive attributes and generalises locations.
 
-\- Store permissions in attributes, such as “share\_with”, “use\_limitations”, and “contact\_kaitiaki”.
+- Store permissions in attributes, such as “share_with”, “use_limitations”, and “contact_kaitiaki”.
 
-\- Keep local place names as a first-class dataset, with fields for preferred spelling, dialect, sources, and usage notes.
+- Keep local place names as a first-class dataset, with fields for preferred spelling, dialect, sources, and usage notes.
 
-\- Record provenance for every layer: source, date, licence, processing steps, and who to contact.
+- Record provenance for every layer: source, date, licence, processing steps, and who to contact.
 
 
 
-\## Suggested starter layer pack
+## Suggested starter layer pack
 
 
 
@@ -418,39 +416,39 @@ If you want a simple starter set for climate work, these are high value layers t
 
 
 
-\- Rohe boundaries and local community areas
+- Rohe boundaries and local community areas
 
-\- Marae and key community assets
+- Marae and key community assets
 
-\- Whenua Māori blocks and/or land trust boundaries
+- Whenua Māori blocks and/or land trust boundaries
 
-\- Parcels, buildings, roads, rivers, coastline
+- Parcels, buildings, roads, rivers, coastline
 
-\- LiDAR DEM where available, else NZ 8m DEM
+- LiDAR DEM where available, else NZ 8m DEM
 
-\- Council flood and coastal hazard layers
+- Council flood and coastal hazard layers
 
-\- NZ SeaRise projections summaries for your coast
+- NZ SeaRise projections summaries for your coast
 
-\- NIWA coastal flood scenarios for a quick national baseline
+- NIWA coastal flood scenarios for a quick national baseline
 
-\- HIRDS rainfall outputs for key catchments
+- HIRDS rainfall outputs for key catchments
 
-\- LAWA catchment water quality and quantity context
-
-
-
-\## Further reading and planning support
+- LAWA catchment water quality and quantity context
 
 
 
-\- National Climate Change Risk Assessment (MfE): https://environment.govt.nz/publications/national-climate-change-risk-assessment-for-new-zealand-main-report/
+## Further reading and planning support
 
-\- Coastal hazards and climate change guidance (MfE): https://environment.govt.nz/publications/coastal-hazards-and-climate-change-guidance/
 
-\- Updated climate projections and dataset access (MfE/NIWA): https://climatedata.environment.govt.nz/
 
-\- NZ SeaRise resources and factsheets: https://searise.nz/resources/
+- National Climate Change Risk Assessment (MfE): https://environment.govt.nz/publications/national-climate-change-risk-assessment-for-new-zealand-main-report/
+
+- Coastal hazards and climate change guidance (MfE): https://environment.govt.nz/publications/coastal-hazards-and-climate-change-guidance/
+
+- Updated climate projections and dataset access (MfE/NIWA): https://climatedata.environment.govt.nz/
+
+- NZ SeaRise resources and factsheets: https://searise.nz/resources/
 
 
 
