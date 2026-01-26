@@ -1,160 +1,67 @@
 ---
-
 title: Survey123
-
-sidebar\_position: 61
-
+sidebar_position: 61
 ---
 
+Survey123 is a form based data collection tool in the ArcGIS platform. It is used to collect structured survey responses, including locations, photos, and attachments, then publish results into ArcGIS Online for mapping and reporting.
 
+Survey123 site: https://survey123.arcgis.com/
+Product overview: https://www.esri.com/en-us/arcgis/products/arcgis-survey123/overview
 
-Survey123 is a form based data collection tool developed by :contentReference\[oaicite:1]{index=1}. It is part of the ArcGIS ecosystem and is designed for structured surveys that can include location, photos, and attachments.
-
-
-
-Survey123 is not GIS software. It is a data capture tool that feeds into GIS.
-
-
-
-\## What Survey123 is good for
-
-
+## What Survey123 is good for
 
 Survey123 works well for:
 
+- Field surveys with consistent questions and response types
+- Monitoring programmes where the same site is visited many times
+- Condition checks, inspections, and repeatable assessments
+- Collecting GPS points, photos, and notes together
+- Workflows that need validation rules and required fields
 
+## Where it fits in Māori GIS workflows
 
-\- Field data collection with phones or tablets
+Survey123 can be a good fit when:
 
-\- Structured surveys with clear schemas
+- Your organisation already uses ArcGIS Online
+- You need consistent data capture across staff or contractors
+- The project needs dashboards or reporting that update automatically
+- You need to separate internal registers from what is shared
 
-\- Collecting locations, photos, and observations together
+It is strongest when the dataset design and permissions are decided before any field collection starts.
 
-\- Monitoring programmes and repeat visits
+## Data governance and sensitive information
 
-\- Projects that need controlled questions and responses
+Before building a survey, decide:
 
+- Who owns the data and who is responsible for it
+- Who can view, edit, download, and share the outputs
+- Whether any locations or kōrero are sensitive
+- Whether identifying information is required at all
 
+Practical safer approaches:
 
-It is commonly used by councils, Crown agencies, and organisations already using ArcGIS Online.
+- Avoid collecting personal information unless it is required
+- Put sensitive details in a separate internal dataset, not in the public facing layer
+- Use hosted feature layer views to share only safe fields or safe records
 
+Hosted feature layer views: https://doc.arcgis.com/en/arcgis-online/manage-data/create-hosted-views.htm
 
+## Typical workflow
 
-\## Why it is used in Māori contexts
+1. Design the survey schema and keep it minimal
+2. Test on real devices in the field conditions you expect
+3. Collect data and review it regularly during collection
+4. Clean and quality check results in ArcGIS Pro or QGIS if needed
+5. Publish a view layer for sharing and reporting
+6. Build maps, dashboards, or StoryMaps on top of the view
 
+ArcGIS Online sharing items: https://doc.arcgis.com/en/arcgis-online/share-maps/share-items.htm
 
+## Limits to be aware of
 
-Survey123 can work well when:
+Survey123 may not suit work where:
 
-
-
-\- The organisation already has ArcGIS Online
-
-\- Clear governance and permissions are in place
-
-\- Data needs to flow into dashboards or maps
-
-\- Multiple staff are collecting data consistently
-
-
-
-It supports structured collection, which reduces ambiguity.
-
-
-
-\## Key things to understand early
-
-
-
-Survey123 relies on:
-
-
-
-\- An ArcGIS Online organisation
-
-\- User accounts and licences
-
-\- Hosted feature layers
-
-\- Sharing settings that affect visibility
-
-
-
-Decisions made at setup time affect risk later.
-
-
-
-\## Managing sensitive information
-
-
-
-Good practice includes:
-
-
-
-\- Avoid collecting personal data unless required
-
-\- Separate identifying information from observation data
-
-\- Use clear field names and descriptions
-
-\- Restrict sharing at the layer level
-
-\- Use view layers for wider access
-
-
-
-Always check whether downloads and exports are enabled.
-
-
-
-\## Typical workflow with GIS
-
-
-
-A common pattern is:
-
-
-
-1\. Design the survey with only required fields
-
-2\. Test it thoroughly before use
-
-3\. Collect data in the field
-
-4\. Review and clean data in GIS
-
-5\. Publish summaries or views, not raw data
-
-
-
-Treat Survey123 as the front door, not the data store.
-
-
-
-\## Limits to be aware of
-
-
-
-Survey123 is not suitable when:
-
-
-
-\- Work must remain fully offline long term
-
-\- You need survey grade spatial accuracy
-
-\- You do not control the ArcGIS environment
-
-\- The kaupapa requires local file based storage only
-
-
-
-\## Where this fits in the guide
-
-
-
-Survey123 is useful for structured data capture in organisations already committed to ArcGIS Online. Use it with strong governance and clear decisions about what is shared.
-
-
-
+- Data must remain fully offline for the full life of the project
+- You need survey grade accuracy
+- You cannot control ArcGIS Online governance and sharing settings
+- The kaupapa requires local file based storage only
