@@ -2,7 +2,7 @@
 
 title: Data governance and sovereignty
 
-sidebar\_position: 1
+sidebar_position: 1
 
 ---
 
