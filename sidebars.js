@@ -4,15 +4,19 @@ module.exports = {
     'principles',
     'about',
     {
-      type: 'category',
-      label: 'Getting started',
-      items: [
-        'getting-started/tools',
-        'getting-started/qgis',
-        'getting-started/arcgis-pro',
-        'getting-started/arcgis-online',
-        'getting-started/google-earth',
-        'getting-started/kobotoolbox'
+   type: 'category',
+  label: 'getting started',
+  items: [
+    'getting-started/tools',
+    'getting-started/qgis',
+    'getting-started/arcgis-pro',
+    'getting-started/arcgis-online',
+    'getting-started/arcgis-storymaps',
+    'getting-started/arcgis-survey123',
+    'getting-started/arcgis-fieldmaps',
+    'getting-started/kobotoolbox',
+    'getting-started/google-earth',
+    'getting-started/Google-mymaps',
       ],
     },
     {
