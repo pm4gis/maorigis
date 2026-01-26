@@ -3,140 +3,250 @@ title: GIS tools used in Aotearoa
 sidebar_label: Tools overview
 ---
 
-:::info
-This page gives a practical overview of the GIS tools most commonly used in Aotearoa New Zealand, and how they are typically used in Māori contexts. It is not a product comparison or endorsement. The aim is to help you choose tools that fit your kaupapa, your team, and your constraints.
-:::
+This page is a practical overview of common GIS tools used in Aotearoa New Zealand, with a Māori audience in mind. It is not an endorsement. The aim is to help you choose tools that fit your kaupapa, your people, your budget, your IT constraints, and the level of care required for the data.
 
-## Te ao tūturu, mixed tool environments
+## Most teams use a tool chain, not one tool
 
-Most Māori GIS work happens in mixed environments. You may use more than one tool, or work alongside organisations that use different platforms.
+Māori GIS work often moves through stages, and different tools suit different stages.
 
-Common combinations include:
+- Kōrero and early scoping: simple, visual tools that help people talk and orient
+- Data preparation and analysis: desktop GIS where you can work carefully and repeatably
+- Sharing and decision support: web maps, dashboards, and story style outputs
+- Field capture: mobile tools and forms, often offline
+- Archiving and reuse: clean formats, clear metadata, sensible folder structure
 
-- QGIS for analysis and offline work
-- ArcGIS Pro for compatibility with council or Crown partners
-- ArcGIS Online for sharing maps, apps, and StoryMaps
-- Google Earth Pro for quick visualisation and kōrero
+A common, practical chain looks like this:
+- QGIS for cleaning, analysis, and offline work
+- ArcGIS Pro when you need compatibility with councils and Crown partners
+- ArcGIS Online for sharing web maps, apps, and dashboards
+- StoryMaps for narrative outputs
+- Field Maps, Survey123, or KoboToolbox for field capture
+- Google Earth Pro for quick kōrero and visualisation
 
-The right choice is often about relationships, constraints, and the audience for the output.
+## Choosing tools based on kaupapa and risk
 
-## QGIS
+Tools are easy to change. Trust is hard to rebuild. Start by matching tools to the kaupapa and the sensitivity of the information.
 
-QGIS is a free and open source desktop GIS application.
+Useful checks:
+- Who is the audience for the output, and where will it be viewed
+- What happens if this data is shared wider than intended
+- What needs to stay offline or restricted
+- Who holds mana to approve sharing and publishing
+- What skills exist in your team now, and what is realistic to learn this year
 
-Why it often works well in Māori contexts:
+If you are unsure, keep sensitive layers offline, publish generalised outputs, and keep a clear record of decisions.
 
-- Works offline, supporting local control
-- Files are stored where you choose, making access easier to manage
-- Supports open data formats
-- Strong community support and documentation
+## Desktop GIS for “make it right” work
 
-Typical uses:
+### QGIS
+QGIS is free and open source. It suits teams that want flexibility, offline capability, and control over where files live.
 
-- Mapping whenua and land interests
-- Taiao analysis and overlays
-- Working with large datasets
-- Preparing data before sharing
+Good for:
+- cleaning and preparing data from many sources
+- whenua, taiao, and planning overlays
+- repeatable analysis workflows
+- producing clear printed maps for hui and governance packs
 
-Things to be aware of:
+Key considerations:
+- access control is mostly your folder and file permissions, not built into the tool
+- sharing is often file based, so version control matters
+- set standards early for project folders, naming, and metadata
 
-- Sharing is manual, copies can spread if not managed
-- No built in access control
-- Collaboration needs agreed file management practices
+Download:
+- https://qgis.org/download/
 
-Read the full page: /docs/getting-started/qgis
+Read more: [QGIS](./qgis)
 
-## ArcGIS Pro
+### ArcGIS Pro
+ArcGIS Pro is a licensed desktop GIS used widely by councils and many agencies. It is often useful when partners expect ArcGIS formats or enterprise patterns.
 
-ArcGIS Pro is a desktop GIS application commonly used by councils, Crown agencies, and larger organisations.
+Good for:
+- compatibility with ArcGIS environments used by partners
+- geodatabase workflows and structured editing
+- producing formal layouts for reporting
+- preparing layers for ArcGIS Online sharing
 
-Useful when:
+Key considerations:
+- licensing and accounts need active management
+- workflows can depend on organisational IT settings
+- plan for handover so knowledge does not sit with one person
 
-- You need compatibility with partner organisations
-- You are working within an existing ArcGIS environment
-- You need advanced cartography or structured data management
+Download:
+- https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm
 
-Typical uses:
+Read more: [ArcGIS Pro](./arcgis-pro)
 
-- Formal reporting maps
-- Enterprise style data workflows
-- Preparing layers for ArcGIS Online
+## Web sharing, decision support, and storytelling
 
-Things to be aware of:
+### ArcGIS Online
+ArcGIS Online is a web platform for maps, layers, apps, dashboards, and sharing with controlled access.
 
-- Requires a licence and account management
-- Often tied to organisational IT systems
+Good for:
+- governance viewing maps and dashboards
+- community engagement where interactivity helps
+- sharing a single “source of truth” layer for a project team
+- controlled access via groups and roles
 
-Read the full page: /docs/getting-started/arcgis-pro
+Key considerations:
+- oversharing is easy if settings are not checked every time
+- treat “anyone with the link” as public in practice
+- keep sensitive layers out of public map items and public groups
+- set a publishing checklist and use a second reviewer
 
-## ArcGIS Online
+Access:
+- https://www.esri.com/en-us/arcgis/products/arcgis-online/overview
 
-ArcGIS Online is a web based platform for sharing maps, layers, and apps.
+Read more: [ArcGIS Online](./arcgis-online)
 
-Common uses:
+### ArcGIS StoryMaps
+StoryMaps is for narrative outputs that combine maps, images, text, and media. It can work well for kaupapa Māori contexts where you need explanation and context, not just a map.
 
-- Sharing with governance or community
-- Interactive web maps and dashboards
-- StoryMaps that combine maps, text, and images
-- Field data capture through forms and mobile apps
+Good for:
+- sharing kōrero with maps in a controlled way
+- project updates with clear visuals
+- education and communication for whānau and partners
+- reporting outcomes with maps and images together
 
-Strengths:
+Key considerations:
+- treat StoryMaps like publishing, not like internal drafting
+- assume content can be copied or screenshotted
+- do not embed restricted layers in a public story
+- add clear source notes and “checked date” statements
 
-- Easy visual sharing
-- Access control through users and groups
-- Familiar to many partner organisations
+Access:
+- https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/overview
 
-Risks:
+Read more: [ArcGIS StoryMaps](./arcgis-storymaps)
 
-- Easy to overshare by accident
-- Sharing settings can change visibility quickly
+## Field capture and forms
 
-Safe approach:
+### ArcGIS Field Maps
+Field Maps is a mobile app for viewing maps, collecting and editing features, and working offline when configured.
 
-- Keep sensitive data offline
-- Publish derived or generalised outputs
-- Check layer sharing settings every time
+Good for:
+- capturing points, lines, and polygons in the field
+- inspections and asset checks
+- tracking work completed and what is next
+- offline field workflows with sync when back in coverage
 
-Read the full page: /docs/getting-started/arcgis-online
+Key considerations:
+- plan offline areas and sync rules before you go to the field
+- decide what fields are required, and keep forms short
+- avoid collecting personal information unless you have clear permission and a secure system
+- test a full field workflow with two devices before rollout
 
-## Google Earth Pro
+Downloads:
+- https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/downloads
 
-Google Earth Pro is a free desktop tool focused on visualisation rather than analysis.
+Read more: [ArcGIS Field Maps](./arcgis-fieldmaps)
 
-Useful for:
+### ArcGIS Survey123
+Survey123 is form centric. It is often used when data quality and consistency matter and you want a guided form.
 
-- Quick kōrero and visual explanation
-- Exploring landscapes and places
-- Simple overlays and screenshots
+Good for:
+- structured surveys and monitoring forms
+- repeatable site assessments
+- capturing photos and notes in a consistent way
+- offline data capture with later upload
 
-Things to be aware of:
+Key considerations:
+- define validation rules so you do not collect rubbish data
+- include “who collected” and “checked date” fields for provenance
+- decide your sensitivity model early, especially for site and cultural information
+- keep a clear process for review before publishing outputs
 
-- Limited analysis capability
-- Not suitable for managing authoritative datasets
+Downloads:
+- https://www.esri.com/en-us/arcgis/products/arcgis-survey123/downloads
 
-Read the full page: /docs/getting-started/google-earth
+Read more: [ArcGIS Survey123](./arcgis-survey123)
 
-## He aronga kaupapa, choosing tools based on purpose
+### KoboToolbox
+KoboToolbox is widely used for surveys and monitoring, including offline field collection. It can suit Māori organisations that want a strong survey workflow without needing the ArcGIS stack.
 
-When choosing tools, ask:
+Good for:
+- surveys and monitoring programmes
+- offline field capture
+- community led data collection with clear forms
 
-- What is the kaupapa and purpose of the mahi
-- Who needs to see the output
-- Where should the data live
-- What skills the team already has
-- What constraints exist around cost and IT
+Key considerations:
+- choose hosting options that match your governance and privacy needs
+- define who can see raw submissions and attachments
+- plan how you will bring data into GIS cleanly (CSV, GeoJSON, other)
+- design consent language and restrictions as part of the form
 
-There is no single correct stack. A kaupapa driven approach often uses different tools at different stages.
+Access:
+- https://www.kobotoolbox.org/
 
-## He kōrero mō te mana, a note on responsibility
+Read more: [KoboToolbox](./kobotoolbox)
 
-Tools do not carry mana. People and relationships do.
+## Simple tools for kōrero and quick maps
 
-Regardless of platform:
+### Google Earth Pro
+Google Earth Pro is useful for quick visualisation and kōrero, especially when people recognise the imagery and terrain view.
 
-- Keep consent and permissions visible
-- Avoid default sharing behaviours
-- Document decisions and assumptions
-- Treat sensitive kōrero and locations with care
+Good for:
+- early scoping and orientation
+- screenshots for packs and slides
+- simple overlays for discussion
 
-Good GIS practice supports trust. Poor practice damages it, even when the maps look good.
+Key considerations:
+- it is not a full GIS for data management or analysis
+- keep your “official” datasets in GIS formats, then export simple views when needed
+- use KML or KMZ for sharing lightweight overlays, and keep a clear “checked date” note
+
+Download:
+- https://www.google.com/earth/about/versions/
+
+Read more: [Google Earth](./google-earth)
+
+### Google My Maps
+My Maps is a simple web tool for drawing points and shapes and sharing a basic map.
+
+Good for:
+- quick internal planning maps
+- small project maps that do not need analysis
+- early engagement where simplicity matters
+
+Key considerations:
+- treat it as light and temporary, not as an authoritative store
+- avoid using it for restricted sites or sensitive kōrero
+- plan your export path so you can move data into QGIS or ArcGIS when needed
+
+Start here:
+- https://www.google.com/maps/about/mymaps/
+
+Read more: [Google My Maps](./Google-mymaps)
+
+## Formats that help you move between tools
+
+These formats show up constantly. Choosing the right one reduces pain.
+
+- GeoPackage (GPKG): strong default for QGIS, portable, one file, good for long term storage
+- File geodatabase (GDB): common in ArcGIS workflows, good for structured datasets
+- Shapefile: widely compatible but limited and easy to break, use only when required
+- CSV: good for tables and simple point data, needs clear coordinate fields
+- KML or KMZ: useful for Google Earth and simple sharing, not ideal for complex data management
+
+Practical tip: keep a clean “working” dataset and a separate “shared outputs” dataset. Do not publish straight from your working layers.
+
+## Download and learning links
+
+- QGIS download: https://qgis.org/download/
+- ArcGIS Pro download guidance: https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm
+- ArcGIS Online overview: https://www.esri.com/en-us/arcgis/products/arcgis-online/overview
+- ArcGIS StoryMaps overview: https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/overview
+- ArcGIS Field Maps downloads: https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/downloads
+- ArcGIS Survey123 downloads: https://www.esri.com/en-us/arcgis/products/arcgis-survey123/downloads
+- Google Earth Pro versions and download: https://www.google.com/earth/about/versions/
+- Google My Maps: https://www.google.com/maps/about/mymaps/
+- KoboToolbox: https://www.kobotoolbox.org/
+
+## A short note on mana and responsibility
+
+Tools do not carry mana. People and relationships do. Good practice is visible in the work.
+
+- keep consent and permissions explicit
+- document assumptions, sources, and checked dates
+- separate restricted layers from general project files
+- publish only what has the right approvals
+- return value to whānau and kaitiaki, not only to reporting requirements
