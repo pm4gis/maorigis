@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
-const LINKS = {
+const LINKS = { 
   intro: '/docs/intro',
   principles: '/docs/principles',
   tools: '/docs/getting-started/tools',
@@ -23,7 +23,7 @@ const LINKS = {
 type Card = {
   title: string;
   desc: string;
-  to: string;
+  to: string;   
 };
 
 const startPathway: Card[] = [
