@@ -3,76 +3,126 @@ title: Sites
 sidebar_position: 13
 ---
 
-Site data refers to specific locations of interest. These may be cultural, operational, environmental, or project related.
+Site data refers to specific locations of interest. These may be cultural, operational, environmental, or project related. Sites are often mapped as points, but the meaning behind them is rarely simple.
 
-Sites are often mapped as points, but the meaning behind them is rarely simple.
+This page focuses on how to model sites well, how to capture and store them safely, and how to move site data between field tools, desktop GIS, and sharing outputs.
 
-## Types of sites
+## Types of sites Māori organisations commonly manage
 
 Examples include:
+- cultural and historical locations (managed carefully)
+- project activity sites (planting, fencing, works)
+- monitoring locations (water quality, biodiversity, soil)
+- facilities and assets (buildings, pumps, sheds, tracks)
+- engagement locations (hui venues, access points, meeting points)
+- risk locations (erosion, slips, hazards, incidents)
 
-- Cultural or historical locations
-- Project or activity sites
-- Monitoring locations
-- Facilities or assets
-- Places used for engagement or hui
+Different site types often need different sensitivity and different audiences.
 
-Each type may have different sensitivity and sharing expectations.
+## A point is a reference, not the place
 
-## Points and place
+A point can represent:
+- a true spot location (a gate, a photo point)
+- the centre of an area (a wetland)
+- an approximate location used for kōrero
+- a placeholder until a site is confirmed
 
-A point on a map is a reference, not the place itself.
+Practical habit: store a field that describes what the geometry represents.
 
-Consider:
+Recommended fields:
+- `location_type` exact, approximate, centre_of_area, generalised
+- `accuracy_m` or `confidence` (simple values are fine)
+- `status` draft, confirmed, under review, retired
 
-- Whether a site represents an area
-- Whether accuracy should be reduced
-- Whether descriptive detail should be limited
+## When to use points, lines, and polygons
 
-Points are indicators, not full representations.
+| Geometry | Best for | Example |
+|---|---|---|
+| Point | single features, reference locations | gate, sampling spot, sign |
+| Line | routes, edges, linear features | track, stream reach, fence line |
+| Polygon | areas with footprint | wetland, site boundary, work area |
 
-## Suggested basic schema for site data
+If a site is culturally sensitive, a polygon that represents a wider area can be safer than a precise point.
 
-A practical and respectful structure may include:
+## A practical schema for site datasets
 
-- Site name or identifier
-- Site category
-- Short description
-- Source of information
-- Access or sensitivity notes
+Minimum fields that support reuse:
+- `site_id` stable internal ID
+- `site_name` short display name
+- `site_type` category (monitoring, asset, cultural, project, other)
+- `description` short text
+- `source` who provided it (role or organisation)
+- `source_ref` link, doc reference, or kōrero session reference
+- `captured_date`
+- `checked_date`
+- `status`
+- `sensitivity` public, internal, restricted, highly restricted
+- `sharing_notes` plain language conditions
+- `owner_role` who is responsible for upkeep (role, not personal names)
 
-Avoid storing unnecessary detail if it increases risk.
+If you collect photos and attachments:
+- store them in a controlled folder or system
+- link them with `site_id`
+- avoid embedding sensitive photos in public layers
+
+## Capturing sites in the field
+
+Common field capture options:
+- ArcGIS Field Maps and Survey123 (if you are in the ArcGIS stack)
+- KoboToolbox (strong for forms)
+- QField (if you are using QGIS offline)
+- GPS devices exporting GPX
+
+A reliable pattern:
+1. capture in the field with a simple form
+2. sync or export to a working dataset
+3. review and clean in desktop GIS
+4. publish only approved outputs
+
+If you want site capture to stay consistent, make the form do the hard work:
+- required fields for site type and status
+- drop downs instead of free text where possible
+- validation for dates and numbers
+- a sensitivity field that is mandatory
 
 ## Managing sensitive sites
 
-Good practice includes:
+Not every site should be mapped widely, even internally.
 
-- Separate datasets for sensitive and general sites
-- Controlled access permissions
-- Clear naming and warnings
-- Avoiding public web maps unless appropriate
+Practical controls:
+- keep sensitive sites in a separate dataset
+- restrict access by role
+- generalise locations for wider maps
+- store only the minimum detail needed for the purpose
+- do not publish sensitive site layers in public web maps
 
-:::info
-Just because a site can be mapped does not mean it should be shared.
-:::
+A simple rule: just because you can map it does not mean you should share it.
 
-## Practical uses
+## Quality checks that prevent future problems
 
-Site data is often used to:
+Minimum QA before sharing:
+- duplicates removed or merged
+- site IDs are unique
+- categories are consistent (no spelling variations)
+- geometry is reasonable (not in the ocean, not in the wrong rohe)
+- restricted sites are not included in public outputs
 
-- Support planning and logistics
-- Track activities or projects
-- Provide spatial context in hui
-- Link spatial and non spatial information
+## Moving sites between tools
 
-Sites are most useful when supported by clear context and care.
+Common formats:
+- GeoPackage for QGIS working data
+- file geodatabase for ArcGIS workflows
+- CSV for simple point sharing (with latitude and longitude)
+- KML or KMZ for viewing in Google Earth and quick sharing
 
-## Moving between tools
+If you are exporting for sharing, create a specific export with:
+- only required fields
+- sensitivity checked
+- a clear file name including date and audience
 
-Site data is commonly:
+## Useful sources for context layers
 
-- Collected in the field
-- Reviewed in desktop GIS
-- Shared through web maps or apps
-
-Clear schemas at each step reduce risk and confusion.
+Sites become more useful when you can see them with context:
+- basemaps and imagery: https://basemaps.linz.govt.nz/
+- parcels and topo: https://data.linz.govt.nz/
+- council planning and hazards: your local council open data portal
