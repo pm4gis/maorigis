@@ -14,12 +14,10 @@ const config = {
     v4: true,
   },
 
-  // Primary site domain
   url: 'https://maorigis.nz',
   baseUrl: '/',
   trailingSlash: false,
 
-  // These are still used by some plugins and links
   organizationName: 'pm4gis',
   projectName: 'maorigis',
 
@@ -52,31 +50,36 @@ const config = {
     ],
   ],
 
-themeConfig:
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
-    colorMode: {
-      respectPrefersColorScheme: true,
-    },
-
-    // Social preview and basic SEO
-    image: 'img/social-card.png',
-    metadata: [
-      {
-        name: 'keywords',
-        content: 'Māori GIS, Māori mapping, Maori Maps, Maori GIS Maps, Aotearoa New Zealand GIS, iwi mapping, hapū mapping, whānau mapping, whenua, wai, moana, taiao, mahinga kai, wāhi tapu, Māori data sovereignty, kaitiakitanga, geospatial data NZ, LINZ data, QGIS NZ, New Zealand, ArcGIS, New Zealand, geospatial data, GIS data, land information NZ, council GIS data, hazard mapping NZ, place names Aotearoa, te reo Māori on maps, indigenous GIS, cultural mapping'
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
+      colorMode: {
+        respectPrefersColorScheme: true,
       },
-      {
-        name: 'author',
-        content: 'Duane Wilkins, Māori GIS Mapping'
-      }
-    ],
 
-    navbar: {
-      title: 'Māori GIS',
-      items: [
-        { type: 'doc', docId: 'intro', position: 'left', label: 'Guide' },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: false,
+          hideable: false,
+        },
+      },
+
+      image: 'img/social-card.png',
+      metadata: [
+        {
+          name: 'keywords',
+          content:
+            'Māori GIS, Māori mapping, Maori Maps, Maori GIS Maps, Aotearoa New Zealand GIS, iwi mapping, hapū mapping, whānau mapping, whenua, wai, moana, taiao, mahinga kai, wāhi tapu, Māori data sovereignty, kaitiakitanga, geospatial data NZ, LINZ data, QGIS NZ, ArcGIS, hazard mapping NZ, place names Aotearoa, te reo Māori on maps, indigenous GIS, cultural mapping',
+        },
+        {
+          name: 'author',
+          content: 'Duane Wilkins, Māori GIS Mapping',
+        },
       ],
-    },
+
+      navbar: {
+        title: 'Māori GIS',
+        items: [{ type: 'doc', docId: 'intro', position: 'left', label: 'Guide' }],
+      },
 
       footer: {
         style: 'dark',
@@ -86,7 +89,7 @@ themeConfig:
             items: [
               { label: 'Introduction', to: '/docs/intro' },
               { label: 'About the Author', to: '/docs/about' },
-                         ],
+            ],
           },
           {
             title: 'Contact',
@@ -97,12 +100,10 @@ themeConfig:
           },
           {
             title: 'More resources',
-            items: [
-              { label: 'Matawhenua', href: 'https://matawhenua.com' },
-            ],
+            items: [{ label: 'Matawhenua', href: 'https://matawhenua.com' }],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} Māori GIS. Creative Commons Attribution. Reuse with attribution.`,
+        copyright: `© ${new Date().getFullYear()} MāoriGIS.nz |Reuse with attribution welcome.`,
       },
 
       prism: {
