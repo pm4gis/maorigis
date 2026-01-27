@@ -73,8 +73,7 @@ const config = {
             items: [
               { label: 'Introduction', to: '/docs/intro' },
               { label: 'About the Author', to: '/docs/about' },
-              { label: 'Ngā Poutama Matawhenua at LINZ', href: 'https://www.linz.govt.nz/poutama' },
-            ],
+                         ],
           },
           {
             title: 'Contact',

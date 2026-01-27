@@ -3,9 +3,13 @@
 -------------------------------------------------- */
 
 :root {
+  /* Typography */
   --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
   --ifm-font-size-base: 16px;
-  --ifm-line-height-base: 1.65;
+  --ifm-line-height-base: 1.7;
+  --ifm-heading-font-weight: 600;
+  --ifm-font-weight-semibold: 600;
 
   /* Calm palette */
   --maori-gis-muted: #5f6c7b;
@@ -17,6 +21,15 @@
   /* Notes */
   --maori-gis-note-border: #2f5e8b;
   --maori-gis-note-bg: #eef5ff;
+
+  /* Darker, softer surfaces */
+  --ifm-background-color: #fbfcfd;
+  --ifm-background-surface-color: #ffffff;
+
+  /* Link styling */
+  --ifm-link-color: var(--maori-gis-accent);
+  --ifm-link-hover-color: var(--maori-gis-accent);
+  --ifm-link-decoration: none;
 }
 
 /* Dark mode tokens */
@@ -25,35 +38,46 @@
   --maori-gis-accent: #49b8aa;
   --maori-gis-accent-soft: rgba(73, 184, 170, 0.14);
   --maori-gis-border: rgba(255, 255, 255, 0.14);
-  --maori-gis-bg-soft: rgba(255, 255, 255, 0.04);
+  --maori-gis-bg-soft: rgba(255, 255, 255, 0.05);
 
   --maori-gis-note-border: #7bb7ff;
   --maori-gis-note-bg: rgba(123, 183, 255, 0.12);
+
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #111c33;
 }
 
 /* --------------------------------------------------
-   Content width and reading comfort
+   Layout, reading width, and rhythm
 -------------------------------------------------- */
 
 .markdown {
-  max-width: 780px;
+  max-width: 820px;
 }
 
-/* Wider column only on large screens */
 @media (min-width: 1200px) {
   .markdown {
-    max-width: 920px;
+    max-width: 980px;
   }
 }
 
 .markdown p {
-  margin-bottom: 1rem;
+  margin: 0 0 1.05rem 0;
+}
+
+.markdown hr {
+  border: 0;
+  border-top: 1px solid var(--maori-gis-border);
+  margin: 2rem 0;
+  opacity: 0.9;
 }
 
 /* Softer link styling */
 .markdown a {
   color: var(--maori-gis-accent);
   text-decoration: none;
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 0.08em;
 }
 
 .markdown a:hover {
@@ -61,125 +85,9 @@
 }
 
 /* --------------------------------------------------
-   Headings and section rhythm
+   Headings
 -------------------------------------------------- */
 
 .markdown h1 {
-  font-size: 2.25rem;
-  font-weight: 650;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
-}
-
-.markdown h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-top: 2.25rem;
-  margin-bottom: 0.75rem;
-  color: var(--maori-gis-accent);
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--maori-gis-border);
-}
-
-/* Do not add divider if h2 is the first thing on the page */
-.markdown h1 + h2 {
-  border-top: none;
-  padding-top: 0;
-}
-
-.markdown h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-/* --------------------------------------------------
-   Lists
--------------------------------------------------- */
-
-.markdown ul,
-.markdown ol {
-  margin-left: 1.2rem;
-  margin-bottom: 1.1rem;
-}
-
-.markdown li {
-  margin-bottom: 0.35rem;
-}
-
-/* --------------------------------------------------
-   Admonitions (:::info etc)
--------------------------------------------------- */
-
-.markdown .admonition {
-  border-left: 4px solid var(--maori-gis-accent);
-  background-color: var(--maori-gis-accent-soft);
-  padding: 1rem 1.2rem;
-  margin: 1.5rem 0;
-}
-
-.markdown .admonition-title {
-  font-weight: 600;
-  color: var(--maori-gis-accent);
-}
-
-/* Note callout */
-.markdown .admonition.admonition-note {
-  border-left: 4px solid var(--maori-gis-note-border);
-  background-color: var(--maori-gis-note-bg);
-}
-
-.markdown .admonition.admonition-note .admonition-title {
-  color: var(--maori-gis-note-border);
-}
-
-/* --------------------------------------------------
-   Sidebar tweaks
--------------------------------------------------- */
-
-.theme-doc-sidebar-item-link {
-  font-size: 0.95rem;
-}
-
-.theme-doc-sidebar-item-link-level-1 {
-  font-weight: 600;
-}
-
-.theme-doc-sidebar-item-link-level-2 {
-  font-weight: 400;
-}
-
-/* Slightly calmer active state */
-.theme-doc-sidebar-item-link--active {
-  color: var(--maori-gis-accent);
-}
-
-/* --------------------------------------------------
-   Breadcrumbs
--------------------------------------------------- */
-
-.breadcrumbs__item {
-  font-size: 0.85rem;
-  color: var(--maori-gis-muted);
-}
-
-/* --------------------------------------------------
-   Tables
--------------------------------------------------- */
-
-.markdown table {
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-}
-
-.markdown th,
-.markdown td {
-  border: 1px solid var(--maori-gis-border);
-  padding: 0.6rem 0.7rem;
-}
-
-.markdown th {
-  background-color: var(--maori-gis-bg-soft);
-  font-weight: 600;
-}
+  font-size: 2.2rem;
+  font-weight: 620;
