@@ -50,6 +50,17 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */ ({
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
       colorMode: {
@@ -103,7 +114,7 @@ const config = {
             items: [{ label: 'Matawhenua', href: 'https://matawhenua.com' }],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} MāoriGIS.nz |Reuse with attribution welcome.`,
+        copyright: `© ${new Date().getFullYear()} MāoriGIS.nz | Reuse with attribution welcome.`,
       },
 
       prism: {
