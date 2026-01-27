@@ -72,24 +72,25 @@ const config = {
             title: 'About',
             items: [
               { label: 'Introduction', to: '/docs/intro' },
+              { label: 'About the Author', to: '/docs/about' },
               { label: 'Ngā Poutama Matawhenua at LINZ', href: 'https://www.linz.govt.nz/poutama' },
             ],
           },
           {
             title: 'Contact',
             items: [
-              { label: 'Email Author', href: 'mailto:duane.wilkins@gmail.com' },
-              { label: 'Connect on LinkedIn', href: 'https://www.linkedin.com/in/duanewilkins/' },
+              { label: 'Email', href: 'mailto:duane.wilkins@gmail.com' },
+              { label: 'LinkedIn', href: 'https://www.linkedin.com/in/duanewilkins/' },
             ],
           },
           {
-            title: 'Code',
+            title: 'More resources',
             items: [
-          //    { label: 'GitHub', href: 'https://github.com/pm4gis/maorigis' },
+              { label: 'Matawhenua', href: 'https://matawhenua.com' },
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} Māori GIS. He mapi nā tātou, mō tātou. This work is open source under Creative Commons Attribution. Reuse and adaptation are welcomed with attribution`,
+        copyright: `© ${new Date().getFullYear()} Māori GIS. Creative Commons Attribution. Reuse with attribution.`,
       },
 
       prism: {
