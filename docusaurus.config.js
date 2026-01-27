@@ -1,6 +1,5 @@
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from 'prism-react-renderer';
@@ -15,10 +14,12 @@ const config = {
     v4: true,
   },
 
-  url: 'https://maorigis.pages.dev',
+  // Primary site domain
+  url: 'https://maorigis.nz',
   baseUrl: '/',
+  trailingSlash: false,
 
-  // This is not GitHub Pages, but Docusaurus still uses these values for some links/plugins.
+  // These are still used by some plugins and links
   organizationName: 'pm4gis',
   projectName: 'maorigis',
 
@@ -28,8 +29,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-
 
   presets: [
     [
@@ -44,6 +43,11 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.7,
+          ignorePatterns: ['/tags/**'],
+        },
       }),
     ],
   ],
@@ -56,7 +60,9 @@ const config = {
 
       navbar: {
         title: 'Māori GIS',
-        items: [{ type: 'doc', docId: 'intro', position: 'left', label: 'Guide' }],
+        items: [
+          { type: 'doc', docId: 'intro', position: 'left', label: 'Guide' },
+        ],
       },
 
       footer: {
@@ -72,16 +78,18 @@ const config = {
           {
             title: 'Contact',
             items: [
-              { label: 'Duane Wilkins', href: 'mailto:duane.wilkins@gmail.com' },
-              { label: 'LinkedIn', href: 'https://www.linkedin.com/in/duanewilkins/' },
+              { label: 'Email Author', href: 'mailto:duane.wilkins@gmail.com' },
+              { label: 'Connect on LinkedIn', href: 'https://www.linkedin.com/in/duanewilkins/' },
             ],
           },
           {
             title: 'Code',
-            items: [{ label: 'GitHub', href: 'https://github.com/pm4gis/maorigis' }],
+            items: [
+          //    { label: 'GitHub', href: 'https://github.com/pm4gis/maorigis' },
+            ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} Māori GIS. He mapi nā tātou, mō tātou.`,
+        copyright: `© ${new Date().getFullYear()} Māori GIS. He mapi nā tātou, mō tātou. This work is open source under Creative Commons Attribution. Reuse and adaptation are welcomed with attribution`,
       },
 
       prism: {
