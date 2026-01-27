@@ -18,15 +18,15 @@
   --maori-gis-border: #d9e2ec;
   --maori-gis-bg-soft: #f8fafb;
 
-  /* Notes */
+  /* Note styling */
   --maori-gis-note-border: #2f5e8b;
   --maori-gis-note-bg: #eef5ff;
 
-  /* Darker, softer surfaces */
+  /* Surfaces */
   --ifm-background-color: #fbfcfd;
   --ifm-background-surface-color: #ffffff;
 
-  /* Link styling */
+  /* Links */
   --ifm-link-color: var(--maori-gis-accent);
   --ifm-link-hover-color: var(--maori-gis-accent);
   --ifm-link-decoration: none;
@@ -72,7 +72,7 @@
   opacity: 0.9;
 }
 
-/* Softer link styling */
+/* Links */
 .markdown a {
   color: var(--maori-gis-accent);
   text-decoration: none;
@@ -91,3 +91,189 @@
 .markdown h1 {
   font-size: 2.2rem;
   font-weight: 620;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem 0;
+}
+
+.markdown h2 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 2.4rem 0 0.8rem 0;
+  color: var(--maori-gis-accent);
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--maori-gis-border);
+}
+
+/* No divider if h2 is the first thing after h1 */
+.markdown h1 + h2 {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 1.7rem;
+}
+
+.markdown h3 {
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin: 1.9rem 0 0.55rem 0;
+}
+
+/* --------------------------------------------------
+   Lists
+-------------------------------------------------- */
+
+.markdown ul,
+.markdown ol {
+  margin-left: 1.2rem;
+  margin-bottom: 1.15rem;
+}
+
+.markdown li {
+  margin-bottom: 0.35rem;
+}
+
+.markdown li > p {
+  margin: 0.35rem 0;
+}
+
+/* --------------------------------------------------
+   Admonitions (:::tip, :::note, :::caution)
+-------------------------------------------------- */
+
+.markdown .admonition {
+  border-left: 4px solid var(--maori-gis-accent);
+  background-color: var(--maori-gis-accent-soft);
+  padding: 1rem 1.2rem;
+  margin: 1.6rem 0;
+  border-radius: 8px;
+}
+
+.markdown .admonition-title {
+  font-weight: 600;
+  color: var(--maori-gis-accent);
+}
+
+.markdown .admonition.admonition-note {
+  border-left-color: var(--maori-gis-note-border);
+  background-color: var(--maori-gis-note-bg);
+}
+
+.markdown .admonition.admonition-note .admonition-title {
+  color: var(--maori-gis-note-border);
+}
+
+/* Blockquotes as calm callouts */
+.markdown blockquote {
+  border-left: 4px solid var(--maori-gis-border);
+  background: var(--maori-gis-bg-soft);
+  padding: 0.9rem 1.1rem;
+  margin: 1.4rem 0;
+  border-radius: 8px;
+}
+
+[data-theme='dark'] .markdown blockquote {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* --------------------------------------------------
+   Code blocks
+-------------------------------------------------- */
+
+.markdown code {
+  border-radius: 6px;
+}
+
+.markdown pre {
+  border-radius: 10px;
+}
+
+/* --------------------------------------------------
+   Sidebar and navigation
+-------------------------------------------------- */
+
+.theme-doc-sidebar-item-link {
+  font-size: 0.95rem;
+}
+
+.theme-doc-sidebar-item-link-level-1 {
+  font-weight: 600;
+}
+
+.theme-doc-sidebar-item-link-level-2 {
+  font-weight: 400;
+}
+
+.theme-doc-sidebar-item-link--active {
+  color: var(--maori-gis-accent);
+}
+
+/* Sticky sidebar with its own scroll */
+@media (min-width: 997px) {
+  .theme-doc-sidebar-container {
+    position: sticky;
+    top: var(--ifm-navbar-height);
+    height: calc(100vh - var(--ifm-navbar-height));
+    overflow-y: auto;
+  }
+}
+
+/* Breadcrumbs */
+.breadcrumbs__item {
+  font-size: 0.85rem;
+  color: var(--maori-gis-muted);
+}
+
+.breadcrumbs__link {
+  color: var(--maori-gis-muted);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--maori-gis-accent);
+  text-decoration: underline;
+}
+
+/* Next and previous buttons */
+.pagination-nav__link {
+  border: 1px solid var(--maori-gis-border);
+  border-radius: 10px;
+}
+
+.pagination-nav__label {
+  color: var(--maori-gis-accent);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------
+   Tables
+-------------------------------------------------- */
+
+.markdown table {
+  border-collapse: collapse;
+  margin: 1.6rem 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid var(--maori-gis-border);
+  padding: 0.65rem 0.75rem;
+  vertical-align: top;
+}
+
+.markdown th {
+  background-color: var(--maori-gis-bg-soft);
+  font-weight: 600;
+}
+
+[data-theme='dark'] .markdown th {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --------------------------------------------------
+   Images
+-------------------------------------------------- */
+
+.markdown img {
+  border-radius: 10px;
+}
