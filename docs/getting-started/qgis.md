@@ -1,7 +1,5 @@
 ---
-title: QGIS
-sidebar_label: QGIS Desktop
-sidebar_position: 2
+title: QGIS Desktop
 ---
 
 QGIS is a free, open source desktop GIS tool for viewing, analysing, and making maps. It runs on Windows, macOS, and Linux. In Aotearoa it is widely used by councils, consultants, community groups, and iwi organisations.
