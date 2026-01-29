@@ -1,6 +1,6 @@
 ---
 title: Geospatial Data Catalogue
-sidebar_position: 20
+
 description: A detailed catalogue of geospatial datasets relevant to Māori kaupapa in Aotearoa New Zealand, prioritising national sources and grouping regional datasets by region.
 ---
 
