@@ -2,7 +2,7 @@
 
 title: Ethics and consent
 
-sidebar\_position: 2
+
 
 ---
 
