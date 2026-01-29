@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-sidebar\_position: 1
+sidebar_position: 1
 ---
 
 This page is a practical overview of common GIS tools used in Aotearoa New Zealand, with a Māori audience in mind. It is not an endorsement. The aim is to help you choose tools that fit your kaupapa, your people, your budget, your IT constraints, and the level of care required for the data.

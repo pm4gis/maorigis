@@ -1,5 +1,5 @@
 ---
-id: maori-gis-mapping
+
 title: Māori GIS Mapping in Aotearoa
 ---
 
