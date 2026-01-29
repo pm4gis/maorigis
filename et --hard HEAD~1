@@ -1,0 +1,77 @@
+[33md6e41ff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix homepage hero banner and add top-right image using global styles
+[33m3fa1f55[m Update homepage hero layout with left aligned content and image
+[33mf5068bd[m Update homepage hero layout with left aligned content and image
+[33ma527cee[m Update homepage hero layout with left aligned content and image
+[33m65dac9e[m Update homepage hero layout with left aligned content and image
+[33mf983cd4[m Update homepage hero layout with left aligned content and image
+[33m103b9ab[m Update homepage hero layout with left aligned content and image
+[33m7c2f56c[m Update homepage hero layout with left aligned content and image
+[33m53a4630[m Add local site search
+[33md2ab72d[m Update footer copyright and site config
+[33m77dd428[m Update footer copyright and site config
+[33m894e333[m Update footer copyright and site config
+[33m1719f57[m Update footer copyright and site config
+[33mdd399c6[m Update footer copyright and site config
+[33m15d1d3c[m Update footer copyright and site config
+[33md36be60[m Update footer copyright and site config
+[33me7aef51[m Update footer copyright and site config
+[33m7797bcb[m front page
+[33m0946ae2[m front page
+[33mfa6b21c[m front page
+[33m5e7bc92[m front page
+[33mcb91834[m sidebar.js
+[33m618a7a7[m sidebar.js
+[33md41d79e[m sidebar.js
+[33mf9c7795[m sidebar.js
+[33m6a3dfd1[m page updates with more detail
+[33m180e44a[m page updates with more detail
+[33m71e85e6[m page updates with more detail
+[33m3251f3b[m page updates with more detail
+[33m08afbd6[m tools and mymaps
+[33m78d036b[m placenames update
+[33ma46ec92[m placenames update
+[33m08df5b7[m maori land update
+[33md4f66e8[m Remove oaicite contentReference directives from docs
+[33me3c4f16[m Fix MDX syntax in new tool pages
+[33m0c260db[m 'mucking'
+[33m5ec920a[m Add detailed StoryMaps guidance for Māori GIS
+[33mc896114[m Update quality-assurance.md
+[33med1c958[m Update metadata-documentation.md
+[33m6e15e97[m Update working-with-whanau.md
+[33m20995a6[m Update ethics-and-consent.md
+[33me5e762c[m Update Governance-and-Practice.md
+[33mefe2577[m plugins
+[33m48e3889[m sidebar update
+[33m7e2f78a[m governance
+[33m9147b60[m fix storyamps and friends
+[33mfe90011[m governance
+[33ma2fbb3b[m Add KoboToolbox guidance page
+[33mee1b9dc[m Fix home routing and landing page link
+[33m42a4867[m Fix home routing and landing page link
+[33md812531[m Fix home routing and landing page link
+[33mf11168f[m Improve landing page content and navigation
+[33macc267d[m Fix MDX build errors in data pages
+[33m7b3113d[m Fix MDX build errors in data pages
+[33m02ce1df[m Update nz-data.md
+[33m7c65fb0[m Fix MDX build errors in data pages
+[33m20047b2[m various data files
+[33mf0bdfc3[m Refine typography, layout width, dividers, and context notes
+[33m6a6c064[m Improve typography and colour palette
+[33m535b48b[m Fix headings on practice pages
+[33m1f69c84[m Add core workflows, whenua, taiao, and sites pages
+[33m0195f45[m Add About page
+[33ma57acd8[m Fix Docusaurus config
+[33m0bbbd96[m Install redirects plugin
+[33m87409ab[m Refine principles page
+[33m9afc2f7[m Tidy landing and improve typography
+[33m1685279[m Clean landing page and remove Docusaurus defaults
+[33meaac8a1[m Clean up footer
+[33m7cc4291[m Add GIS tools overview
+[33mfc0ed2c[m Add GIS tools overview
+[33m44c96e5[m Add principles page
+[33m983d9f5[m Fix intro formatting and use front matter
+[33mae8e53a[m Fix intro formatting and use front matter
+[33m184453b[m Remove default tutorial and use Maori GIS docs
+[33m68ea442[m Update docs content
+[33mc348049[m Set site identity
+[33m2632207[m Initial Docusaurus site
