@@ -1,6 +1,6 @@
 ---
 title: Google Earth
-sidebar_position: 3
+sidebar_label: Google Earth
 ---
 
 Google Earth Pro desktop is a free visual mapping tool that lets you explore whenua using satellite imagery, aerial photos, terrain, and simple overlays. It is one of the best tools for early kōrero because it is fast, familiar, and easy to use in a hui setting.

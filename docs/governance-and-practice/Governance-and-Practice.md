@@ -1,6 +1,6 @@
 ---
 
-title: Data governance and sovereignty
+title: Sovereignty and Governance
 
 sidebar_position: 1
 

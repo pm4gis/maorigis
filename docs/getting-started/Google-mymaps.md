@@ -1,6 +1,6 @@
 ---
 title: Google My Maps
-sidebar_position: 60
+sidebar_label: Google MyMaps
 ---
 
 Google My Maps is one of the best beginner mapping tools because it is simple, visual, and collaborative. It lets you create a map in a browser, add points, lines, and areas, organise them into layers, and share the map with others. Treat it as a kōrero and communication tool, not a full GIS system.

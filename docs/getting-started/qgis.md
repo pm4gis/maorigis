@@ -1,5 +1,6 @@
 ---
 title: QGIS
+sidebar_label: QGIS Desktop
 sidebar_position: 2
 ---
 

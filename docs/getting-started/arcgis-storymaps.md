@@ -1,6 +1,6 @@
 ---
 title: StoryMaps
-sidebar_position: 40
+sidebar_label: Esri ArcGIS StoryMaps
 ---
 
 ArcGIS StoryMaps is a web based tool for publishing a narrative that combines maps, text, images, video, and other media. It is designed for communication and engagement rather than analysis, and it sits on top of your ArcGIS Online content, including web maps and layers.

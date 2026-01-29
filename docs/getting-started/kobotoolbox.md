@@ -1,6 +1,6 @@
 ---
 title: KoboToolbox
-sidebar_position: 50
+sidebar_label: KoboToolBox Mobile Forms
 ---
 
 KoboToolbox is a free and open platform for collecting survey and field data. It is widely used in humanitarian, development, and community based work, including kaupapa Māori research, environmental monitoring, and engagement projects.
