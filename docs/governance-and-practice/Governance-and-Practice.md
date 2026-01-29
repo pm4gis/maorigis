@@ -2,7 +2,6 @@
 
 title: Sovereignty and Governance
 
-sidebar_position: 1
 
 ---
 
