@@ -5,8 +5,8 @@ module.exports = {
   guideSidebar: [
     // Keep these explicitly at the top
     'intro',
-    'principles',
-    'about',
+//    'principles',
+//    'about',
 
     // Everything else is generated automatically from /docs
     {
