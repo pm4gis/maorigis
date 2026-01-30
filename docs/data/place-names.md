@@ -14,15 +14,15 @@ This page focuses on practical ways to use:
 
 Official names search and downloads (LINZ New Zealand Gazetteer):
 - https://gazetteer.linz.govt.nz/
-- https://gazetteer.linz.govt.nz/gaz.csv :contentReference[oaicite:1]{index=1}
+- https://gazetteer.linz.govt.nz/gaz.csv
 
 LINZ guidance on Gazetteer use and downloads:
-- https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer :contentReference[oaicite:2]{index=2}
-- https://www.linz.govt.nz/products-services/place-names/place-names-new-zealand :contentReference[oaicite:3]{index=3}
+- https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer
+- https://www.linz.govt.nz/products-services/place-names/place-names-new-zealand
 
 LINZ Data Service NZGB layers (GIS ready):
-- NZ Place Names (NZGB): https://data.linz.govt.nz/layer/51681-nz-place-names-nzgb/ :contentReference[oaicite:4]{index=4}
-- NZ Place Names Lines (NZGB): https://data.linz.govt.nz/layer/52423-nz-place-names-lines-nzgb/ :contentReference[oaicite:5]{index=5}
+- NZ Place Names (NZGB): https://data.linz.govt.nz/layer/51681-nz-place-names-nzgb/
+- NZ Place Names Lines (NZGB): https://data.linz.govt.nz/layer/52423-nz-place-names-lines-nzgb/
 
 ## Why place names matter in Māori GIS
 
@@ -38,7 +38,7 @@ If names are wrong, missing macrons, or inconsistent, trust drops fast. If names
 
 ## The LINZ Gazetteer is more than a list
 
-The LINZ New Zealand Gazetteer is the central public place name record for Aotearoa, maintained by the New Zealand Geographic Board Ngā Pou Taunaha o Aotearoa (NZGB). It includes official names and also records some unofficial names that appear on official mapping products. :contentReference[oaicite:6]{index=6}
+The LINZ New Zealand Gazetteer is the central public place name record for Aotearoa, maintained by the New Zealand Geographic Board Ngā Pou Taunaha o Aotearoa (NZGB). It includes official names and also records some unofficial names that appear on official mapping products.
 
 Practical value in GIS:
 - you can label maps with consistent spellings and macrons
@@ -57,7 +57,7 @@ The Gazetteer CSV header includes fields like:
 - land_district
 - crd_north, crd_east, crd_projection, crd_datum
 - crd_latitude, crd_longitude
-- info_ref :contentReference[oaicite:7]{index=7}
+- info_ref
 
 Practical notes:
 - Use name_id as your join key when you build internal name tables.
@@ -67,7 +67,7 @@ Practical notes:
 
 ### NZGB place name layers in LINZ Data Service
 
-If you want GIS layers rather than a CSV, the LINZ Data Service provides NZGB place name layers, including points and lines. These are useful for direct use in QGIS and ArcGIS Pro and for building web services. :contentReference[oaicite:8]{index=8}
+If you want GIS layers rather than a CSV, the LINZ Data Service provides NZGB place name layers, including points and lines. These are useful for direct use in QGIS and ArcGIS Pro and for building web services.
 
 ## A naming taxonomy that works in Māori organisations
 
@@ -153,22 +153,22 @@ These sources are also useful when whānau are trying to locate a place referenc
 There is not one single place that holds everything. In practice you will use a combination.
 
 Māori Land Court and Pātaka Whenua
-- Pātaka Whenua holds the Court electronic record, including minutes and orders. :contentReference[oaicite:9]{index=9}
-- The Pātaka Whenua guidance for document searching shows how minute book references can be used to find related documents. :contentReference[oaicite:10]{index=10}
-- If you cannot find what you need digitally, the Court provides a pathway to view the physical record at district offices. :contentReference[oaicite:11]{index=11}
+- Pātaka Whenua holds the Court electronic record, including minutes and orders.
+- The Pātaka Whenua guidance for document searching shows how minute book references can be used to find related documents.
+- If you cannot find what you need digitally, the Court provides a pathway to view the physical record at district offices.
 
 Archives New Zealand
-- Archives holds copies of Māori Land Court minute books across long time periods and provides guidance for research. :contentReference[oaicite:12]{index=12}
-- LINZ also notes that at Archives you can find plans and maps of Māori Land Court dealings and other historic land records. :contentReference[oaicite:13]{index=13}
-- Archives also has guidance about whenua and Māori land research across their collections. :contentReference[oaicite:14]{index=14}
+- Archives holds copies of Māori Land Court minute books across long time periods and provides guidance for research.
+- LINZ also notes that at Archives you can find plans and maps of Māori Land Court dealings and other historic land records.
+- Archives also has guidance about whenua and Māori land research across their collections.
 
 University of Auckland Māori Land Court Minute Books Index
-- An index to minute books (1865 to 1910) that can help you locate relevant hearings and references when you are trying to find where a name appears. :contentReference[oaicite:15]{index=15}
+- An index to minute books (1865 to 1910) that can help you locate relevant hearings and references when you are trying to find where a name appears.
 
 LINZ Land Record Search and historic land records
-- LINZ Land Record Search can be used to find titles, instruments, and surveys. :contentReference[oaicite:16]{index=16}
-- LINZ guidance also covers historic land records and how to find them. :contentReference[oaicite:17]{index=17}
-- LINZ guidance on searching Māori land records outlines what information helps, including block name and Māori Land Court district. :contentReference[oaicite:18]{index=18}
+- LINZ Land Record Search can be used to find titles, instruments, and surveys.
+- LINZ guidance also covers historic land records and how to find them.
+- LINZ guidance on searching Māori land records outlines what information helps, including block name and Māori Land Court district.
 
 ### A practical workflow: from kōrero to a georeferenced historical plan
 
@@ -176,12 +176,12 @@ LINZ Land Record Search and historic land records
 - Block name, area name, nearby river or maunga, and the Māori Land Court district if known.
 
 2. Locate Court record references
-- Use Pātaka Whenua to identify relevant minutes and orders. :contentReference[oaicite:19]{index=19}
+- Use Pātaka Whenua to identify relevant minutes and orders.
 - Record minute book references and any plan or survey references mentioned in the record.
 
 3. Locate the plan or map
-- Use Archives guidance and LINZ Land Record Search where appropriate, depending on what reference you have. :contentReference[oaicite:20]{index=20}
-- If digital copies are not available, plan for viewing the physical record through the Māori Land Court district office process. :contentReference[oaicite:21]{index=21}
+- Use Archives guidance and LINZ Land Record Search where appropriate, depending on what reference you have.
+- If digital copies are not available, plan for viewing the physical record through the Māori Land Court district office process.
 
 4. Scan or obtain a digital copy
 - Keep the file name consistent, including the plan reference and date where known.

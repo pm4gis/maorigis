@@ -1,232 +1,114 @@
-// src/pages/index.tsx
 import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-import styles from './index.module.css';
+import Link from '@docusaurus/Link';
 
-const LINKS = { 
-  intro: '/docs/intro',
-  principles: '/docs/principles',
-  tools: '/docs/getting-started/tools',
-  nzData: '/docs/data/nz-data-sources',
-  qgis: '/docs/getting-started/qgis',
-  arcgisOnline: '/docs/getting-started/arcgis-online',
-  maoriLand: '/docs/data/maori-land',
-  placeNames: '/docs/data/place-names',
-  coreWorkflows: '/docs/mapping-work/core-workflows',
-  taiao: '/docs/mapping-work/taiao',
-  sites: '/docs/mapping-work/sites',
-  climate: '/docs/taiao/climate-change-impacts',
-};
-
-type Card = {
+type Tile = {
   title: string;
   desc: string;
-  to: string;   
+  to: string;
+  colour: 'blue' | 'purple' | 'orange' | 'teal' | 'red' | 'green';
 };
 
-const startPathway: Card[] = [
-  {
-    title: 'Introduction',
-    desc: 'What this guide is, who it is for, and how to use it.',
-    to: LINKS.intro,
-  },
-  {
-    title: 'Principles',
-    desc: 'Mana, responsibility, permissions, and safe sharing.',
-    to: LINKS.principles,
-  },
-  {
-    title: 'Tools overview',
-    desc: 'Choose a tool chain that fits your kaupapa and constraints.',
-    to: LINKS.tools,
-  },
-  {
-    title: 'NZ data sources',
-    desc: 'Find trusted datasets for Aotearoa, quickly.',
-    to: LINKS.nzData,
-  },
+const quickTiles: Tile[] = [
+  { title: 'Start', desc: 'Safe defaults, roles, and your first clean map.', to: '/docs/start', colour: 'blue' },
+  { title: 'Tools overview', desc: 'Choose a tool chain that fits your mahi.', to: '/docs/toolkits', colour: 'purple' },
+  { title: 'NZ data sources', desc: 'Find trusted datasets for Aotearoa.', to: '/docs/data', colour: 'teal' },
+  { title: 'QGIS', desc: 'Offline desktop GIS, analysis, and exports.', to: '/docs/toolkits/qgis', colour: 'green' },
+  { title: 'ArcGIS Online', desc: 'Web maps, apps, sharing, and permissions.', to: '/docs/toolkits/arcgis-online', colour: 'orange' },
+  { title: 'Place names', desc: 'Gazetteer, macrons, ingoa wāhi, local naming.', to: '/docs/data/place-names', colour: 'red' },
 ];
-
-const quickLinks: Card[] = [
-  { title: 'QGIS', desc: 'Free desktop GIS for offline work and analysis.', to: LINKS.qgis },
-  { title: 'ArcGIS Online', desc: 'Web maps, apps, groups, sharing, and controls.', to: LINKS.arcgisOnline },
-  { title: 'Māori land', desc: 'Blocks, parcels, sources, and practical workflows.', to: LINKS.maoriLand },
-  { title: 'Place names', desc: 'Gazetteer, macrons, ingoa wāhi, local names.', to: LINKS.placeNames },
-  { title: 'Core workflows', desc: 'From kaupapa to outputs, repeatable and safe.', to: LINKS.coreWorkflows },
-  { title: 'Taiao', desc: 'Environmental layers, monitoring, and kaitiakitanga.', to: LINKS.taiao },
-  { title: 'Sites', desc: 'Site schemas, sensitivity, capture, and sharing.', to: LINKS.sites },
-  { title: 'Climate impacts', desc: 'Sea level rise, hazards, and planning layers.', to: LINKS.climate },
-];
-
-const toolChains = [
-  {
-    title: 'Beginner',
-    items: ['Google Earth Pro for kōrero', 'Google My Maps for simple sharing', 'QGIS for tidy datasets'],
-  },
-  {
-    title: 'ArcGIS stack',
-    items: ['ArcGIS Pro for prep', 'ArcGIS Online for sharing', 'Survey123 and Field Maps for field capture'],
-  },
-  {
-    title: 'Offline first',
-    items: ['QGIS + GeoPackage', 'Local basemaps and LDS downloads', 'Restricted layers separated by design'],
-  },
-];
-
-function HeroButtons() {
-  return (
-    <div className={styles.heroButtons}>
-      <Link className={clsx('button button--primary button--lg', styles.heroButton)} to={LINKS.intro}>
-        Start here
-      </Link>
-      <Link className={clsx('button button--secondary button--lg', styles.heroButton)} to={LINKS.tools}>
-        Tools overview
-      </Link>
-      <Link className={clsx('button button--outline button--lg', styles.heroButton)} to={LINKS.nzData}>
-        NZ data sources
-      </Link>
-    </div>
-  );
-}
-
-function CardGrid({ title, items }: { title: string; items: Card[] }) {
-  return (
-    <section className={styles.section}>
-      <div className="container">
-        <div className={styles.sectionHeader}>
-          <h2 className={styles.h2}>{title}</h2>
-        </div>
-        <div className={styles.grid}>
-          {items.map((c) => (
-            <Link key={c.title} to={c.to} className={styles.card}>
-              <div className={styles.cardTitle}>{c.title}</div>
-              <div className={styles.cardDesc}>{c.desc}</div>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function StartPathway() {
-  return (
-    <section className={styles.section}>
-      <div className="container">
-        <div className={styles.twoCol}>
-          <div>
-            <h2 className={styles.h2}>He aha tēnei</h2>
-            <p className={styles.p}>
-              A practical Māori GIS guide for day to day mahi. Plain New Zealand English, light te reo Māori,
-              practical tasks, and safe approaches to sharing.
-            </p>
-            <ul className={styles.list}>
-              <li>Choose tools that fit your kaupapa, team, and constraints.</li>
-              <li>Build repeatable workflows that keep control of your data.</li>
-              <li>Use Aotearoa datasets confidently, with sources and checked dates.</li>
-              <li>Publish maps and stories without accidental oversharing.</li>
-            </ul>
-          </div>
-
-          <div className={styles.panel}>
-            <div className={styles.panelTitle}>A good starting pathway</div>
-            <ol className={styles.steps}>
-              {startPathway.map((s) => (
-                <li key={s.title} className={styles.step}>
-                  <Link to={s.to} className={styles.stepLink}>
-                    {s.title}
-                  </Link>
-                  <div className={styles.stepDesc}>{s.desc}</div>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ToolChainPanel() {
-  return (
-    <section className={styles.sectionAlt}>
-      <div className="container">
-        <h2 className={styles.h2}>Pick a tool chain that fits the mahi</h2>
-        <p className={styles.p}>
-          Most teams use a chain. Start simple, keep the kete tidy, and scale up when the kaupapa needs it.
-        </p>
-
-        <div className={styles.grid3}>
-          {toolChains.map((t) => (
-            <div key={t.title} className={styles.panelSoft}>
-              <div className={styles.panelTitle}>{t.title}</div>
-              <ul className={styles.list}>
-                {t.items.map((x) => (
-                  <li key={x}>{x}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ManaPanel() {
-  return (
-    <section className={styles.section}>
-      <div className="container">
-        <div className={styles.callout}>
-          <div className={styles.calloutTitle}>He kōrero mō te mana, responsibility and care</div>
-          <p className={styles.p}>
-            GIS makes copying and sharing easy. Keep a clear boundary between public outputs and internal source data.
-            Record permissions, keep checked dates with datasets, and use the least sensitive version that still meets
-            the kaupapa.
-          </p>
-          <div className={styles.calloutButtons}>
-            <Link className={clsx('button button--secondary', styles.smallButton)} to={LINKS.principles}>
-              Read principles
-            </Link>
-            <Link className={clsx('button button--outline', styles.smallButton)} to={LINKS.tools}>
-              Tools overview
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function Home(): JSX.Element {
   return (
     <Layout
       title="Māori GIS"
-      description="A practical GIS mapping guide for people working in iwi and Māori communities."
+      description="A practical Māori GIS guide for day to day mahi in Aotearoa New Zealand."
     >
-      <header className={styles.hero}>
-        <div className="container">
-          <div className={styles.heroInner}>
-            <div className={styles.kicker}>He aratohu mahi</div>
-            <h1 className={styles.heroTitle}>Māori GIS</h1>
-            <p className={styles.heroSubtitle}>
-              A practical GIS mapping guide for people working in iwi and Māori communities.
+      <main>
+        <section className="mgis-hero">
+          <div className="container">
+            <h1 className="mgis-hero__title">Māori GIS</h1>
+
+            <p className="mgis-hero__subtitle">
+              A practical GIS guide for Māori contexts in Aotearoa. Focused on real mahi, safe sharing, and clear
+              decision support.
             </p>
-            <HeroButtons />
-            <div className={styles.heroMeta}>
-              Plain New Zealand English, light te reo Māori, practical tasks, and safe approaches to sharing.
+
+            <div className="mgis-hero__buttons">
+              <Link className="button button--primary button--lg" to="/docs/start">
+                Start here
+              </Link>
+              <Link className="button button--outline button--lg" to="/docs/toolkits">
+                Tools overview
+              </Link>
+              <Link className="button button--secondary button--lg" to="/docs/data">
+                NZ data sources
+              </Link>
             </div>
           </div>
-        </div>
-      </header>
+        </section>
 
-      <main>
-        <StartPathway />
-        <CardGrid title="Ngā hononga tere" items={quickLinks} />
-        <ToolChainPanel />
-        <ManaPanel />
+        <section className="container margin-vert--lg">
+          <div className="row">
+            <div className="col col--7">
+              <h2>He aha tēnei</h2>
+
+              <p>
+                This site supports useful GIS work in Māori contexts without turning it into academic theory or software
+                manuals. It is written in plain New Zealand English, with light te reo Māori, and focuses on practical,
+                repeatable workflows.
+              </p>
+
+              <ul>
+                <li>Choose tools that fit your kaupapa, team, and constraints</li>
+                <li>Build workflows that keep control of your data</li>
+                <li>Use Aotearoa datasets confidently, with sources and dates checked</li>
+                <li>Publish maps and stories without accidental oversharing</li>
+              </ul>
+            </div>
+
+            <div className="col col--5">
+              <h3>A good starting pathway</h3>
+              <ol>
+                <li>
+                  <Link to="/docs/introduction">Introduction</Link>
+                  <br />
+                  What this guide is, who it is for, and how to use it.
+                </li>
+                <li>
+                  <Link to="/docs/principles">Principles</Link>
+                  <br />
+                  Mana, responsibility, permissions, and safe sharing.
+                </li>
+                <li>
+                  <Link to="/docs/toolkits">Tools overview</Link>
+                  <br />
+                  Choosing a tool chain that fits your mahi.
+                </li>
+                <li>
+                  <Link to="/docs/data">NZ data sources</Link>
+                  <br />
+                  Trusted datasets for Aotearoa.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <hr />
+
+          <h2>Ngā hononga tere</h2>
+          <p className="mgis-muted">Quick entry points for first clicks.</p>
+
+          <div className="mgis-tiles">
+            {quickTiles.map((t) => (
+              <Link key={t.to} to={t.to} className={`mgis-tile mgis-tile--${t.colour}`}>
+                <div className="mgis-tile__title">{t.title}</div>
+                <div className="mgis-tile__desc">{t.desc}</div>
+                <div className="mgis-tile__cta">Get started</div>
+              </Link>
+            ))}
+          </div>
+        </section>
       </main>
     </Layout>
   );

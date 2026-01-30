@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ---
 
-This section sets the foundation for the rest of the guide. It focuses on practical judgement and responsibility rather than theory. The aim is to support decisions that protect people, relationships, and information while still getting useful work done. :contentReference[oaicite:0]{index=0}
+This section sets the foundation for the rest of the guide. It focuses on practical judgement and responsibility rather than theory. The aim is to support decisions that protect people, relationships, and information while still getting useful work done.
 
 ## Begin with purpose
 
@@ -59,7 +59,7 @@ Before you begin, decide:
 - whether external partners are involved
 - how long the access should last
 
-If you are using ArcGIS Online, treat sharing settings as a high risk step.  
+If you are using ArcGIS Online, treat sharing settings as a high risk step.
 If you are using QGIS and files, treat folder permissions, file copies, and email attachments as high risk steps.
 
 A useful default is role based access rather than person based access, such as “kaitiaki group”, “governance group”, “project team”, “public”.
