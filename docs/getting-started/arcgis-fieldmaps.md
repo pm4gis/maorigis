@@ -2,7 +2,6 @@
 title: ArcGIS Field Maps
 sidebar_label: Esri ArcGIS Field Maps
 ---
-
 ArcGIS Field Maps is a mobile application used to view maps, collect new features, and update existing GIS data in the field. It is part of the ArcGIS platform and works with ArcGIS Online web maps and feature layers.
 
 Field Maps site: https://www.esri.com/en-us/arcgis/products/arcgis-field-maps/overview

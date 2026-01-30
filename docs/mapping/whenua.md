@@ -2,7 +2,6 @@
 title: Whenua
 sidebar_position: 11
 ---
-
 Whenua is central to much Māori GIS work. Mapping whenua carries cultural, legal, historical, and relational meaning. It is not only a technical exercise. A good whenua workflow makes boundaries clear, names correct, and sharing safe.
 
 This page focuses on practical ways to organise whenua layers so they can support governance, planning, and kaitiakitanga without creating confusion or risk.

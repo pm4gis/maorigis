@@ -3,7 +3,6 @@ title: Geospatial Data Catalogue
 
 description: A detailed catalogue of geospatial datasets relevant to Māori kaupapa in Aotearoa New Zealand, prioritising national sources and grouping regional datasets by region.
 ---
-
 Last reviewed: 25 January 2026
 
 ## Purpose and scope
@@ -140,42 +139,42 @@ Regional datasets are typically published via council open data portals using Ar
 
 ## Thematic groupings
 
-**Whenua Māori and tenure**  
+**Whenua Māori and tenure**
 Māori land block information, cadastre, historic survey plans, and reporting tools that support governance, development, and succession planning.
 
-**Rohe, iwi, and statutory areas**  
+**Rohe, iwi, and statutory areas**
 Indicative rohe, iwi statistical areas, and statutory acknowledgement areas used for planning and engagement triggers.
 
-**Te reo Māori place names**  
+**Te reo Māori place names**
 Gazetteer data, tangata whenua place names, and iwi led naming initiatives that restore and normalise te reo in spatial products.
 
-**Treaty settlement redress and co management**  
+**Treaty settlement redress and co management**
 Areas defined in settlement legislation, including conservation redress land, co governance zones, and statutory acknowledgements.
 
-**Cultural heritage and archaeology**  
+**Cultural heritage and archaeology**
 Marae, pā, wāhi tapu, wāhi tūpuna, and archaeological records. High care required.
 
-**Wai and moana management**  
+**Wai and moana management**
 Freshwater and coastal datasets supporting customary rights, environmental restoration, and planning.
 
-**Environmental context for kaupapa decisions**  
+**Environmental context for kaupapa decisions**
 Land cover, biodiversity, hazards, and climate related datasets that inform Māori led decisions.
 
-**Historical evidence and change**  
+**Historical evidence and change**
 Historic imagery, survey plans, and archival mapping that support narratives of change and evidence based claims.
 
 ## Case studies and practice examples
 
-**Historic imagery in Treaty research**  
+**Historic imagery in Treaty research**
 Historic aerial imagery and survey plans are routinely used to evidence land use change, river modification, and coastal erosion over long timeframes. These datasets support Treaty settlement research and environmental claims when combined with oral history.
 
-**Freshwater co governance mapping**  
+**Freshwater co governance mapping**
 River authorities and iwi environmental units use national river and water quality datasets alongside iwi values mapping to guide restoration investment and measure outcomes.
 
-**Cultural mapping and place name restoration**  
+**Cultural mapping and place name restoration**
 Iwi led mapping of traditional place names demonstrates how open basemap data can be enriched with mātauranga Māori under iwi governance.
 
-**Māori land planning**  
+**Māori land planning**
 Combining Māori land information with soils, land cover, and elevation data supports sustainable development aligned with tikanga and long term aspirations.
 
 ## Guidance for respectful use

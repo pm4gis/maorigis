@@ -1,13 +1,6 @@
 ---
-
 title: Ethics and consent
-
-
-
 ---
-
-
-
 ## Purpose
 
 
@@ -131,6 +124,3 @@ Ethical decisions should be:
 
 
 Responsibility continues after publication.
-
-
-

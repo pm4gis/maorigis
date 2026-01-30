@@ -2,7 +2,6 @@
 title: Sites
 sidebar_position: 13
 ---
-
 Site data refers to specific locations of interest. These may be cultural, operational, environmental, or project related. Sites are often mapped as points, but the meaning behind them is rarely simple.
 
 This page focuses on how to model sites well, how to capture and store them safely, and how to move site data between field tools, desktop GIS, and sharing outputs.

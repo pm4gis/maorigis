@@ -4,11 +4,11 @@ sidebar_position: 999
 ---
 ## Pepeha
 
-Ko Taupiri te maunga  
-Ko Waikato te awa  
-Ko Ōhinewai te roto  
+Ko Taupiri te maunga
+Ko Waikato te awa
+Ko Ōhinewai te roto
 
-Ko Aotearoa te whenua i tupu ake ai au, ā, kei Te Whanganui a Tara au e mahi ana ināianei.  
+Ko Aotearoa te whenua i tupu ake ai au, ā, kei Te Whanganui a Tara au e mahi ana ināianei.
 Nō Airani, nō Wēra, nō Kōtirana ōku tīpuna.
 
 I am Duane Wilkins, a geospatial professional based in Wellington, New Zealand, with thirty years experience working with geography, mapping, and geographic information systems. My focus is practical use of spatial information to support decision making, planning, and communication, with a strong emphasis on building capability so teams can do the mahi themselves.

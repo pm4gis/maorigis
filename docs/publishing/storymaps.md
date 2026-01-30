@@ -11,8 +11,7 @@ keywords:
   - sensitive sites
   - kaitiakitanga
 ---
-
-**He kōrero tō te mapi, he horopaki tō te kōrero.**  
+**He kōrero tō te mapi, he horopaki tō te kōrero.**
 StoryMaps can help you share kaupapa, explain decisions, and carry context that a map alone cannot. In Māori GIS work, the main job is to keep intent and meaning intact while protecting what should not travel beyond its proper audience.
 
 This page focuses on building StoryMaps that are clear, useful, and safe to share.

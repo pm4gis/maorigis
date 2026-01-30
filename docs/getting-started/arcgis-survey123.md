@@ -2,7 +2,6 @@
 title: Survey123
 sidebar_label: Esri ArcGIS Survey123
 ---
-
 Survey123 is a form based data collection tool in the ArcGIS platform. It is used to collect structured survey responses, including locations, photos, and attachments, then publish results into ArcGIS Online for mapping and reporting.
 
 Survey123 site: https://survey123.arcgis.com/

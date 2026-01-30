@@ -1,12 +1,6 @@
 ---
-
 title: Sovereignty and Governance
-
-
 ---
-
-
-
 ## Purpose
 
 
@@ -154,6 +148,3 @@ Strong governance includes:
 
 
 Governance supports good GIS practice rather than slowing it.
-
-
-

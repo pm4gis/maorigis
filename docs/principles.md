@@ -2,9 +2,7 @@
 title: Principles and responsibilities
 sidebar_label: Principles
 sidebar_position: 2
-
 ---
-
 This section sets the foundation for the rest of the guide. It focuses on practical judgement and responsibility rather than theory. The aim is to support decisions that protect people, relationships, and information while still getting useful work done.
 
 ## Begin with purpose

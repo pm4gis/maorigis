@@ -1,8 +1,6 @@
 ---
 title: Publishing maps
-
 ---
-
 Publishing maps is about turning internal GIS work into something other people can understand and use. In Māori contexts, publishing also involves decisions about mana, access, responsibility, and long term control of information.
 
 This page focuses on practical ways to publish maps while keeping control of data and intent.

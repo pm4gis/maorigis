@@ -2,7 +2,6 @@
 title: ArcGIS Pro
 sidebar_label: Esri ArcGIS Pro Desktop
 ---
-
 ArcGIS Pro is a desktop GIS application designed for advanced mapping, data management, and spatial analysis. It is used when you need more structure, repeatability, and control than web based tools can provide.
 
 ArcGIS Pro runs on Windows and connects to ArcGIS Online, but it is primarily a hands on desktop tool for GIS practitioners.

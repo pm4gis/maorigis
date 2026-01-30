@@ -1,8 +1,6 @@
 ---
 title: QGIS
-
 ---
-
 QGIS is a free, open source desktop GIS tool for viewing, analysing, and making maps. It runs on Windows, macOS, and Linux. In Aotearoa it is widely used by councils, consultants, community groups, and iwi organisations.
 
 QGIS suits Māori contexts because it can work fully offline, supports open formats, and lets you keep control of where files live, who has access, and what gets shared.
@@ -140,7 +138,7 @@ LINZ Basemaps are a fast way to add high quality context. Vector tiles work well
 2. Choose Vector Tiles
 3. New Generic Connection
 4. Name: `LINZ Topographic`
-5. URL example:  
+5. URL example:
    `https://basemaps.linz.govt.nz/v1/styles/topographic-v2.json?api={api_key}`
 6. Add the connection, then double click it to add to your map
 

@@ -2,7 +2,6 @@
 title: Taiao
 sidebar_position: 12
 ---
-
 Taiao data supports understanding of environmental systems connected to whenua. This includes land, water, ecosystems, and change over time. For many Māori organisations, taiao mapping supports kaitiakitanga, restoration planning, and long term stewardship.
 
 This page focuses on practical taiao datasets, how to use them safely, and how to keep context so maps support kōrero rather than flatten it.

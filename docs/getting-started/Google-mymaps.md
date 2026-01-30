@@ -2,7 +2,6 @@
 title: Google My Maps
 sidebar_label: Google MyMaps
 ---
-
 Google My Maps is one of the best beginner mapping tools because it is simple, visual, and collaborative. It lets you create a map in a browser, add points, lines, and areas, organise them into layers, and share the map with others. Treat it as a kōrero and communication tool, not a full GIS system.
 
 My Maps: https://www.google.com/mymaps
@@ -64,7 +63,7 @@ Practical ideas:
 - Draw areas for “general focus zones” for discussion, not exact boundaries
 - Draw lines for proposed walking routes, monitoring tracks, or access corridors
 
-Limits matter if you are building a big map. A map can hold up to 10,000 lines, shapes, or places, and layers have their own limits. If your map is growing, split it into more than one map, or move to QGIS.  
+Limits matter if you are building a big map. A map can hold up to 10,000 lines, shapes, or places, and layers have their own limits. If your map is growing, split it into more than one map, or move to QGIS.
 
 Help:
 - Add places: https://support.google.com/mymaps/answer/3024925
@@ -81,7 +80,7 @@ Example layer set for a simple kaupapa map:
 - Risks and constraints
 - Notes and photos
 
-My Maps supports up to 10 layers. You can move features between layers and open the layer data table to edit attributes.  
+My Maps supports up to 10 layers. You can move features between layers and open the layer data table to edit attributes.
 
 Help: https://support.google.com/mymaps/answer/3024933
 
@@ -207,7 +206,7 @@ My Maps are stored in Google Drive. Put maps into kaupapa folders, like:
 - Engagement maps
 - Comms outputs
 
-Google notes that My Maps do not use your Drive storage quota, and maps are available only in Google Drive on the web, not offline.  
+Google notes that My Maps do not use your Drive storage quota, and maps are available only in Google Drive on the web, not offline.
 
 Help: https://support.google.com/mymaps/answer/6138031
 

@@ -2,7 +2,6 @@
 id: maori-gis-mapping-in-aotearoa
 title: Māori GIS Resources
 ---
-
 # Māori GIS Mapping in Aotearoa
 
 Māori whānau, hapū and iwi across Aotearoa are increasingly using GIS (geographic information systems) to map their whenua (land), taonga (treasured places) and whakapapa (genealogies). Māori led mapping often blends Western GIS methods with tikanga (customary practice) and mātauranga Māori (Māori knowledge). GIS tools help communities present information for resource management, cultural narratives, planning, and evidence for decisions.
@@ -12,24 +11,24 @@ Māori whānau, hapū and iwi across Aotearoa are increasingly using GIS (geogra
 A range of free data and tools can support Māori GIS work.
 
 **Data**
-- **LINZ Data Service (Toitū Te Whenua):** Cadastral parcels, topographic layers, elevation, hydro, coastline, and imagery access.  
+- **LINZ Data Service (Toitū Te Whenua):** Cadastral parcels, topographic layers, elevation, hydro, coastline, and imagery access.
   https://data.linz.govt.nz/
-- **Stats NZ:** Demographic and census information, including iwi related outputs and tools.  
+- **Stats NZ:** Demographic and census information, including iwi related outputs and tools.
   https://www.stats.govt.nz/
-- **data.govt.nz:** Cross agency catalogue for open datasets, including councils and CRIs.  
+- **data.govt.nz:** Cross agency catalogue for open datasets, including councils and CRIs.
   https://data.govt.nz/
-- **NZ Geographic Board Gazetteer (LINZ):** Official place names, spelling, and macrons.  
+- **NZ Geographic Board Gazetteer (LINZ):** Official place names, spelling, and macrons.
   https://gazetteer.linz.govt.nz/
-- **Te Puni Kōkiri:** Information and resources that may include relevant community datasets and context.  
+- **Te Puni Kōkiri:** Information and resources that may include relevant community datasets and context.
   https://www.tpk.govt.nz/
 
 **Software**
-- **QGIS (free, open source):** Desktop GIS for mapping, analysis, and data preparation.  
+- **QGIS (free, open source):** Desktop GIS for mapping, analysis, and data preparation.
   https://qgis.org/
-- **ArcGIS Online and StoryMaps (commercial):** Web maps and storytelling tools, often used by organisations already in the Esri ecosystem.  
-  https://www.esri.com/en-us/arcgis/products/arcgis-online/overview  
+- **ArcGIS Online and StoryMaps (commercial):** Web maps and storytelling tools, often used by organisations already in the Esri ecosystem.
+  https://www.esri.com/en-us/arcgis/products/arcgis-online/overview
   https://storymaps.arcgis.com/
-- **OpenStreetMap (open data):** Community editable basemaps and local features, including Māori place names when added carefully.  
+- **OpenStreetMap (open data):** Community editable basemaps and local features, including Māori place names when added carefully.
   https://www.openstreetmap.org/
 
 ## Community projects and examples

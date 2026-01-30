@@ -1,8 +1,6 @@
 ---
-
 title: Māori GIS Mapping in Aotearoa
 ---
-
 # Māori GIS Mapping in Aotearoa
 
 Māori GIS mapping brings together Western geospatial technology and Māori worldviews. It supports iwi, hapū and whānau to record, understand, and manage whenua, taiao, and cultural knowledge using maps and spatial data. This work is grounded in tikanga and kaitiakitanga, and reflects a holistic Māori understanding of place that connects land, people, history, and responsibility.

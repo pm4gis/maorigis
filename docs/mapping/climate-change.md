@@ -1,13 +1,8 @@
 ---
-
 title: Climate change impacts
 
 sidebar\_position: 40
-
 ---
-
-
-
 Climate change (huringa āhuarangi) is already reshaping the taiao across Aotearoa. For iwi, hapū, and Māori organisations, GIS can support kaitiakitanga, planning for marae and papakāinga, protecting wāhi tapu and urupā, and sustaining mahinga kai and customary fisheries. This page is a practical guide to mapping climate impacts and using the best public data that is available.
 
 
@@ -449,6 +444,3 @@ If you want a simple starter set for climate work, these are high value layers t
 - Updated climate projections and dataset access (MfE/NIWA): https://climatedata.environment.govt.nz/
 
 - NZ SeaRise resources and factsheets: https://searise.nz/resources/
-
-
-

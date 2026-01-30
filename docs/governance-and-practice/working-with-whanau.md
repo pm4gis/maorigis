@@ -1,13 +1,8 @@
 ---
-
 title: Working with iwi, hapū, and whānau
 
 sidebar\_position: 3
-
 ---
-
-
-
 ## Purpose
 
 
@@ -127,6 +122,3 @@ Engagement does not end at delivery.
 
 
 Trust is built over time.
-
-
-

@@ -2,7 +2,6 @@
 title: Sharing and access
 sidebar_position: 20
 ---
-
 Sharing GIS outputs is often more complex than creating them. Once information leaves your control, it can be copied, reused, or misunderstood. In Māori contexts, sharing can also affect mana, trust, and relationships, so it needs active decisions and clear agreements.
 
 This page focuses on practical sharing approaches that respect kaupapa and protect relationships.

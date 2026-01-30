@@ -1,13 +1,8 @@
 ---
-
 title: Quality assurance and validation
 
 sidebar\_position: 5
-
 ---
-
-
-
 ## Purpose
 
 
@@ -89,6 +84,3 @@ Be clear about:
 
 
 Honesty builds credibility.
-
-
-

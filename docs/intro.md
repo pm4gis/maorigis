@@ -3,7 +3,6 @@ title: Practical Māori GIS Mapping
 sidebar_label: Introduction
 sidebar_position: 1
 ---
-
 This site is a practical guide to using Geographic Information Systems in Māori contexts in Aotearoa New Zealand. It is written for iwi and hapū staff, Māori organisations, and practitioners who work with Māori communities and need GIS as part of everyday mahi. It is not an academic text and it is not software documentation. It is a working guide for getting useful, safe results with real tools.
 
 GIS can support rangatiratanga, kaitiakitanga, and better decisions, but only when the data and outputs are handled with care. In Māori contexts, the technical work sits alongside tikanga, consent, and governance.

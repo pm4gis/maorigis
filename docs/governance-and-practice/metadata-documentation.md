@@ -1,13 +1,6 @@
 ---
-
 title: Metadata and documentation
-
-
-
 ---
-
-
-
 ## Purpose
 
 
@@ -97,6 +90,3 @@ Metadata should be:
 
 
 Out of date metadata creates risk.
-
-
-

@@ -2,7 +2,6 @@
 title: ArcGIS Online
 sidebar_label: Esri ArcGIS Online
 ---
-
 ArcGIS Online is a web based GIS platform for storing, managing, analysing, and sharing spatial data through maps and apps. In Aotearoa it is widely used by councils and agencies, so it is often the platform partners expect.
 
 ArcGIS Online is easy to publish with, which is both the strength and the risk. A Māori organisation gets the most value when it sets clear rules for permissions, sharing, and what must stay restricted.

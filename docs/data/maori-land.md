@@ -2,7 +2,6 @@
 title: Māori land
 sidebar_position: 20
 ---
-
 Māori land information sits across whakapapa, law, governance, and place. GIS can help you pull kōrero, boundaries, and context into one view, but you need to be clear about what each dataset represents and what must stay restricted. This page focuses on practical sources and workflows for working with whenua Māori in a GIS context, written for iwi and hapū staff, trust managers, kaitiaki, and practitioners.
 
 ## What people usually need from a whenua map
@@ -30,11 +29,11 @@ Practical tip: use blocks for whenua context and governance kōrero, and use par
 ## Where to find Māori land record context
 
 ### Pātaka Whenua (Māori Land Court)
-Pātaka Whenua is the Māori Land Court portal for searching and accessing Māori land information, including minutes and orders. It replaced the older Māori Land Online experience for most day to day use.  
-https://customer.service.maorilandcourt.govt.nz/  
-Guidance on searching the Court record is here:  
-https://www.xn--morilandcourt-wqb.govt.nz/en/the-court-record/our-record  
-Find your land guidance is here:  
+Pātaka Whenua is the Māori Land Court portal for searching and accessing Māori land information, including minutes and orders. It replaced the older Māori Land Online experience for most day to day use.
+https://customer.service.maorilandcourt.govt.nz/
+Guidance on searching the Court record is here:
+https://www.xn--morilandcourt-wqb.govt.nz/en/the-court-record/our-record
+Find your land guidance is here:
 https://www.xn--morilandcourt-wqb.govt.nz/en/maori-land/find-your-land
 
 Use Pātaka Whenua when you need:
@@ -46,31 +45,31 @@ Use Pātaka Whenua when you need:
 The Māori Land Court publishes regular documents and registers, including:
 - Māori Land Update reports
 - Māori Land Blocks in New Zealand (National List)
-- Māori Incorporation Register  
+- Māori Incorporation Register
 https://www.xn--morilandcourt-wqb.govt.nz/en/the-court-record/m%C4%81ori-land-data
 
 Important scope note from the Court: the national lists cover customary and freehold Māori land blocks and aggregated blocks, and exclude some categories such as Crown land reserved for Māori, general land owned by Māori, and blocks under internal review. Always check the notes on the document you download.
 
 ### Tōku Whenua reports (Te Puni Kōkiri)
-Useful for high level environmental and land characteristic context when scoping options.  
+Useful for high level environmental and land characteristic context when scoping options.
 https://www.tupu.nz/
 
 ### Whenua Māori Visualisation Tool (Manaaki Whenua)
-Useful for quick context and early kōrero. Note that the site states the land block information used was last updated in February 2017, so treat it as a guide, not a current source of record.  
+Useful for quick context and early kōrero. Note that the site states the land block information used was last updated in February 2017, so treat it as a guide, not a current source of record.
 https://whenuaviz.landcareresearch.co.nz/
 
 ## Where to find surrounding context layers
 
-LINZ Data Service (topo, hydro, transport, parcels, many national layers)  
+LINZ Data Service (topo, hydro, transport, parcels, many national layers)
 https://data.linz.govt.nz/
 
-LINZ Basemaps (imagery and basemap tiles)  
+LINZ Basemaps (imagery and basemap tiles)
 https://basemaps.linz.govt.nz/
 
-Stats NZ boundary layers (meshblocks, SA2, local government boundaries)  
+Stats NZ boundary layers (meshblocks, SA2, local government boundaries)
 https://datafinder.stats.govt.nz/
 
-DOC open data (public conservation land and related layers)  
+DOC open data (public conservation land and related layers)
 https://doc-deptconservation.opendata.arcgis.com/
 
 Regional and local council open data portals
@@ -94,7 +93,7 @@ A widely used boundary dataset is commonly referred to as the Māori Land Spatia
 If you are trying to obtain the original files, a current request exists on data.govt.nz listing:
 - MLC_2017_05-Shapefile.zip
 - MLC_2017_05-Geodatabase.zip
-- MLC-2017-05-Fact-Sheet-Maori-Land-Dataset.pdf  
+- MLC-2017-05-Fact-Sheet-Maori-Land-Dataset.pdf
 https://data.govt.nz/datasetrequest/show/1283
 
 ## Common attributes in the Māori land dataset
@@ -128,11 +127,11 @@ Treat these as supporting context fields, not legal proof. If you are producing 
 ## LINZ parcels and how they relate to Māori land blocks
 
 ### NZ Primary Parcels
-NZ Primary Parcels is widely used as the base cadastral parcel layer for mapping and analysis. It provides current primary parcel polygons plus descriptive attributes such as legal description (appellation), purpose, and size.  
+NZ Primary Parcels is widely used as the base cadastral parcel layer for mapping and analysis. It provides current primary parcel polygons plus descriptive attributes such as legal description (appellation), purpose, and size.
 https://data.linz.govt.nz/layer/50772-nz-primary-parcels/
 
 ### NZ Primary Land Parcels
-NZ Primary Land Parcels is provided for users who want land parcels separated from road parcels.  
+NZ Primary Land Parcels is provided for users who want land parcels separated from road parcels.
 https://data.linz.govt.nz/layer/50823-nz-primary-land-parcels/
 
 Why this matters for whenua Māori:
@@ -211,7 +210,7 @@ Suggested fields:
 
 ## ArcGIS Online: add LINZ Basemaps imagery correctly
 
-LINZ Basemaps provides a step by step guide for ArcGIS Online WMTS setup, including how to handle the API key parameter.  
+LINZ Basemaps provides a step by step guide for ArcGIS Online WMTS setup, including how to handle the API key parameter.
 https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/
 
 A practical tip from the LINZ guidance: create your own ArcGIS Online item for each imagery layer you use regularly, and share those items with your internal group so they are easy to reuse.

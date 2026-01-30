@@ -1,12 +1,3 @@
 ---
-
 title: Articles
-
-
-
 ---
-
-
-
-
-

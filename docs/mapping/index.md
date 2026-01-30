@@ -1,8 +1,6 @@
 ---
 title: Core workflows
-
 ---
-
 This page describes practical GIS workflows that Māori organisations commonly use. The focus is not software features. The focus is reliable ways to move from a kaupapa to a map, dataset, or decision support output, while keeping control of quality, permissions, and kōrero.
 
 ## A simple workflow that works most of the time

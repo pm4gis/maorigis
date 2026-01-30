@@ -2,7 +2,6 @@
 title: Place names
 sidebar_position: 22
 ---
-
 Place names, ingoa wāhi, are not just labels. In Aotearoa they often carry whakapapa, history, rights, responsibilities, and ongoing relationships between people and whenua. Good naming practice improves map quality, supports te reo Māori, and reduces confusion in governance, engagement, planning, and taiao mahi.
 
 This page focuses on practical ways to use:

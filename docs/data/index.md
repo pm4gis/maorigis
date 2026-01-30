@@ -1,7 +1,6 @@
 ---
 title: NZ data sources
 ---
-
 Most Māori GIS work uses a mix of your own data and public datasets from government, councils, and research organisations. This page lists high value sources for Aotearoa and practical ways to use them.
 
 ## A practical way to organise your dataset library
@@ -164,4 +163,3 @@ A map without dates becomes hard to trust.
 
 ## Record licence terms
 Keep a short licence note in your dataset register for every dataset you use.
-
