@@ -1,7 +1,18 @@
+
 ---
 id: maori-gis-mapping-in-aotearoa
 title: Māori GIS Resources
+date: 2026-01-31
+authors: [duane]
+tags:
+  - basemaps
+  - imagery
+  - linz
+  - qgis
+  - arcgis
+  - wmts
 ---
+
 # Māori GIS Mapping in Aotearoa
 
 Māori whānau, hapū and iwi across Aotearoa are increasingly using GIS (geographic information systems) to map their whenua (land), taonga (treasured places) and whakapapa (genealogies). Māori led mapping often blends Western GIS methods with tikanga (customary practice) and mātauranga Māori (Māori knowledge). GIS tools help communities present information for resource management, cultural narratives, planning, and evidence for decisions.
