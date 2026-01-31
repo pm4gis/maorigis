@@ -1,4 +1,9 @@
+# blog/authors.yml
 duane:
   name: Duane Wilkins
-  title: Māori GIS Mapping
+  title: No longer eats the crayons.  
   url: https://www.linkedin.com/in/duanewilkins/
+  image_url: /img/DuaneWilkinsEC2026.png
+  socials:
+    linkedin: duanewilkins
+

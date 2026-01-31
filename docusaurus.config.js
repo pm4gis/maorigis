@@ -39,6 +39,8 @@ const config = {
           editUrl: 'https://github.com/pm4gis/maorigis/edit/main/',
         },
 
+
+
         blog: {
           path: 'blog',
           routeBasePath: 'blog',
@@ -53,6 +55,8 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+
+
 
         sitemap: {
           changefreq: 'weekly',

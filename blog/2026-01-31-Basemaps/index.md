@@ -2,6 +2,7 @@
 title: Basemaps in Aotearoa
 slug: basemaps-in-aotearoa
 date: 2026-01-31
+authors: [duane]
 tags:
   - basemaps
   - imagery
@@ -9,12 +10,7 @@ tags:
   - qgis
   - arcgis
   - wmts
-  - councils
-  - whenua
-  - taiao
-  - rural
 ---
-
 Basemaps are the background layers that help you read your data in context. In Māori GIS work, basemaps often sit behind decisions about whenua, taiao, access, planning, and change over time. They can also carry risk, because high detail imagery can reveal more than you intended to share.
 
 This post covers the main basemap options used in Aotearoa, how WMTS tiles work, how imagery is updated, and how to add these basemaps into QGIS, ArcGIS Online, and other tools.
