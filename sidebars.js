@@ -4,7 +4,7 @@
 module.exports = {
   guideSidebar: [
     // Keep these explicitly at the top
-  'intro',
+  //'intro',
 //    'principles',
 //    'about',
 

@@ -1,4 +1,3 @@
-
 ---
 title: Māori GIS Resources
 slug: Maorigis-resources
