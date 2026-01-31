@@ -1,31 +1,38 @@
-/* =========================
-   MGIS Theme foundation
-   ========================= */
+/* src/css/custom.css */
 
+/* Navbar base */
 :root {
-  /* Core neutrals */
-  --mgis-ink: #0b1220;
-  --mgis-ink-2: #111c33;
-  --mgis-surface: #ffffff;
-  --mgis-border: rgba(15, 23, 42, 0.12);
+  --ifm-navbar-background-color: #000000;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #ffffff;
+  --ifm-navbar-shadow: none;
+}
 
-  /* Brand blues (use across hero, insets, accents) */
+/* Optional: keep active link visible on black navbar */
+.navbar__link--active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Landing page palette and layout, scoped to .mgis-landing */
+.mgis-landing {
+  --mgis-ink: #0b1220;
+  --mgis-surface: #ffffff;
+
   --mgis-navy-1: #071a2b;
   --mgis-navy-2: #0b2a4a;
-  --mgis-navy-3: #0e3a63;
 
-  /* Complementary palette (balanced, modern, consistent) */
   --mgis-blue-a: #2563eb;
   --mgis-blue-b: #38bdf8;
-
-  --mgis-indigo-a: #4f46e5;
-  --mgis-indigo-b: #a78bfa;
 
   --mgis-teal-a: #0f766e;
   --mgis-teal-b: #22d3ee;
 
-  --mgis-emerald-a: #15803d;
-  --mgis-emerald-b: #86efac;
+  --mgis-purple-a: #4f46e5;
+  --mgis-purple-b: #a78bfa;
+
+  --mgis-green-a: #15803d;
+  --mgis-green-b: #86efac;
 
   --mgis-amber-a: #b45309;
   --mgis-amber-b: #fbbf24;
@@ -33,254 +40,251 @@
   --mgis-rose-a: #be123c;
   --mgis-rose-b: #fb7185;
 
-  /* Tile styling */
-  --mgis-tile-radius: 16px;
-  --mgis-tile-shadow: 0 10px 26px rgba(0, 0, 0, 0.14);
-  --mgis-tile-shadow-hover: 0 18px 40px rgba(0, 0, 0, 0.22);
-  --mgis-tile-border: rgba(255, 255, 255, 0.14);
-
-  /* Motion */
-  --mgis-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --mgis-radius: 18px;
+  --mgis-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+  --mgis-shadow-hover: 0 20px 44px rgba(0, 0, 0, 0.28);
+  --mgis-ease: cubic-bezier(0.2, 0.85, 0.2, 1);
 }
 
-/* =========================
-   Navbar (black)
-   ========================= */
-
-:root {
-  --ifm-navbar-background-color: #000;
-  --ifm-navbar-link-color: #fff;
-  --ifm-navbar-link-hover-color: #fff;
-  --ifm-navbar-shadow: none;
+/* Anchor offset so headings do not hide under navbar */
+.mgis-landing .mgis-section {
+  scroll-margin-top: 96px;
 }
 
-.navbar {
-  background-color: #000;
-}
-
-.navbar__brand,
-.navbar__title,
-.navbar__link,
-.navbar__toggle {
-  color: #fff;
-}
-
-.navbar__link--active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.navbar__search-input {
-  background-color: rgba(255, 255, 255, 0.14);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-}
-
-.navbar__search-input::placeholder {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-/* =========================
-   Landing hero
-   ========================= */
-
-.mgis-hero {
-  background: radial-gradient(1200px 600px at 10% 15%, rgba(56, 189, 248, 0.18), rgba(56, 189, 248, 0)),
-    radial-gradient(900px 520px at 85% 55%, rgba(251, 113, 133, 0.14), rgba(251, 113, 133, 0)),
+.mgis-landingHero {
+  background:
+    radial-gradient(1000px 520px at 18% 18%, rgba(56, 189, 248, 0.18), rgba(56, 189, 248, 0)),
+    radial-gradient(900px 520px at 82% 55%, rgba(167, 139, 250, 0.14), rgba(167, 139, 250, 0)),
+    radial-gradient(900px 520px at 78% 20%, rgba(34, 211, 238, 0.12), rgba(34, 211, 238, 0)),
     linear-gradient(135deg, var(--mgis-navy-2) 0%, var(--mgis-navy-1) 100%);
-  color: #fff;
-  padding: 3rem 0 2.5rem;
+  color: #ffffff;
+  padding: 3.25rem 0 2.5rem;
 }
 
-.mgis-hero__title {
-  font-size: 3.2rem;
+.mgis-landingHero__inner {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.mgis-eyebrow {
   font-weight: 800;
-  margin: 0 0 0.75rem 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  opacity: 0.86;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
 }
 
-.mgis-hero__subtitle {
-  max-width: 52rem;
-  font-size: 1.15rem;
+.mgis-landingHero__title {
+  font-size: 3.25rem;
+  line-height: 1.02;
+  font-weight: 900;
+  margin: 0 0 0.9rem 0;
+}
+
+.mgis-landingHero__subtitle {
+  font-size: 1.12rem;
+  line-height: 1.55;
   opacity: 0.95;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.35rem 0;
+  max-width: 44rem;
 }
 
-.mgis-hero__buttons {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.mgis-hero .button--outline {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.62);
-}
-
-.mgis-hero .button--outline:hover {
-  border-color: #fff;
-}
-
-/* =========================
-   Coloured quick tiles
-   ========================= */
-
-.mgis-muted {
-  opacity: 0.85;
-  margin-top: -0.25rem;
-}
-
-.mgis-tiles {
+.mgis-landingNav {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 14px;
+  gap: 12px;
 }
 
-.mgis-tile {
+.mgis-navCard {
   display: block;
-  border-radius: var(--mgis-tile-radius);
-  padding: 16px;
+  border-radius: 16px;
+  padding: 14px 14px 12px;
+  color: #ffffff;
   text-decoration: none;
-  color: #fff;
-  border: 1px solid var(--mgis-tile-border);
-  box-shadow: var(--mgis-tile-shadow);
-  transition: transform 160ms var(--mgis-ease), box-shadow 160ms var(--mgis-ease), filter 160ms var(--mgis-ease);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: var(--mgis-shadow);
   position: relative;
   overflow: hidden;
+  transition: transform 170ms var(--mgis-ease), box-shadow 170ms var(--mgis-ease), filter 170ms var(--mgis-ease);
 }
 
-.mgis-tile::before {
+.mgis-navCard::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(800px 220px at 20% 0%, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0)),
-    radial-gradient(420px 240px at 90% 110%, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+  background:
+    radial-gradient(700px 220px at 18% 0%, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0)),
+    radial-gradient(500px 260px at 90% 110%, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0));
   opacity: 0.75;
   pointer-events: none;
 }
 
-.mgis-tile::after {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.0));
-  transform: translateX(-120%);
-  opacity: 0.0;
-  pointer-events: none;
-}
-
-.mgis-tile:hover {
-  text-decoration: none;
+.mgis-navCard:hover {
   transform: translateY(-3px);
-  box-shadow: var(--mgis-tile-shadow-hover);
-  filter: saturate(1.02);
+  box-shadow: var(--mgis-shadow-hover);
+  filter: saturate(1.03);
+  text-decoration: none;
 }
 
-.mgis-tile:hover::after {
-  transform: translateX(120%);
-  opacity: 0.35;
-  transition: transform 700ms var(--mgis-ease), opacity 700ms var(--mgis-ease);
-}
-
-.mgis-tile:focus-visible {
-  outline: 3px solid rgba(56, 189, 248, 0.8);
+.mgis-navCard:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.75);
   outline-offset: 3px;
 }
 
-.mgis-tile__title {
+.mgis-navCard__title {
   font-weight: 900;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 6px;
   position: relative;
   z-index: 1;
 }
 
-.mgis-tile__desc {
-  font-size: 14px;
-  opacity: 0.92;
-  margin-bottom: 12px;
-  max-width: 34rem;
-  position: relative;
-  z-index: 1;
-}
-
-.mgis-tile__cta {
+.mgis-navCard__desc {
   font-size: 13px;
-  font-weight: 900;
-  opacity: 0.95;
+  line-height: 1.35;
+  opacity: 0.92;
   position: relative;
   z-index: 1;
 }
 
-/* Balanced gradients per tile, same style system */
-.mgis-tile--blue {
+.mgis-navCard--blue {
   background: linear-gradient(135deg, var(--mgis-blue-a) 0%, var(--mgis-blue-b) 100%);
 }
 
-.mgis-tile--purple {
-  background: linear-gradient(135deg, var(--mgis-indigo-a) 0%, var(--mgis-indigo-b) 100%);
-}
-
-.mgis-tile--teal {
+.mgis-navCard--teal {
   background: linear-gradient(135deg, var(--mgis-teal-a) 0%, var(--mgis-teal-b) 100%);
 }
 
-.mgis-tile--green {
-  background: linear-gradient(135deg, var(--mgis-emerald-a) 0%, var(--mgis-emerald-b) 100%);
+.mgis-navCard--purple {
+  background: linear-gradient(135deg, var(--mgis-purple-a) 0%, var(--mgis-purple-b) 100%);
 }
 
-.mgis-tile--orange {
+.mgis-navCard--green {
+  background: linear-gradient(135deg, var(--mgis-green-a) 0%, var(--mgis-green-b) 100%);
+}
+
+.mgis-navCard--amber {
   background: linear-gradient(135deg, var(--mgis-amber-a) 0%, var(--mgis-amber-b) 100%);
 }
 
-.mgis-tile--red {
+.mgis-navCard--rose {
   background: linear-gradient(135deg, var(--mgis-rose-a) 0%, var(--mgis-rose-b) 100%);
 }
 
-/* =========================
-   Matching inset blocks for other pages
-   Use these anywhere in Markdown/MDX via className
-   ========================= */
-
-.mgis-inset {
-  border-radius: 14px;
-  padding: 14px 14px 12px;
-  border: 1px solid var(--mgis-border);
-  background: rgba(11, 42, 74, 0.04);
+/* Media card */
+.mgis-mediaCard {
+  border-radius: var(--mgis-radius);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: var(--mgis-shadow);
+  overflow: hidden;
 }
 
-.mgis-inset--blue {
-  border-color: rgba(37, 99, 235, 0.25);
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.10), rgba(56, 189, 248, 0.10));
+.mgis-mediaCard__top {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 12px 12px 8px;
 }
 
-.mgis-inset--purple {
-  border-color: rgba(79, 70, 229, 0.25);
-  background: linear-gradient(135deg, rgba(79, 70, 229, 0.10), rgba(167, 139, 250, 0.10));
+.mgis-pill {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.92);
 }
 
-.mgis-inset--teal {
-  border-color: rgba(15, 118, 110, 0.25);
-  background: linear-gradient(135deg, rgba(15, 118, 110, 0.10), rgba(34, 211, 238, 0.10));
+.mgis-pill--soft {
+  background: rgba(255, 255, 255, 0.10);
 }
 
-.mgis-inset--green {
-  border-color: rgba(21, 128, 61, 0.25);
-  background: linear-gradient(135deg, rgba(21, 128, 61, 0.10), rgba(134, 239, 172, 0.10));
+.mgis-mediaCard__canvas svg,
+.mgis-mediaCard__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.mgis-inset--orange {
-  border-color: rgba(180, 83, 9, 0.25);
-  background: linear-gradient(135deg, rgba(180, 83, 9, 0.10), rgba(251, 191, 36, 0.10));
+.mgis-mediaCard__image {
+  object-fit: cover;
 }
 
-.mgis-inset--red {
-  border-color: rgba(190, 18, 60, 0.25);
-  background: linear-gradient(135deg, rgba(190, 18, 60, 0.10), rgba(251, 113, 133, 0.10));
+.mgis-mediaCard__caption {
+  padding: 12px 14px 14px;
+  font-size: 13px;
+  opacity: 0.90;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+/* Sections */
+.mgis-section {
+  background: var(--mgis-surface);
+  color: var(--mgis-ink);
+  padding: 2.25rem 0;
+}
+
+.mgis-section:nth-of-type(even) {
+  background: rgba(11, 18, 32, 0.02);
+}
+
+.mgis-section__title {
+  font-weight: 900;
+  margin-bottom: 0.65rem;
+}
+
+.mgis-section__lead {
+  max-width: 56rem;
+  margin-bottom: 0.9rem;
+}
+
+.mgis-section__list {
+  max-width: 56rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.mgis-section__list li {
+  margin: 0.35rem 0;
+}
+
+.mgis-section--last {
+  padding-bottom: 3rem;
+}
+
+/* Responsive */
 @media (max-width: 996px) {
-  .mgis-tiles {
+  .mgis-landingHero__inner {
     grid-template-columns: 1fr;
+  }
+
+  .mgis-landingNav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mgis-landingHero__title {
+    font-size: 2.6rem;
+  }
+
+  .mgis-mediaCard__top {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .mgis-landingNav {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .mgis-navCard {
+    transition: none;
   }
 }
