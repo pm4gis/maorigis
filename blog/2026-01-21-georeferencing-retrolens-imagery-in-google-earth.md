@@ -10,17 +10,17 @@ authors: \[duane]
 
 tags:
 
-&nbsp; - retrolens
+ - retrolens
 
-&nbsp; - georeferencing
+ - georeferencing
 
-&nbsp; - google-earth
+ - google-earth
 
-&nbsp; - historical-imagery
+ - historical-imagery
 
-&nbsp; - workflows
+ - workflows
 
-&nbsp; - whenua
+ - whenua
 
 ---
 
@@ -58,7 +58,7 @@ For Māori GIS work, this can support whenua history, planning discussions, and 
 
 \- Google Earth Pro installed  
 
-&nbsp; https://www.google.com/earth/versions/
+ https://www.google.com/earth/versions/
 
 \- A basic understanding of the area being mapped
 
