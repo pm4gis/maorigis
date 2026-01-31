@@ -1,31 +1,17 @@
 ---
-
-title: Understanding land and property layers in Aotearoa
-
-slug: understanding-land-parcel-layers-aotearoa
-
-date: 2026-01-23
-
-authors: \[duane]
-
+title: "Understanding land and property layers in Aotearoa"
+slug: "understanding-land-parcel-layers-aotearoa"
+date: "2026-01-23"
+authors: [duane]
 tags:
-
-  - land-parcels
-
-  - property
-
-  - linz
-
-  - crosyl
-
-  - crown-land
-
-  - whenua
-
-  - governance
-
+  - land-parcels
+  - property
+  - linz
+  - crosyl
+  - crown-land
+  - whenua
+  - governance
 ---
-
 
 
 One of the most common sources of confusion in Māori GIS work is land and property data. Many people assume there is one definitive parcel layer that shows ownership. In reality, there are several layers, each representing something slightly different and some even incomplete.
