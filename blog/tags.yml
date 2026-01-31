@@ -1,124 +1,154 @@
-maori-gis:
-  label: Māori GIS
-  permalink: /maori-gis
-  description: GIS practice in Māori contexts across Aotearoa
+basemaps:
+  label: Basemaps
+  permalink: /basemaps
+  description: Background map layers used for context in GIS
 
-aotearoa:
-  label: Aotearoa
-  permalink: /aotearoa
-  description: Work grounded in Aotearoa New Zealand
-
-tikanga:
-  label: Tikanga
-  permalink: /tikanga
-  description: Tikanga informed approaches to mapping and data use
-
-data-sovereignty:
-  label: Data sovereignty
-  permalink: /data-sovereignty
-  description: Māori control and governance of Māori data
-
-kaitiakitanga:
-  label: Kaitiakitanga
-  permalink: /kaitiakitanga
-  description: Guardianship and long term care of whenua and taiao
-
-whenua:
-  label: Whenua
-  permalink: /whenua
-  description: Land based mapping and analysis
-
-taiao:
-  label: Taiao
-  permalink: /taiao
-  description: Environmental and ecological mapping
-
-iwi:
-  label: Iwi
-  permalink: /iwi
-  description: Iwi level GIS work and planning
-
-hapu:
-  label: Hapū
-  permalink: /hapu
-  description: Hapū level mapping and decision support
-
-whanau:
-  label: Whānau
-  permalink: /whanau
-  description: Whānau focused spatial work
-
-place-names:
-  label: Place names
-  permalink: /place-names
-  description: Māori place names and gazetteer work
-
-cultural-mapping:
-  label: Cultural mapping
-  permalink: /cultural-mapping
-  description: Mapping sites, narratives, and cultural knowledge
-
-sensitive-data:
-  label: Sensitive data
-  permalink: /sensitive-data
-  description: Managing access to sensitive and restricted locations
-
-gis-workflows:
-  label: GIS workflows
-  permalink: /gis-workflows
-  description: Repeatable and practical GIS workflows
-
-mapping-practice:
-  label: Mapping practice
-  permalink: /mapping-practice
-  description: Day to day GIS practice and methods
-
-qgis:
-  label: QGIS
-  permalink: /qgis
-  description: Open source GIS using QGIS
-
-arcgis:
-  label: ArcGIS
-  permalink: /arcgis
-  description: Esri tools including Pro, Online, and StoryMaps
-
-storymaps:
-  label: StoryMaps
-  permalink: /storymaps
-  description: Narrative mapping and storytelling
-
-open-data:
-  label: Open data
-  permalink: /open-data
-  description: Use of open datasets with care and context
-
-nz-data:
-  label: NZ data
-  permalink: /nz-data
-  description: National and regional datasets in Aotearoa
+imagery:
+  label: Imagery
+  permalink: /imagery
+  description: Aerial and satellite imagery, orthophotos, and scanned photos
 
 linz:
   label: LINZ
   permalink: /linz
-  description: Land Information New Zealand data and services
+  description: Toitū Te Whenua Land Information New Zealand datasets and services
+
+qgis:
+  label: QGIS
+  permalink: /qgis
+  description: Open source desktop GIS workflows and tips
+
+arcgis:
+  label: ArcGIS
+  permalink: /arcgis
+  description: Esri tools including Pro, Online, and Field apps
+
+wmts:
+  label: WMTS
+  permalink: /wmts
+  description: Web Map Tile Service and tiled basemap services
 
 councils:
   label: Councils
   permalink: /councils
-  description: Local and regional council GIS data
+  description: Regional and local council data, imagery, and map services
+
+whenua:
+  label: Whenua
+  permalink: /whenua
+  description: Land and place focused GIS work
+
+taiao:
+  label: Taiao
+  permalink: /taiao
+  description: Environmental mapping and monitoring
+
+rural:
+  label: Rural
+  permalink: /rural
+  description: Rural and remote area mapping, often with limited data coverage
+
+retrolens:
+  label: Retrolens
+  permalink: /retrolens
+  description: Historical aerial photo browsing and downloads via retrolens.nz
+
+historical-imagery:
+  label: Historical imagery
+  permalink: /historical-imagery
+  description: Older aerial photos and imagery used for change over time analysis
+
+aerial-photos:
+  label: Aerial photos
+  permalink: /aerial-photos
+  description: Aerial photography, frames, and orthophoto layers
+
+land-use:
+  label: Land use
+  permalink: /land-use
+  description: Land use change, forestry history, drainage, and development patterns
+
+georeferencing:
+  label: Georeferencing
+  permalink: /georeferencing
+  description: Aligning scanned images to real world coordinates
+
+google-earth:
+  label: Google Earth
+  permalink: /google-earth
+  description: Using Google Earth Pro for overlays, time series, and visual checks
+
+workflows:
+  label: Workflows
+  permalink: /workflows
+  description: Practical step by step GIS workflows
+
+land-parcels:
+  label: Land parcels
+  permalink: /land-parcels
+  description: Cadastral parcel polygons and related land layers
+
+property:
+  label: Property
+  permalink: /property
+  description: Property and land layers used for mapping and planning
+
+crosyl:
+  label: CROSYL
+  permalink: /crosyl
+  description: Crown Owned Spatial Layer context and analysis
+
+crown-land:
+  label: Crown land
+  permalink: /crown-land
+  description: Identifying and mapping Crown owned land footprints
 
 governance:
   label: Governance
   permalink: /governance
-  description: Data governance, access, and decision making
+  description: Access, responsibility, and data management decisions
 
-publishing-maps:
-  label: Publishing maps
-  permalink: /publishing-maps
-  description: Sharing maps safely and appropriately
+monitoring:
+  label: Monitoring
+  permalink: /monitoring
+  description: Repeatable monitoring over time at fixed sites
 
-decision-support:
-  label: Decision support
-  permalink: /decision-support
-  description: Using GIS to support planning and decisions
+water-quality:
+  label: Water quality
+  permalink: /water-quality
+  description: Stream and freshwater measurements and observations
+
+data-schema:
+  label: Data schema
+  permalink: /data-schema
+  description: Designing field structures, identifiers, and data models for collection
+
+taxonomy:
+  label: Taxonomy
+  permalink: /taxonomy
+  description: Controlled vocabularies and pick lists to keep data consistent
+
+kobotoolbox:
+  label: KoboToolbox
+  permalink: /kobotoolbox
+  description: Mobile form based data collection using KoboToolbox
+
+survey123:
+  label: Survey123
+  permalink: /survey123
+  description: ArcGIS Survey123 form based data collection
+
+niwa:
+  label: NIWA
+  permalink: /niwa
+  description: National Institute of Water and Atmospheric Research resources
+
+rivers:
+  label: Rivers
+  permalink: /rivers
+  description: River and stream mapping, change, and catchment context
+
+flora-fauna:
+  label: Flora and fauna
+  permalink: /flora-fauna
+  description: Species observations, habitat notes, and biodiversity context
