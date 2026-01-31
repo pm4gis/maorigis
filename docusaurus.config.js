@@ -1,3 +1,4 @@
+// docusaurus.config.js
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // See: https://docusaurus.io/docs/api/docusaurus-config
@@ -37,10 +38,22 @@ const config = {
           routeBasePath: 'docs',
           editUrl: 'https://github.com/pm4gis/maorigis/edit/main/',
         },
-        blog: false,
+
+        blog: {
+          path: 'blog',
+          routeBasePath: 'blog',
+          showReadingTime: true,
+          blogTitle: 'Māori GIS Blog',
+          blogDescription: 'Updates, examples, and notes from Māori GIS mahi',
+          postsPerPage: 10,
+          blogSidebarCount: 10,
+          blogSidebarTitle: 'Recent posts',
+        },
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+
         sitemap: {
           changefreq: 'weekly',
           priority: 0.7,
@@ -55,7 +68,7 @@ const config = {
       require.resolve('@easyops-cn/docusaurus-search-local'),
       /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */ ({
         hashed: true,
-        indexBlog: false,
+        indexBlog: true,
         docsRouteBasePath: '/docs',
       }),
     ],
@@ -89,7 +102,10 @@ const config = {
 
       navbar: {
         title: 'Māori GIS',
-        items: [{ type: 'doc', docId: 'intro', position: 'left', label: 'Guide' }],
+        items: [
+          { type: 'doc', docId: 'intro', position: 'left', label: 'Guide' },
+          { to: '/blog', position: 'left', label: 'Blog' },
+        ],
       },
 
       footer: {
@@ -101,6 +117,10 @@ const config = {
               { label: 'Introduction', to: '/docs/intro' },
               { label: 'About the Author', to: '/docs/about' },
             ],
+          },
+          {
+            title: 'Blog',
+            items: [{ label: 'Latest posts', to: '/blog' }],
           },
           {
             title: 'Contact',
