@@ -1,19 +1,124 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+maori-gis:
+  label: Māori GIS
+  permalink: /maori-gis
+  description: GIS practice in Māori contexts across Aotearoa
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+aotearoa:
+  label: Aotearoa
+  permalink: /aotearoa
+  description: Work grounded in Aotearoa New Zealand
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+tikanga:
+  label: Tikanga
+  permalink: /tikanga
+  description: Tikanga informed approaches to mapping and data use
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+data-sovereignty:
+  label: Data sovereignty
+  permalink: /data-sovereignty
+  description: Māori control and governance of Māori data
+
+kaitiakitanga:
+  label: Kaitiakitanga
+  permalink: /kaitiakitanga
+  description: Guardianship and long term care of whenua and taiao
+
+whenua:
+  label: Whenua
+  permalink: /whenua
+  description: Land based mapping and analysis
+
+taiao:
+  label: Taiao
+  permalink: /taiao
+  description: Environmental and ecological mapping
+
+iwi:
+  label: Iwi
+  permalink: /iwi
+  description: Iwi level GIS work and planning
+
+hapu:
+  label: Hapū
+  permalink: /hapu
+  description: Hapū level mapping and decision support
+
+whanau:
+  label: Whānau
+  permalink: /whanau
+  description: Whānau focused spatial work
+
+place-names:
+  label: Place names
+  permalink: /place-names
+  description: Māori place names and gazetteer work
+
+cultural-mapping:
+  label: Cultural mapping
+  permalink: /cultural-mapping
+  description: Mapping sites, narratives, and cultural knowledge
+
+sensitive-data:
+  label: Sensitive data
+  permalink: /sensitive-data
+  description: Managing access to sensitive and restricted locations
+
+gis-workflows:
+  label: GIS workflows
+  permalink: /gis-workflows
+  description: Repeatable and practical GIS workflows
+
+mapping-practice:
+  label: Mapping practice
+  permalink: /mapping-practice
+  description: Day to day GIS practice and methods
+
+qgis:
+  label: QGIS
+  permalink: /qgis
+  description: Open source GIS using QGIS
+
+arcgis:
+  label: ArcGIS
+  permalink: /arcgis
+  description: Esri tools including Pro, Online, and StoryMaps
+
+storymaps:
+  label: StoryMaps
+  permalink: /storymaps
+  description: Narrative mapping and storytelling
+
+open-data:
+  label: Open data
+  permalink: /open-data
+  description: Use of open datasets with care and context
+
+nz-data:
+  label: NZ data
+  permalink: /nz-data
+  description: National and regional datasets in Aotearoa
+
+linz:
+  label: LINZ
+  permalink: /linz
+  description: Land Information New Zealand data and services
+
+councils:
+  label: Councils
+  permalink: /councils
+  description: Local and regional council GIS data
+
+governance:
+  label: Governance
+  permalink: /governance
+  description: Data governance, access, and decision making
+
+publishing-maps:
+  label: Publishing maps
+  permalink: /publishing-maps
+  description: Sharing maps safely and appropriately
+
+decision-support:
+  label: Decision support
+  permalink: /decision-support
+  description: Using GIS to support planning and decisions
