@@ -10,25 +10,25 @@ authors: \[duane]
 
 tags:
 
-&nbsp; - land-parcels
+  - land-parcels
 
-&nbsp; - property
+  - property
 
-&nbsp; - linz
+  - linz
 
-&nbsp; - crosyl
+  - crosyl
 
-&nbsp; - crown-land
+  - crown-land
 
-&nbsp; - whenua
+  - whenua
 
-&nbsp; - governance
+  - governance
 
 ---
 
 
 
-One of the most common sources of confusion in Māori GIS work is land and property data. Many people assume there is one definitive parcel layer that shows ownership. In reality, there are several layers, each representing something slightly different.
+One of the most common sources of confusion in Māori GIS work is land and property data. Many people assume there is one definitive parcel layer that shows ownership. In reality, there are several layers, each representing something slightly different and some even incomplete.
 
 
 
@@ -38,13 +38,13 @@ This post explains the main land and property polygon datasets available through
 
 \## The starting point: cadastral parcels
 
-The foundation of land information in Aotearoa is the cadastral survey system. This defines legal land parcel boundaries based on surveyed titles.
+The foundation of land information is the cadastral survey system. This defines legal land parcel boundaries based on surveyed titles.
 
 
 
 The primary dataset is:
 
-NZ Parcels  
+NZ Parcels
 
 https://data.linz.govt.nz/layer/51279-nz-parcels/
 
@@ -96,11 +96,11 @@ Behind NZ Parcels sit survey datasets and title records. These are linked throug
 
 Relevant LINZ content:
 
-\- Cadastral survey data  
+\- Cadastral survey data
 
-&nbsp; https://www.linz.govt.nz/products-services/data/types-linz-data/cadastral-data
+  https://www.linz.govt.nz/products-services/data/types-linz-data/cadastral-data
 
-\- Landonline system (not public GIS data)  
+\- Landonline system (not public GIS data)
 
 
 
@@ -168,7 +168,7 @@ CROSYL stands for Crown Owned Spatial Layer.
 
 Dataset:
 
-Crown Owned Property (CROSYL)  
+Crown Owned Property (CROSYL)
 
 https://data.linz.govt.nz/layer/101290-crown-owned-property-crosyl/
 
@@ -238,13 +238,13 @@ All these datasets can be added to QGIS or ArcGIS.
 
 Sources:
 
-\- LINZ Data Service  
+\- LINZ Data Service
 
-&nbsp; https://data.linz.govt.nz
+  https://data.linz.govt.nz
 
-\- LINZ Basemaps  
+\- LINZ Basemaps
 
-&nbsp; https://basemaps.linz.govt.nz
+  https://basemaps.linz.govt.nz
 
 
 
@@ -275,6 +275,4 @@ Understanding land layers is as much about governance as it is about GIS. Each d
 
 
 For Māori GIS work, clarity about what a layer does and does not represent is just as important as the map itself.
-
-
 

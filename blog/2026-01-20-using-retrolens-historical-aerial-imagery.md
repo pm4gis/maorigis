@@ -1,29 +1,16 @@
 ---
-
 title: Using Retrolens to explore historical aerial imagery in Aotearoa
-
 slug: using-retrolens-historical-aerial-imagery
-
 date: 2026-01-20
-
-authors: \[duane]
-
+authors: [duane]
 tags:
-
-&nbsp; - retrolens
-
-&nbsp; - historical-imagery
-
-&nbsp; - aerial-photos
-
-&nbsp; - whenua
-
-&nbsp; - land-use
-
-&nbsp; - linz
-
-&nbsp; - rural
-
+  - retrolens
+  - historical-imagery
+  - aerial-photos
+  - whenua
+  - land-use
+  - linz
+  - rural
 ---
 
 
