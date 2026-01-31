@@ -1,7 +1,7 @@
 
 ---
-id: maori-gis-mapping-in-aotearoa
 title: Māori GIS Resources
+slug: Maorigis-resources
 date: 2026-01-31
 authors: [duane]
 tags:
