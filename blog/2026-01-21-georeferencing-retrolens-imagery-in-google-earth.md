@@ -1,27 +1,16 @@
 ---
 
 title: Georeferencing Retrolens imagery using Google Earth
-
 slug: georeferencing-retrolens-imagery-google-earth
-
 date: 2026-01-21
-
-authors: \[duane]
-
+authors: duane
 tags:
-
  - retrolens
-
  - georeferencing
-
  - google-earth
-
  - historical-imagery
-
  - workflows
-
  - whenua
-
 ---
 
 
