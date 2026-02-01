@@ -3,8 +3,6 @@ title: About
 sidebar_position: 999
 ---
 
-![Duane Wilkins](../static/img/DuaneWilkins.png)
-
 ## Pepeha
 
 Ko Waikato te awa  
@@ -19,7 +17,9 @@ Kei Te Awakairangi, Te Whanganui a Tara au e noho ana
 Ko Duane Wilkins tōku ingoa
 ## Ko wai au
 
-I am a geospatial professional based in Wellington, New Zealand. I have worked with geography, mapping, and geographic information systems since the late 1990s. My focus now is sharing the practical use of geospatial information to support decision making, planning, and communication, with an emphasis on building capability so teams and people can do the mahi themselves.
+I am a geospatial professional based in Wellington, New Zealand. I have worked with geography, mapping, and geographic information systems since the late 1990s. My focus now is sharing the practical use of geospatial information to support decision making, planning, and communication, with an emphasis on building capability so teams and people can do the mahi on their own.
+
+![Duane Wilkins](../static/img/DuaneWilkins.png)
 
 ## What I do
 
